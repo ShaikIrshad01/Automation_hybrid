@@ -20,9 +20,12 @@ public class Home_Mobile extends Base_Class {
 	public void Validate_joinnow_button(String Value) throws Exception {
 		
 				if (Value.equalsIgnoreCase("Joinnow")) {
+					
+					Element_isdisplayed(menu);
 					click(menu);
+					
 					Thread.sleep(200);
-//					Element_isdisplayed(menu);
+		
 					Element_isdisplayed(Join_now_button);
 				
 					ExtentTestManager.getTest().log(Status.PASS, "Join_now_button validation successful");

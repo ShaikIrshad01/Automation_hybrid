@@ -64,14 +64,56 @@ public class All_scenarios extends Base_Class  {
 				String Dropdown_values=testdata.get("Dropdown_values").toString();
 
 				String Country =testdata.get("Country").toString();
-				String RatesorAmenities =testdata.get("Rates/Amenities").toString();
+				String Ratesoramenities =testdata.get("Rates/amenities").toString();
 				String Club_name =testdata.get("Club_name").toString();
 				String rates_details =testdata.get("Rates_details").toString();
 				String Add_amenities =testdata.get("Add_amenities").toString();
 				String Included_amenities =testdata.get("Included_amenities").toString();
 				String Text_input =testdata.get("Text_input").toString();
-				String City_name =testdata.get("City").toString();
+				
 				String plan_rates =testdata.get("Plan_rates").toString();
+				String Amount_details =testdata.get("Amount_details").toString();
+//				String Club_address =testdata.get("Address").toString();
+				String additional_input =testdata.get("additional_input").toString();
+				String input_data =testdata.get("input_data").toString();
+				String input_data1 =testdata.get("input_data1").toString();
+				String F_Name =testdata.get("F_Name").toString();
+				String L_Name =testdata.get("L_Name").toString();
+				String Phone =testdata.get("Member_Phone").toString();
+				String Email =testdata.get("Email").toString();
+				String Address =testdata.get("Member_address").toString();
+				
+				String City =testdata.get("Member_City").toString();
+				
+				String Club_phone =testdata.get("Club_phone").toString();
+				String Club_zip =testdata.get("Club_zip").toString();
+				String Club_Address =testdata.get("Club_Address").toString();
+				String Club_city =testdata.get("Club_city").toString();
+				
+				String State =testdata.get("State").toString();
+				String Zipcode =testdata.get("Member_Zipcode").toString();
+				String Payment_type =testdata.get("Payment_type").toString();
+				String Card_number  =testdata.get("Card_number").toString();
+				
+				String Ex_month =testdata.get("Ex_month").toString();
+				String Ex_year  =testdata.get("Ex_year").toString();
+				
+				String Routing_number  =testdata.get("Routing_number").toString();
+				String Account_number =testdata.get("Account_number").toString();
+				String Card_name =testdata.get("Card_name").toString();
+				
+				String Number_of_Persons1 =testdata.get("Number_of_Persons1").toString();
+				String Initiation_Fee =testdata.get("Initiation_Fee").toString();
+				String Billing_Frequency =testdata.get("Billing_Frequency").toString();				
+				String Initial_Term =testdata.get("Initial_Term").toString();
+				String Prepayment =testdata.get("Prepayment").toString();
+				String First_Month_Dues =testdata.get("First_Month_Dues").toString();
+				String Last_Month_Dues =testdata.get("Last_Month_Dues").toString();
+				String Total_initial_Payment =testdata.get("Total_initial_Payment").toString();	
+				String Annual_Fee_Per_Person =testdata.get("Annual_Fee_Per_Person").toString();
+				
+//				String input_data1 =testdata.get("input_data1").toString();
+//				
 				
 				switch (testdata.get("TextMessage").toString()) {
 				
@@ -152,21 +194,21 @@ public class All_scenarios extends Base_Class  {
 				case "club_ratesandamenities":
 
 					context.setAttribute("fileName", "club_ratesandamenities");
-					joinnow.Validate_club_ratesandamenities(testdata.get("TextMessage").toString(), Dropdown_values, Country);
+					joinnow.Validate_club_ratesandamenities(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name);
 					context.setAttribute("fileName", "club_ratesandamenities");
 					driver.quit();
 					
 				case "club_rateplans":
 
 					context.setAttribute("fileName", "club_rateplans");
-					joinnow.Validate_club_rateplans(testdata.get("TextMessage").toString(), Dropdown_values, Country, RatesorAmenities, Club_name);
+					joinnow.Validate_club_rateplans(testdata.get("TextMessage").toString(), Dropdown_values, Country, Ratesoramenities, Club_name);
 					context.setAttribute("fileName", "club_rateplans");
 					driver.quit();
 					
 				case "club_Amenities":
 
 					context.setAttribute("fileName", "club_Amenities");
-					joinnow.Validate_club_Amenities(testdata.get("TextMessage").toString(), Dropdown_values, Country, RatesorAmenities, Club_name);
+					joinnow.Validate_club_Amenities(testdata.get("TextMessage").toString(), Dropdown_values, Country, Ratesoramenities, Club_name);
 					context.setAttribute("fileName", "club_Amenities");
 					driver.quit();
 
@@ -188,14 +230,14 @@ public class All_scenarios extends Base_Class  {
 				case "Additionalfeatures_monthlyrates":
 
 					context.setAttribute("fileName", "Additionalfeatures_monthlyrates");
-					joinnow.Validate_Additionalfeatures_monthlyrates(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, RatesorAmenities);
+					joinnow.Validate_Additionalfeatures_monthlyrates(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Ratesoramenities);
 					context.setAttribute("fileName", "Additionalfeatures_monthlyrates");
 					driver.quit();
 					
 				case "monthlyrates_$36_99_details":
 
 					context.setAttribute("fileName", "monthlyrates_$36_99_details");
-					joinnow.Validate_select_monthlyrates_$36_99_details(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name,plan_rates, RatesorAmenities, rates_details);
+					joinnow.Validate_select_monthlyrates_$36_99_details(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name,plan_rates, Number_of_Persons1, Initiation_Fee, Billing_Frequency, Initial_Term, Prepayment);
 					context.setAttribute("fileName", "monthlyrates_$36_99_details");
 					driver.quit();
 					
@@ -203,7 +245,7 @@ public class All_scenarios extends Base_Class  {
 				case "monthlyrates_$46_99_details":
 
 					context.setAttribute("fileName", "monthlyrates_$46_99_details");
-					joinnow.Validate_select_monthlyrates_$46_99_details(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, plan_rates,RatesorAmenities, rates_details);
+					joinnow.Validate_select_monthlyrates_$46_99_details(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, plan_rates, Number_of_Persons1, Initiation_Fee, Billing_Frequency, Initial_Term, Prepayment);
 					context.setAttribute("fileName", "monthlyrates_$46_99_details");
 					driver.quit();
 					
@@ -225,7 +267,7 @@ public class All_scenarios extends Base_Class  {
 				case "monthlyrates_$36_99_yourdues_section":
 
 					context.setAttribute("fileName", "monthlyrates_$36_99_yourdues_section");
-					joinnow.Validate_select_monthlyrates_$36_99_yourdues_section(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name,plan_rates, RatesorAmenities, rates_details);
+					joinnow.Validate_select_monthlyrates_$36_99_yourdues_section(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name,plan_rates, First_Month_Dues ,Last_Month_Dues ,Total_initial_Payment ,Annual_Fee_Per_Person);
 					context.setAttribute("fileName", "monthlyrates_$36_99_yourdues_section");
 					driver.quit();
 					
@@ -233,7 +275,7 @@ public class All_scenarios extends Base_Class  {
 				case "monthlyrates_$46_99_yourdues_section":
 
 					context.setAttribute("fileName", "monthlyrates_$46_99_yourdues_section");
-					joinnow.Validate_select_monthlyrates_$46_99_yourdues_section(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, plan_rates,RatesorAmenities, rates_details);
+					joinnow.Validate_select_monthlyrates_$46_99_yourdues_section(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, plan_rates,Ratesoramenities, rates_details);
 					context.setAttribute("fileName", "monthlyrates_$46_99_yourdues_section");
 					driver.quit();
 					
@@ -313,7 +355,7 @@ public class All_scenarios extends Base_Class  {
 				case "Validate_different_pricing_in_canadatext":
 
 					context.setAttribute("fileName", "Validate_different_pricing_in_canadatext");
-					joinnow.Validate_different_pricing_in_canadatext(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, City_name);
+					joinnow.Validate_different_pricing_in_canadatext(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, City);
 					context.setAttribute("fileName", "Validate_different_pricing_in_canadatext");
 					driver.quit();
 					
@@ -340,6 +382,179 @@ public class All_scenarios extends Base_Class  {
 					context.setAttribute("fileName", "Validate_all_fields_under_Billing_information_section");
 					driver.quit();
 					
+					
+				case "Validate_all_fields_by_selecting_creditcard_radiobutton":
+
+					context.setAttribute("fileName", "Validate_all_fields_by_selecting_creditcard_radiobutton");
+					joinnow.Validate_all_fields_by_selecting_creditcard_radiobutton(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input);
+					context.setAttribute("fileName", "Validate_all_fields_by_selecting_creditcard_radiobutton");
+					driver.quit();
+					
+					
+				case "Validate_all_fields_by_selecting_checking_radiobutton":
+
+					context.setAttribute("fileName", "Validate_all_fields_by_selecting_checking_radiobutton");
+					joinnow.Validate_all_fields_by_selecting_checking_radiobutton(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input);
+					context.setAttribute("fileName", "Validate_all_fields_by_selecting_checking_radiobutton");
+					driver.quit();
+					
+				case "Validate_all_fields_by_selecting_savings_radiobutton":
+
+					context.setAttribute("fileName", "Validate_all_fields_by_selecting_savings_radiobutton");
+					joinnow.Validate_all_fields_by_selecting_savings_radiobutton(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input);
+					context.setAttribute("fileName", "Validate_all_fields_by_selecting_savings_radiobutton");
+					driver.quit();
+					
+					
+				case "Validate_use_same_information_for_monthly_billing_checkbox":
+
+					context.setAttribute("fileName", "Validate_use_same_information_for_monthly_billing_checkbox");
+					joinnow.Validate_use_same_information_for_monthly_billing_checkbox(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input);
+					context.setAttribute("fileName", "Validate_use_same_information_for_monthly_billing_checkbox");
+					driver.quit();
+					
+				case "Validate_initial_payment_amounts":
+
+					context.setAttribute("fileName", "Validate_initial_payment_amounts");
+					joinnow.Validate_initial_payment_amounts(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input,plan_rates, rates_details,Amount_details);
+					context.setAttribute("fileName", "Validate_initial_payment_amounts");
+					driver.quit();
+					
+					
+				case "Validate_included_amenities_under_initial_payment_amount_section":
+
+					context.setAttribute("fileName", "Validate_included_amenities_under_initial_payment_amount_section");
+					joinnow.Validate_included_amenities_under_initial_payment_amount_section(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, Included_amenities);
+					context.setAttribute("fileName", "Validate_included_amenities_under_initial_payment_amount_section");
+					driver.quit();
+					
+				case "Validate_details_in_Your_home_club_section":
+
+					context.setAttribute("fileName", "Validate_details_in_Your_home_club_section");
+					joinnow.Validate_details_in_Your_home_club_section(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input,Address, additional_input,input_data, input_data1);
+					context.setAttribute("fileName", "Validate_details_in_Your_home_club_section");
+					driver.quit();
+					
+					
+				case "Validate_back_and_Review_confirm_buttons":
+
+					context.setAttribute("fileName", "Validate_back_and_Review_confirm_buttons");
+					joinnow.Validate_back_and_Review_confirm_buttons(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates);
+					context.setAttribute("fileName", "Validate_back_and_Review_confirm_buttons");
+					driver.quit();
+					
+					
+				case "Validate_back_button_in_step3":
+
+					context.setAttribute("fileName", "Validate_back_button_in_step3");
+					joinnow.Validate_back_button_in_step3(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates);
+					context.setAttribute("fileName", "Validate_back_button_in_step3");
+					driver.quit();
+					
+				case "Validate_review_and_confirm_button_by_fillingalldetails":
+
+					context.setAttribute("fileName", "Validate_review_and_confirm_button_by_fillingalldetails");
+					joinnow.Validate_review_and_confirm_button_by_fillingalldetails(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number);
+					context.setAttribute("fileName", "Validate_review_and_confirm_button_by_fillingalldetails");
+					driver.quit();
+					
+					
+				case "Validate_all_sections_in_review_and_confirm_membership_page":
+
+					context.setAttribute("fileName", "Validate_all_sections_in_review_and_confirm_membership_page");
+					joinnow.Validate_all_sections_in_review_and_confirm_membership_page(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number);
+					context.setAttribute("fileName", "Validate_all_sections_in_review_and_confirm_membership_page");
+					driver.quit();
+					
+					
+				case "Validate_user_details_in_review_page":
+
+					context.setAttribute("fileName", "Validate_user_details_in_review_page");
+					joinnow.Validate_user_details_in_review_page(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number);
+					context.setAttribute("fileName", "Validate_user_details_in_review_page");
+					driver.quit();
+					
+				case "Validate_user_fullname_under_billingsection":
+
+					context.setAttribute("fileName", "Validate_user_fullname_under_billingsection");
+					joinnow.Validate_user_fullname_under_billingsection(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number);
+					context.setAttribute("fileName", "Validate_user_fullname_under_billingsection");
+					driver.quit();
+					
+				case "Validate_user_payment_info":
+
+					context.setAttribute("fileName", "Validate_user_payment_info");
+					joinnow.Validate_user_payment_info(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number, Card_name);
+					context.setAttribute("fileName", "Validate_user_payment_info");
+					driver.quit();
+					
+					
+					
+				case "Validate_user_fullname_under_monthlyduesbillingsection":
+
+					context.setAttribute("fileName", "Validate_user_fullname_under_monthlyduesbillingsection");
+					joinnow.Validate_user_fullname_under_monthlyduesbillingsection(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number);
+					context.setAttribute("fileName", "Validate_user_fullname_under_monthlyduesbillingsection");
+					driver.quit();
+					
+					
+				case "Validate_user_monthly_dues_payment_info":
+
+					context.setAttribute("fileName", "Validate_user_monthly_dues_payment_info");
+					joinnow.Validate_user_monthly_dues_payment_info(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number, Card_name, input_data);
+					context.setAttribute("fileName", "Validate_user_monthly_dues_payment_info");
+					driver.quit();
+					
+					
+					
+				case "Validate_Monthly_dues_amount":
+
+					context.setAttribute("fileName", "Validate_Monthly_dues_amount");
+					joinnow.Validate_Monthly_dues_amount(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number);
+					context.setAttribute("fileName", "Validate_Monthly_dues_amount");
+					driver.quit();
+					
+					
+				case "Validate_initial_payment_amount_section":
+
+					context.setAttribute("fileName", "Validate_initial_payment_amount_section");
+					joinnow.Validate_initial_payment_amount_section(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number, input_data, input_data1);
+					context.setAttribute("fileName", "Validate_initial_payment_amount_section");
+					driver.quit();
+					
+					
+					
+				case "Validate_Includeded_amenities_in_review_page":
+
+					context.setAttribute("fileName", "Validate_Includeded_amenities_in_review_page");
+					joinnow.Validate_Includeded_amenities_in_review_page(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number, Included_amenities);
+					context.setAttribute("fileName", "Validate_Includeded_amenities_in_review_page");
+					driver.quit();
+					
+					
+					
+				case "Validate_all_yourhomeclub_section_review_page":
+
+					context.setAttribute("fileName", "Validate_all_yourhomeclub_section_review_page");
+					joinnow.Validate_all_yourhomeclub_section_review_page(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number, input_data,additional_input, input_data1, Club_Address, Club_city, Club_zip, Club_phone);
+					context.setAttribute("fileName", "Validate_all_yourhomeclub_section_review_page");
+					driver.quit();
+					
+					
+				case "Validate_Membership_agreement_in_review_page":
+
+					context.setAttribute("fileName", "Validate_Membership_agreement_in_review_page");
+					joinnow.Validate_Membership_agreement_in_review_page(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number, additional_input);
+					context.setAttribute("fileName", "Validate_Membership_agreement_in_review_page");
+					driver.quit();
+					
+					
+				case "Validate_Previewagreement_and_Confirmandpay_buttons":
+
+					context.setAttribute("fileName", "Validate_Previewagreement_and_Confirmandpay_buttons");
+					joinnow.Validate_Previewagreement_and_Confirmandpay_buttons(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Text_input, plan_rates, F_Name, L_Name, Phone,  Email,  Address,  City,  State,  Zipcode, Payment_type, Card_number,  Ex_month,  Ex_year, Routing_number , Account_number);
+					context.setAttribute("fileName", "Validate_Previewagreement_and_Confirmandpay_buttons");
+					driver.quit();
 					
 					
 					// Freepass

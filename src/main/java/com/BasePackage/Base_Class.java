@@ -11,6 +11,9 @@ import com.google.common.base.Throwables;
 import com.google.common.base.Verify;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -224,6 +227,8 @@ try {
 		try {
 			WebDriverWait wait2 = new WebDriverWait(driver, 30);
 			Assert.assertTrue(wait2.until(ExpectedConditions.presenceOfElementLocated(element)).isDisplayed());
+			
+			
 	
 		} catch (Exception e) {
 			String stackTrace = Throwables.getStackTraceAsString(e);
@@ -237,10 +242,7 @@ try {
 			throw new Exception("Element: "+ element +" is not displayed");
 		}
 		
-//		WebDriverWait wait2 = new WebDriverWait(driver, 30);
-//		Assert.assertTrue(wait2.until(ExpectedConditions.presenceOfElementLocated(element)).isDisplayed(), "Element: "+ element +" is not displayed");
-//		Assert.assertTrue(driver.findElement(element).isDisplayed());
-		
+Thread.sleep(200);
 		
 	}
 	
@@ -271,6 +273,21 @@ try {
 		Thread.sleep(500);
 	}
 	
+
+public void error(By error) throws Exception {
+	Thread.sleep(100);
+	if(driver.findElement(error).isDisplayed()) {
+		MoveToElement(error);
+		click(error);
+		String error1=driver.findElement(error).getText();
+		Log.info(error1);
+
+		throw new Exception(error1);
+	}
+}
+
+
+	
 public ExpectedCondition<Boolean> Verify_staleelement(WebElement element) throws InterruptedException {
 		
 //		WebDriverWait wait2 = new WebDriverWait(driver, 30);
@@ -285,6 +302,7 @@ public ExpectedCondition<Boolean> Verify_staleelement(WebElement element) throws
 
 		WebDriverWait wait2 = new WebDriverWait(driver, 30);
 		wait2.until(ExpectedConditions.presenceOfElementLocated(element)).sendKeys(Value);
+		Thread.sleep(300);
 
 	}
 
@@ -333,6 +351,12 @@ public ExpectedCondition<Boolean> Verify_staleelement(WebElement element) throws
 		Thread.sleep(4000);
 	}
 
+	
+	
+	public String convert_to_tel_number(String number) {
+		String tel_number = number.replaceFirst("(\\d{3})(\\d{3})(\\d+)", "($1) $2-$3");
+		return tel_number;
+	}
 	
 	public void keypress(int KeyEvent) throws Throwable {
 		Robot r = new Robot();
@@ -489,6 +513,113 @@ public ExpectedCondition<Boolean> Verify_staleelement(WebElement element) throws
 		r.keyRelease(KeyEvent.VK_DOWN);
 	}
 
+	
+	
+	
+
+
+public static String convert_month_to_number(String month) {
+	
+	switch(month) {
+    case "January":
+    case "january":
+    case "jan":
+    case "Jan":
+    	month = "01";
+    break;
+
+    case "febuary":
+    case "feb":
+    case "Febuary":
+    case "Feb":
+    	month = "02";
+    break;
+
+    case "march":
+    case "mar":
+    case "March":
+    case "Mar":
+    	month = "03";
+    break;
+
+    case "april":
+    case "apr":
+    case "April":
+    case "Apr":
+    	month = "04";
+    break;
+
+    case "may":
+    case "May":
+    	month = "05";
+    break;
+
+    case "june":
+    case "jun":
+    case "June":
+    case "Jun":
+    	month = "06";
+    break;
+
+    case "july":
+    case "jul":
+    case "July":
+    case "Jul":
+    	month = "07";
+    break;
+
+    case "august":
+    case "aug":
+    case "August":
+    case "Aug":
+    	month = "08";
+    break;
+
+    case "september":
+    case "sep":
+    case "sept":
+    case "September":
+    case "Sep":
+    case "Sept":
+    	month = "09";
+    break;
+
+    case "october":
+    case "oct":
+    case "October":
+    case "Oct":
+    	month = "10";
+    break;
+
+    case "november":
+    case "nov":
+    case "November":
+    case "Nov":
+    	month = "11";
+    break;
+
+    case "december":
+    case "dec":
+    case "December":
+    case "Dec":
+    	month = "12";
+    break;
+    }
+	
+	return month;
+	
+}
+
+
+public String Get_todays_date_pus_1month(String dateformatter) {
+	
+	DateTimeFormatter dtf = DateTimeFormatter.ofPattern(dateformatter);  
+//	   LocalDateTime now = LocalDateTime.now();
+	 LocalDate now = LocalDate.now().plusMonths(1);
+	   String date=dtf.format(now);
+	   return date;
+}
+	
 	}
 
 

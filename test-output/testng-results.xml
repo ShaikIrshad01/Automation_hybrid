@@ -2,39 +2,41 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-11T22:28:55 IST" name="Suite" finished-at="2022-08-11T22:29:13 IST" duration-ms="18188">
+  <suite started-at="2022-09-09T17:25:06 IST" name="Suite" finished-at="2022-09-09T17:26:21 IST" duration-ms="75120">
     <groups>
     </groups>
-    <test started-at="2022-08-11T22:28:55 IST" name="Joinnow_Test" finished-at="2022-08-11T22:28:56 IST" duration-ms="720">
-    </test> <!-- Joinnow_Test -->
-    <test started-at="2022-08-11T22:28:56 IST" name="Responsive_tests" finished-at="2022-08-11T22:29:13 IST" duration-ms="17449">
+    <test started-at="2022-09-09T17:25:06 IST" name="Joinnow_Test" finished-at="2022-09-09T17:26:21 IST" duration-ms="74807">
       <class name="com.test.user.All_scenarios">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.user.All_scenarios@6ae5aa72]" started-at="2022-08-11T22:28:55 IST" name="reference" finished-at="2022-08-11T22:28:55 IST" duration-ms="504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reference -->
-      </class> <!-- com.test.user.All_scenarios -->
-      <class name="com.test.user.Responsive_scenarios">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.user.Responsive_scenarios@409bf450]" started-at="2022-08-11T22:28:55 IST" name="reference" finished-at="2022-08-11T22:28:55 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reference -->
-        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.Responsive_scenarios@409bf450]" started-at="2022-08-11T22:28:56 IST" name="RUNALL" data-provider="TestData" finished-at="2022-08-11T22:29:13 IST" duration-ms="17336" status="PASS">
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@5158b42f]" started-at="2022-09-09T17:25:07 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-09T17:26:21 IST" duration-ms="73914" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Add_amenities=, City=, Club_name=, Country=, Dimensions=, Dropdown_values=ALL,USA,India, Included_amenities=, Mobile_Device=iPhone SE, Plan_rates=, Rates/Amenities=, Rates_details=, Res_Run=Yes, Run=No, TestScenario=TC_LAF_Validate_Joinnow_country_values, Text_input=, TextMessage=country_values}]]>
+                <![CDATA[{Account_number=, Add_amenities=Towels: $5.00 - unchecked, additional_input=, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=BRONX - EASTCHESTER RD. (Signature), Club_phone=, Club_zip=, Country=USA, Dropdown_values=NY, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, Included_amenities=Racquetball/Squash Courts: Included -checked, 2 guests per visit: Included -checked, Group Fitness: Included -checked, Cycle Class: Included -checked, Pool/Whirlpool Spa: Included -checked, Esporta Brand Access: Included -checked, City Sports Brand Access: Included -checked, LA Fitness Brand Access: Included -checked, Initial_Term=, Initiation_Fee=, input_data=, input_data1=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=38.99, Prepayment=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=NY, TestScenario=TC18_Validate_Joinnow_club_select_monthlyrates_$36_99_add_amenities_list, Text_input=, TextMessage=monthlyrates_$36_99_add_amenities_list, Total_initial_Payment=}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@89c65d5]]>
+                <![CDATA[org.testng.TestRunner@3249a1ce]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RUNALL -->
+      </class> <!-- com.test.user.All_scenarios -->
+    </test> <!-- Joinnow_Test -->
+    <test started-at="2022-09-09T17:26:21 IST" name="Responsive_tests" finished-at="2022-09-09T17:26:21 IST" duration-ms="289">
+      <class name="com.test.user.All_scenarios">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.user.All_scenarios@5158b42f]" started-at="2022-09-09T17:25:06 IST" name="reference" finished-at="2022-09-09T17:25:06 IST" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reference -->
+      </class> <!-- com.test.user.All_scenarios -->
+      <class name="com.test.user.Responsive_scenarios">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.user.Responsive_scenarios@2a3b5b47]" started-at="2022-09-09T17:25:06 IST" name="reference" finished-at="2022-09-09T17:25:06 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reference -->
       </class> <!-- com.test.user.Responsive_scenarios -->
     </test> <!-- Responsive_tests -->
   </suite> <!-- Suite -->

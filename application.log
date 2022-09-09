@@ -1,43 +1,32 @@
-[INFO ] 2022-08-11 22:28:56.718 [main] Log - *** Running the tests in Responsive mode ***
-[INFO ] 2022-08-11 22:28:56.723 [main] Log - *** Running test method TC_LAF_Validate_Joinnow_country_values...
-[INFO ] 2022-08-11 22:28:58.506 [main] Log - Chrome browser launched successfully
-[INFO ] 2022-08-11 22:29:01.096 [main] Log - Entered the application url successfully
-[INFO ] 2022-08-11 22:29:12.004 [main] Log - Join_now_button clicked successfully
-[INFO ] 2022-08-11 22:29:12.035 [main] Log - Country dropdown validation successful
-[INFO ] 2022-08-11 22:29:12.144 [main] Log - ALL value matched
-[INFO ] 2022-08-11 22:29:12.145 [main] Log - USA value matched
-[ERROR] 2022-08-11 22:29:12.145 [main] Log - India value not matched with the values in country dropdown list
-[ERROR] 2022-08-11 22:29:12.145 [main] Log - All values not matched successfully in the country dropdown. Expected dropdown list [ ALL,USA,India ] Actual dropdown list [ All,USA,CANADA ]
-[ERROR] 2022-08-11 22:29:13.157 [main] Log - *** Test execution TC_LAF_Validate_Joinnow_country_values failed...
-[ERROR] 2022-08-11 22:29:13.160 [main] Log - java.lang.Exception: All values not matched successfully in the country dropdown
-	at com.pages.Joinnow_Mobile.Validate_country_values(Joinnow_Mobile.java:232)
-	at com.test.user.Responsive_scenarios.RUNALL(Responsive_scenarios.java:170)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-[INFO ] 2022-08-11 22:29:13.586 [main] Log - Browser is closed
-[INFO ] 2022-08-11 22:29:13.899 [main] Log - *** Test Suite TC_LAF_Validate_Joinnow_country_values ending ***
+[INFO ] 2022-09-09 17:25:07.826 [main] Log - *** Running test method TC18_Validate_Joinnow_club_select_monthlyrates_$36_99_add_amenities_list...
+[INFO ] 2022-09-09 17:25:09.859 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-09 17:25:28.877 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-09 17:25:35.950 [main] Log - Join_now_button clicked successfully
+[INFO ] 2022-09-09 17:25:36.198 [main] Log - Country dropdown field is displayed successfully
+[INFO ] 2022-09-09 17:25:36.509 [main] Log - Country dropdown value: USA is selected successfully
+[INFO ] 2022-09-09 17:25:36.742 [main] Log - By State or province dropdown field  is displayed successfully
+[INFO ] 2022-09-09 17:25:36.809 [main] Log - By state or province dropdown value: NY is selected successfully
+[INFO ] 2022-09-09 17:25:40.050 [main] Log - NY contains in the results 
+[INFO ] 2022-09-09 17:25:40.051 [main] Log - 28 Club(s) found in "NY"
+[INFO ] 2022-09-09 17:25:45.965 [main] Log - club BRONX - EASTCHESTER RD. (Signature) is selected
+[INFO ] 2022-09-09 17:25:51.234 [main] Log - Join this club button is displayed successfully
+[INFO ] 2022-09-09 17:25:56.400 [main] Log - User successfully navigated to the step two (Select a Membership Plan) page: LA Fitness | Online Membership - Rate | BRONX - EASTCHESTER RD. (Signature)
+[INFO ] 2022-09-09 17:25:56.638 [main] Log - Select a Membership Plan section displayed successfully
+[INFO ] 2022-09-09 17:25:56.871 [main] Log - Select additional features section is displayed successfully
+[INFO ] 2022-09-09 17:25:57.103 [main] Log - Your homeclub section is displayed successfully
+[INFO ] 2022-09-09 17:26:01.901 [main] Log - Selected 38.99 Monthly Rate successfully
+[INFO ] 2022-09-09 17:26:02.799 [main] Log - Add Amenities section is displayed successfully
+[INFO ] 2022-09-09 17:26:02.864 [main] Log - Amenity: Towels: $5.00 check box is checked: false and validated successfully
+[INFO ] 2022-09-09 17:26:02.864 [main] Log - All values matched successfully in the amenities list
+[INFO ] 2022-09-09 17:26:03.090 [main] Log - Included Amenities section is displayed successfully
+[INFO ] 2022-09-09 17:26:08.135 [main] Log - Amenity: Racquetball/Squash Courts: Included check box is checked: true and validated successfully
+[INFO ] 2022-09-09 17:26:08.172 [main] Log - Amenity: 2 guests per visit: Included check box is checked: true and validated successfully
+[INFO ] 2022-09-09 17:26:08.208 [main] Log - Amenity: Group Fitness: Included check box is checked: true and validated successfully
+[INFO ] 2022-09-09 17:26:08.247 [main] Log - Amenity: Cycle Class: Included check box is checked: true and validated successfully
+[INFO ] 2022-09-09 17:26:08.286 [main] Log - Amenity: Pool/Whirlpool Spa: Included check box is checked: true and validated successfully
+[INFO ] 2022-09-09 17:26:08.324 [main] Log - Amenity: Esporta Brand Access: Included check box is checked: true and validated successfully
+[INFO ] 2022-09-09 17:26:08.362 [main] Log - Amenity: City Sports Brand Access: Included check box is checked: true and validated successfully
+[INFO ] 2022-09-09 17:26:08.402 [main] Log - Amenity: LA Fitness Brand Access: Included check box is checked: true and validated successfully
+[INFO ] 2022-09-09 17:26:08.402 [main] Log - All values matched successfully in the amenities list
+[INFO ] 2022-09-09 17:26:21.575 [main] Log - *** Test Suite TC18_Validate_Joinnow_club_select_monthlyrates_$36_99_add_amenities_list ending ***
+[INFO ] 2022-09-09 17:26:21.576 [main] Log - Browser is closed

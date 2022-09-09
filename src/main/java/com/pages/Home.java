@@ -20,11 +20,12 @@ public class Home extends Base_Class {
 	private static By FreePass_top_button = By.xpath("//div[@class='d-flex align-items-center nav-menu-list']/div/a[@title='FREE PASS']");
 	private static By FreePass_mid = By.xpath("//div[@class='btn free-pass']/a[@title='FREE PASS']");
 	private static By FreePass_bottom = By.xpath("//div[@class=' col-lg-2 d-flex justify-content-around flex-column pass-join']/div/a[@title='FREE PASS']");
-	
+	private static By menu = By.xpath("/html[1]/body[1]/form[1]/div[3]/div[1]/nav[1]/div[4]/div[3]/a[2]/img[1]");
 	public void Validate_joinnow_button(String Value) throws Exception {
 		
 				if (Value.equalsIgnoreCase("Joinnow")) {
-		
+					
+					if (driver.findElement(menu).isDisplayed()) click(menu);
 					Element_isdisplayed(Join_now_button);
 				
 					ExtentTestManager.getTest().log(Status.PASS, "Join_now_button validation successful");

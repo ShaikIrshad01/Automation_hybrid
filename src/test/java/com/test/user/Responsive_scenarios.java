@@ -59,29 +59,38 @@ public class Responsive_scenarios extends Base_Class {
 				Log.info("*** Running test method " + testdata.get("TestScenario").toString() + "...");
 				ExtentTestManager.getTest().log(Status.PASS, "*** Running test method " + testdata.get("TestScenario").toString() + "...");
 //				Base_Class.setup();
-				String dimensions =testdata.get("Dimensions").toString();
+//				String dimensions =testdata.get("Dimensions").toString();
 				String device=testdata.get("Mobile_Device").toString();
-				int height = 0;
-				int width=0;
-				int mobile=0;
-				if(!dimensions.isBlank()) {
-				String[] dim=dimensions.split(",");
-				int w=Integer.parseInt(dim[0].trim());
-				int h=Integer.parseInt(dim[1].trim());
-				height=h;
-				width=w;
-				Base_Class.setup(width,height);
+
+				Boolean mobile=false;
+//				Boolean dimension=false;
+//				Boolean ipad=false;
+				
+//				if(!dimensions.isBlank()) {
+//				String[] dim=dimensions.split(",");
+//				int w=Integer.parseInt(dim[0].trim());
+//				int h=Integer.parseInt(dim[1].trim());
+//				height=h;
+//				width=w;
+//				Base_Class.setup(width,height);
+//				dimension=true;
+//				ExtentTestManager.getTest().log(Status.PASS, "Running as per the dimensions width : "+width + " height: "+height);
+//				Log.info("Running as per the dimensions width : "+width + " height: "+height);
+//				
+//				}else
+				
+				if(!device.isBlank()){
+				Base_Class.setup(device);
+				mobile=true;
+				
+				ExtentTestManager.getTest().log(Status.PASS, "Running in the device : "+device);
+				Log.info("Running in the device : "+device);
+					
 				}
 				else {
-//					String device=testdata.get("Device").toString();
-					Base_Class.setup(device);
-					mobile++;
+					Base_Class.setup();
 				}
-//				String device=testdata.get("Device").toString();
-//				Base_Class.setup("iPhone SE");
-								
-				
-//				if (height<=1000)Base_Class.setup(height,width);
+
 				
 				
 				ExtentTestManager.getTest().log(Status.PASS, "Successfully Entered into Application URL ");
@@ -90,26 +99,34 @@ public class Responsive_scenarios extends Base_Class {
 				String Dropdown_values=testdata.get("Dropdown_values").toString();
 
 				String Country =testdata.get("Country").toString();
-				String RatesorAmenities =testdata.get("Rates/Amenities").toString();
+				String Ratesoramenities =testdata.get("Rates/amenities").toString();
 				String Club_name =testdata.get("Club_name").toString();
 				String rates_details =testdata.get("Rates_details").toString();
 				String plan_rates =testdata.get("Plan_rates").toString();
 				
+				String Number_of_Persons1 =testdata.get("Number_of_Persons1").toString();
+				String Initiation_Fee =testdata.get("Initiation_Fee").toString();
+				String Billing_Frequency =testdata.get("Billing_Frequency").toString();				
+				String Initial_Term =testdata.get("Initial_Term").toString();
+				String Prepayment =testdata.get("Prepayment").toString();
+				String First_Month_Dues =testdata.get("First_Month_Dues").toString();
+				String Last_Month_Dues =testdata.get("Last_Month_Dues").toString();
+				String Total_initial_Payment =testdata.get("Total_initial_Payment").toString();	
+				String Annual_Fee_Per_Person =testdata.get("Annual_Fee_Per_Person").toString();
+				
+				
 				switch (testdata.get("TextMessage").toString()) {
 				
 				case "Joinnow":
-					if(mobile==1) {
+					if(mobile) {
 					context.setAttribute("fileName", "Joinnow");
 					Home_mobile.Validate_joinnow_button(testdata.get("TextMessage").toString());
 					context.setAttribute("fileName", "Joinnow");
-					driver.quit();}
-					else if(width<867) {
-						context.setAttribute("fileName", "Joinnow");
-						Home_mobile.Validate_joinnow_button(testdata.get("TextMessage").toString());
-						context.setAttribute("fileName", "Joinnow");
-						driver.quit();
-						
-					}else {
+					driver.quit();
+					}
+					
+					
+					else  {
 						context.setAttribute("fileName", "Joinnow");
 						Home.Validate_joinnow_button(testdata.get("TextMessage").toString());
 						context.setAttribute("fileName", "Joinnow");
@@ -118,19 +135,13 @@ public class Responsive_scenarios extends Base_Class {
 					
 
 				case "Joinnow_steps":
-					if(mobile==1) {
+					if(mobile) {
 						context.setAttribute("fileName", "Joinnow_steps");
 						Joinnow_Mobile.Validate_joinnow_steps(testdata.get("TextMessage").toString());
 						context.setAttribute("fileName", "Joinnow_steps");
 						driver.quit();
 						}
-						else if(width<867) {
-							context.setAttribute("fileName", "Joinnow_steps");
-							Joinnow_Mobile.Validate_joinnow_steps(testdata.get("TextMessage").toString());
-							context.setAttribute("fileName", "Joinnow_steps");
-							driver.quit();
-							
-						}else {
+						else {
 							context.setAttribute("fileName", "Joinnow_steps");
 							joinnow.Validate_joinnow_steps(testdata.get("TextMessage").toString());
 							context.setAttribute("fileName", "Joinnow_steps");
@@ -140,19 +151,13 @@ public class Responsive_scenarios extends Base_Class {
 
 				case "Joinnow_fields":
 					
-					if(mobile==1) {
+					if(mobile) {
 						context.setAttribute("fileName", "Joinnow_fields");
 						Joinnow_Mobile.Validate_joinnow_fields(testdata.get("TextMessage").toString());
 						context.setAttribute("fileName", "Joinnow_fields");
 						driver.quit();
 						}
-						else if(width<867) {
-							context.setAttribute("fileName", "Joinnow_fields");
-							Joinnow_Mobile.Validate_joinnow_fields(testdata.get("TextMessage").toString());
-							context.setAttribute("fileName", "Joinnow_fields");
-							driver.quit();
-							
-						}else {
+						else {
 							context.setAttribute("fileName", "Joinnow_fields");
 							joinnow.Validate_joinnow_fields(testdata.get("TextMessage").toString());
 							context.setAttribute("fileName", "Joinnow_fields");
@@ -165,19 +170,13 @@ public class Responsive_scenarios extends Base_Class {
 					
 					
 
-					if(mobile==1) {
+					if(mobile) {
 						context.setAttribute("fileName", "country_values");
 						Joinnow_Mobile.Validate_country_values(testdata.get("TextMessage").toString(), Dropdown_values);
 						context.setAttribute("fileName", "country_values");
 						driver.quit();
 						}
-						else if(width<867) {
-							context.setAttribute("fileName", "country_values");
-							Joinnow_Mobile.Validate_country_values(testdata.get("TextMessage").toString(), Dropdown_values);
-							context.setAttribute("fileName", "country_values");
-							driver.quit();
-							
-						}else {
+						else {
 							context.setAttribute("fileName", "country_values");
 							joinnow.Validate_country_values(testdata.get("TextMessage").toString(), Dropdown_values);
 							context.setAttribute("fileName", "country_values");
@@ -189,19 +188,13 @@ public class Responsive_scenarios extends Base_Class {
 				case "ByStateorprovince_dropdown_ALL":
 
 					
-					if(mobile==1) {
+					if(mobile) {
 						context.setAttribute("fileName", "ByStateorprovince_dropdown_ALL");
 						Joinnow_Mobile.Validate_ByStateorprovince_values_ALL(testdata.get("TextMessage").toString(), Dropdown_values, Country);
 						context.setAttribute("fileName", "ByStateorprovince_dropdown_ALL");
 						driver.quit();
 						}
-						else if(width<867) {
-							context.setAttribute("fileName", "ByStateorprovince_dropdown_ALL");
-							Joinnow_Mobile.Validate_ByStateorprovince_values_ALL(testdata.get("TextMessage").toString(), Dropdown_values, Country);
-							context.setAttribute("fileName", "ByStateorprovince_dropdown_ALL");
-							driver.quit();
-							
-						}else {
+						else {
 							context.setAttribute("fileName", "ByStateorprovince_dropdown_ALL");
 							joinnow.Validate_ByStateorprovince_values_ALL(testdata.get("TextMessage").toString(), Dropdown_values, Country);
 							context.setAttribute("fileName", "ByStateorprovince_dropdown_ALL");
@@ -212,19 +205,13 @@ public class Responsive_scenarios extends Base_Class {
 
 				case "ByStateorprovince_dropdown_CANADA":
 
-					if(mobile==1) {
+					if(mobile) {
 						context.setAttribute("fileName", "ByStateorprovince_dropdown_CANADA");
 						Joinnow_Mobile.Validate_ByStateorprovince_values_Canada(testdata.get("TextMessage").toString(), Dropdown_values, Country);
 						context.setAttribute("fileName", "ByStateorprovince_dropdown_CANADA");
 						driver.quit();
 						}
-						else if(width<867) {
-							context.setAttribute("fileName", "ByStateorprovince_dropdown_CANADA");
-							Joinnow_Mobile.Validate_ByStateorprovince_values_Canada(testdata.get("TextMessage").toString(), Dropdown_values, Country);
-							context.setAttribute("fileName", "ByStateorprovince_dropdown_CANADA");
-							driver.quit();
-							
-						}else {
+						else {
 							context.setAttribute("fileName", "ByStateorprovince_dropdown_CANADA");
 							joinnow.Validate_ByStateorprovince_values_Canada(testdata.get("TextMessage").toString(), Dropdown_values, Country);
 							context.setAttribute("fileName", "ByStateorprovince_dropdown_CANADA");
@@ -237,19 +224,13 @@ public class Responsive_scenarios extends Base_Class {
 				case "ByStateorprovince_dropdown_USA":
 
 					
-					if(mobile==1) {
+					if(mobile) {
 						context.setAttribute("fileName", "ByStateorprovince_dropdown_USA");
 						Joinnow_Mobile.Validate_ByStateorprovince_values_USA(testdata.get("TextMessage").toString(), Dropdown_values, Country);
 						context.setAttribute("fileName", "ByStateorprovince_dropdown_USA");
 						driver.quit();
 						}
-						else if(width<867) {
-							context.setAttribute("fileName", "ByStateorprovince_dropdown_USA");
-							Joinnow_Mobile.Validate_ByStateorprovince_values_USA(testdata.get("TextMessage").toString(), Dropdown_values, Country);
-							context.setAttribute("fileName", "ByStateorprovince_dropdown_USA");
-							driver.quit();
-							
-						}else {
+						else {
 							context.setAttribute("fileName", "ByStateorprovince_dropdown_USA");
 							joinnow.Validate_ByStateorprovince_values_USA(testdata.get("TextMessage").toString(), Dropdown_values, Country);
 							context.setAttribute("fileName", "ByStateorprovince_dropdown_USA");
@@ -262,19 +243,13 @@ public class Responsive_scenarios extends Base_Class {
 				case "Listofclubs":
 
 					
-					if(mobile==1) {
+					if(mobile) {
 						context.setAttribute("fileName", "Listofclubs");
 						Joinnow_Mobile.Validate_listofclubs(testdata.get("TextMessage").toString(), Dropdown_values, Country);
 						context.setAttribute("fileName", "Listofclubs");
 						driver.quit();
 						}
-						else if(width<867) {
-							context.setAttribute("fileName", "Listofclubs");
-							Joinnow_Mobile.Validate_listofclubs(testdata.get("TextMessage").toString(), Dropdown_values, Country);
-							context.setAttribute("fileName", "Listofclubs");
-							driver.quit();
-							
-						}else {
+						else {
 							context.setAttribute("fileName", "Listofclubs");
 							joinnow.Validate_listofclubs(testdata.get("TextMessage").toString(), Dropdown_values, Country);
 							context.setAttribute("fileName", "Listofclubs");
@@ -285,69 +260,166 @@ public class Responsive_scenarios extends Base_Class {
 
 				case "club_details":
 
-					context.setAttribute("fileName", "club_details");
-					joinnow.Validate_clubs_name_address_photo_joinbutton(testdata.get("TextMessage").toString(), Dropdown_values, Country);
-					context.setAttribute("fileName", "club_details");
-					driver.quit();
+					if(mobile) {
+						context.setAttribute("fileName", "club_details");
+						Joinnow_Mobile.Validate_clubs_name_address_photo_joinbutton(testdata.get("TextMessage").toString(), Dropdown_values, Country, device);
+						context.setAttribute("fileName", "club_details");
+						driver.quit();
+						}
+						
+						
+						else {
+							context.setAttribute("fileName", "club_details");
+							joinnow.Validate_clubs_name_address_photo_joinbutton(testdata.get("TextMessage").toString(), Dropdown_values, Country);
+							context.setAttribute("fileName", "club_details");
+							driver.quit();
+						}
+					
 					
 					
 				case "clubs_buttons":
 
-					context.setAttribute("fileName", "clubs_buttons");
-					joinnow.Validate_clubs_buttons(testdata.get("TextMessage").toString(), Dropdown_values, Country);
-					context.setAttribute("fileName", "clubs_buttons");
-					driver.quit();
+					
+					if(mobile) {
+						context.setAttribute("fileName", "clubs_buttons");
+						Joinnow_Mobile.Validate_clubs_buttons(testdata.get("TextMessage").toString(), Dropdown_values, Country, device);
+						context.setAttribute("fileName", "clubs_buttons");
+						driver.quit();
+						}
+					
+						else {
+							context.setAttribute("fileName", "clubs_buttons");
+							joinnow.Validate_clubs_buttons(testdata.get("TextMessage").toString(), Dropdown_values, Country);
+							context.setAttribute("fileName", "clubs_buttons");
+							driver.quit();
+						}
+					
+					
+				
 					
 					
 				case "club_ratesandamenities":
-
-					context.setAttribute("fileName", "club_ratesandamenities");
-					joinnow.Validate_club_ratesandamenities(testdata.get("TextMessage").toString(), Dropdown_values, Country);
-					context.setAttribute("fileName", "club_ratesandamenities");
-					driver.quit();
+					
+					if(mobile) {
+						context.setAttribute("fileName", "club_ratesandamenities");
+						Joinnow_Mobile.Validate_club_ratesandamenities(testdata.get("TextMessage").toString(), Dropdown_values, Country,Club_name, device);
+						context.setAttribute("fileName", "club_ratesandamenities");
+						driver.quit();
+						}
+					
+						else {
+							context.setAttribute("fileName", "club_ratesandamenities");
+							joinnow.Validate_club_ratesandamenities(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name);
+							context.setAttribute("fileName", "club_ratesandamenities");
+							driver.quit();
+						}
+					
+					
+					
+					
+					
 					
 				case "club_rateplans":
-
+					
+					if(mobile) {
+						context.setAttribute("fileName", "club_rateplans");
+						Joinnow_Mobile.Validate_club_rateplans(testdata.get("TextMessage").toString(), Dropdown_values, Country,Ratesoramenities,Club_name, device);
+						context.setAttribute("fileName", "club_rateplans");
+						driver.quit();
+						}
+					
+						else {
+					
 					context.setAttribute("fileName", "club_rateplans");
-					joinnow.Validate_club_rateplans(testdata.get("TextMessage").toString(), Dropdown_values, Country, RatesorAmenities, Club_name);
+					joinnow.Validate_club_rateplans(testdata.get("TextMessage").toString(), Dropdown_values, Country, Ratesoramenities, Club_name);
 					context.setAttribute("fileName", "club_rateplans");
 					driver.quit();
+					}
+					
 					
 				case "club_Amenities":
 
+					if(mobile) {
+						context.setAttribute("fileName", "club_Amenities");
+						Joinnow_Mobile.Validate_club_Amenities(testdata.get("TextMessage").toString(), Dropdown_values, Country,Ratesoramenities,Club_name, device);
+						context.setAttribute("fileName", "club_Amenities");
+						driver.quit();
+						}
+					
+						else {
+					
 					context.setAttribute("fileName", "club_Amenities");
-					joinnow.Validate_club_Amenities(testdata.get("TextMessage").toString(), Dropdown_values, Country, RatesorAmenities, Club_name);
+					joinnow.Validate_club_Amenities(testdata.get("TextMessage").toString(), Dropdown_values, Country, Ratesoramenities, Club_name);
 					context.setAttribute("fileName", "club_Amenities");
 					driver.quit();
-
+						}
+					
 					
 				case "Joinnow_steptwo":
-
+					if(mobile) {
+						context.setAttribute("fileName", "Joinnow_steptwo");
+						Joinnow_Mobile.Validate_joinnow_steptwo(testdata.get("TextMessage").toString(), Dropdown_values, Country,Club_name, device);
+						context.setAttribute("fileName", "Joinnow_steptwo");
+						driver.quit();
+						}
+					
+						else {
 					context.setAttribute("fileName", "Joinnow_steptwo");
 					joinnow.Validate_joinnow_steptwo(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name);
 					context.setAttribute("fileName", "Joinnow_steptwo");
 					driver.quit();
+						}
 					
 				case "selectadditionalfeatues_yourhomeclub":
-
+					if(mobile) {
+						context.setAttribute("fileName", "selectadditionalfeatues_yourhomeclub");
+						Joinnow_Mobile.Validate_selectadditionalfeatues_yourhomeclub(testdata.get("TextMessage").toString(), Dropdown_values, Country,Club_name, device);
+						context.setAttribute("fileName", "selectadditionalfeatues_yourhomeclub");
+						driver.quit();
+						}
+					
+						else {
 					context.setAttribute("fileName", "selectadditionalfeatues_yourhomeclub");
 					joinnow.Validate_selectadditionalfeatues_yourhomeclub(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name);
 					context.setAttribute("fileName", "selectadditionalfeatues_yourhomeclub");
 					driver.quit();
+						}
+					
 					
 				case "Additionalfeatures_monthlyrates":
 
+					if(mobile) {
+						context.setAttribute("fileName", "Additionalfeatures_monthlyrates");
+						Joinnow_Mobile.Validate_Additionalfeatures_monthlyrates(testdata.get("TextMessage").toString(), Dropdown_values, Country,Club_name,Ratesoramenities, device);
+						context.setAttribute("fileName", "Additionalfeatures_monthlyrates");
+						driver.quit();
+						}
+					
+						else {
+					
 					context.setAttribute("fileName", "Additionalfeatures_monthlyrates");
-					joinnow.Validate_Additionalfeatures_monthlyrates(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, RatesorAmenities);
+					joinnow.Validate_Additionalfeatures_monthlyrates(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, Ratesoramenities);
 					context.setAttribute("fileName", "Additionalfeatures_monthlyrates");
 					driver.quit();
 					
+						}
+					
+					
 				case "monthlyrates_$36_99_details":
 
+					if(mobile) {
+						context.setAttribute("fileName", "monthlyrates_$36_99_details");
+						Joinnow_Mobile.Validate_select_monthlyrates_$36_99_details(testdata.get("TextMessage").toString(), Dropdown_values, Country,Club_name, plan_rates,Number_of_Persons1, Initiation_Fee, Billing_Frequency, Initial_Term, Prepayment, device);
+						context.setAttribute("fileName", "monthlyrates_$36_99_details");
+						driver.quit();
+						}
+					
+						else {
 					context.setAttribute("fileName", "monthlyrates_$36_99_details");
-					joinnow.Validate_select_monthlyrates_$36_99_details(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, plan_rates, RatesorAmenities, rates_details);
+					joinnow.Validate_select_monthlyrates_$36_99_details(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, plan_rates, Number_of_Persons1, Initiation_Fee, Billing_Frequency, Initial_Term, Prepayment);
 					context.setAttribute("fileName", "monthlyrates_$36_99_details");
 					driver.quit();
+						}
 					
 
 				default:
