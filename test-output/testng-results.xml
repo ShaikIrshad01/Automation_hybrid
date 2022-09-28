@@ -1,22 +1,678 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="42" passed="42" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-09T17:25:06 IST" name="Suite" finished-at="2022-09-09T17:26:21 IST" duration-ms="75120">
+  <suite started-at="2022-09-28T13:54:22 IST" name="Suite" finished-at="2022-09-28T14:29:49 IST" duration-ms="2126953">
     <groups>
     </groups>
-    <test started-at="2022-09-09T17:25:06 IST" name="Joinnow_Test" finished-at="2022-09-09T17:26:21 IST" duration-ms="74807">
+    <test started-at="2022-09-28T13:54:22 IST" name="Joinnow_Test" finished-at="2022-09-28T14:29:49 IST" duration-ms="2126936">
       <class name="com.test.user.All_scenarios">
-        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@5158b42f]" started-at="2022-09-09T17:25:07 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-09T17:26:21 IST" duration-ms="73914" status="PASS">
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T13:54:23 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T13:54:57 IST" duration-ms="34168" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Account_number=, Add_amenities=Towels: $5.00 - unchecked, additional_input=, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=BRONX - EASTCHESTER RD. (Signature), Club_phone=, Club_zip=, Country=USA, Dropdown_values=NY, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, Included_amenities=Racquetball/Squash Courts: Included -checked, 2 guests per visit: Included -checked, Group Fitness: Included -checked, Cycle Class: Included -checked, Pool/Whirlpool Spa: Included -checked, Esporta Brand Access: Included -checked, City Sports Brand Access: Included -checked, LA Fitness Brand Access: Included -checked, Initial_Term=, Initiation_Fee=, input_data=, input_data1=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=38.99, Prepayment=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=NY, TestScenario=TC18_Validate_Joinnow_club_select_monthlyrates_$36_99_add_amenities_list, Text_input=, TextMessage=monthlyrates_$36_99_add_amenities_list, Total_initial_Payment=}]]>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=, input_data1=, input_data2=, input_data3=, input_data4=, Job_long_des=, Job_short_des=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_01_Validate_About_dropdown_Carreer_opportunities_option, Text_input=, TextMessage=About_dropdown, Total_initial_Payment=}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@3249a1ce]]>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T13:54:57 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T13:55:28 IST" duration-ms="30562" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=, input_data1=, input_data2=, input_data3=, input_data4=, Job_long_des=, Job_short_des=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_02_Validate_Navigation_to_Employment_page, Text_input=, TextMessage=Nav_to_Employment_page, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T13:55:28 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T13:56:07 IST" duration-ms="39508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=, input_data2=, input_data3=, input_data4=, Job_long_des=, Job_short_des=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_03_Validate_Career_opportunity_section&youtube_video&desc, Text_input=Career Opportunity, TextMessage=Career_opportunity_section, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T13:56:07 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T13:57:19 IST" duration-ms="71801" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=, input_data2=, input_data3=, input_data4=, Job_long_des=, Job_short_des=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_04_Validate_play_pause_youtube_video, Text_input=Career Opportunity, TextMessage=Validate_play_pause_video, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T13:57:19 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T13:58:03 IST" duration-ms="43307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=, input_data2=, input_data3=, input_data4=, Job_long_des=, Job_short_des=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_05_Validate_Club_and_corporate_positions_sections, Text_input=Career Opportunity, TextMessage=Validate_Club_and_corporate_positions, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T13:58:03 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T13:58:47 IST" duration-ms="44384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=, input_data4=, Job_long_des=, Job_short_des=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_06_Validate_Club_positions_section, Text_input=Career Opportunity, TextMessage=Validate_Club_positions_section, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T13:58:47 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T13:59:33 IST" duration-ms="46151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=, input_data4=, Job_long_des=We are looking for enthusiastic, professional, motivated, experienced individuals who enjoy inspiring others and helping our members achieve their fitness goals. You must have experience in teaching one or more group fitness classes. These are part-time positions and babysitting for your children while you teach is available at most clubs. All instructors are given a complimentary club membership., Job_short_des=WE ARE LOOKING FOR ENTHUSIASTIC, PROFESSIONAL, MOTIVATE, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_07_Validate_details_of_Group_Fitness_position, Text_input=Career Opportunity, TextMessage=Validate_details_of_Group_Fitness_position, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T13:59:33 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:00:19 IST" duration-ms="46128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=, input_data4=, Job_long_des=, Job_short_des=Our ProResults Personal Trainers are true professionals, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_08_Validate_details_of_Personal_Trainer_position, Text_input=Career Opportunity, TextMessage=Validate_details_of_Personal_Trainer_position, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:00:19 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:01:09 IST" duration-ms="49532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=, input_data4=, Job_long_des=, Job_short_des=We are hiring enthusiastic, professional Pilates teache, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_09_Validate_details_of_Pilates_Teacher_position, Text_input=Career Opportunity, TextMessage=Validate_details_of_Pilates_Teacher_position, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:01:09 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:02:02 IST" duration-ms="53662" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=, input_data4=, Job_long_des=, Job_short_des=OUR HIIT COACHES BRING INTENSITY, PASSION AND EXPERTISE, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_10_Validate_details_of_Hiit_Coach_position, Text_input=Career Opportunity, TextMessage=Validate_details_of_Hiit_Coach_position, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:02:02 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:02:58 IST" duration-ms="55783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=, input_data4=, Job_long_des=We are looking for enthusiastic, professional, motivated, experienced individuals who enjoy inspiring others and helping our members achieve their fitness goals. You must have experience in teaching one or more group fitness classes. These are part-time positions and babysitting for your children while you teach is available at most clubs. All instructors are given a complimentary club membership., Job_short_des=We are looking for enthusiastic, professional, motivate, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_11_Validate_moreinfo_popupwindow_of_GFP, Text_input=Career Opportunity, TextMessage=Validate_moreinfo_popupwindow_of_GFP, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:02:58 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:03:53 IST" duration-ms="54934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=, input_data4=, Job_long_des=Our ProResults Personal Trainers are true professionals, each possessing a certified Personal Training Certificate from a qualified, reputable organization. Their sole responsibility is to design customized workout programs and train our members based on their needs. There is an opportunity for advancement to Master Trainer, Group Trainer and beyond. All personal trainers are given a complimentary club membership., Job_short_des=Our ProResults Personal Trainers are true professionals, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_12_Validate_moreinfo_popupwindow_of_Personal_TP, Text_input=Career Opportunity, TextMessage=Validate_moreinfo_popupwindow_of_Personal_TP, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:03:53 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:04:48 IST" duration-ms="54987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=, input_data4=, Job_long_des=We are hiring enthusiastic, professional Pilates teachers with a current comprehensive Reformer Pilates certification. Experience teaching group Reformer workouts, including apparatus such as EXO® chair, spring board and TRX® equipment is required. Part-time hours and blocks of hours are available. Pilates by LAF offers group Reformer-based workouts, and opportunities to teach private and semi-private sessions. If you are interested in a full-time Sales and Management position as a Pilates Director, you receive additional compensation opportunities and training as well., Job_short_des=We are hiring enthusiastic, professional Pilates teache, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=We are hiring enthusiastic, professional Pilates teachers with a current comprehensive Reformer Pilates certification. Experience teaching group Reformer workouts, including apparatus such as EXO® chair, spring board and TRX® equipment is required. Part-time hours and blocks of hours are available. Pilates by LAF offers group Reformer-based workouts, and opportunities to teach private and semi-private sessions. If you are interested in a full-time Sales and Management position as a Pilates Director, you receive additional compensation opportunities and training as well., Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_13_Validate_moreinfo_popupwindow_of_Pilates_TP, Text_input=Career Opportunity, TextMessage=Validate_moreinfo_popupwindow_of_Pilates_TP, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:04:48 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:05:43 IST" duration-ms="54902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=, input_data4=, Job_long_des=Our HIIT Coaches bring intensity, passion and expertise to our newest club offering and Platinum brand, HIIT by LAF - a 50-minute high-tech, high-energy interval training workout comprised of a variety of functional exercises, core training, cardio interval training, and strength. HIIT Coaches deliver an amazing workout while motivating members to achieve their fitness goals. Coaches must hold a nationally recognized Personal Training Certification and/or Group Fitness Certification. Qualified applicants will receive paid training as part of our program. This is a part-time position. All Coaches receive a complimentary standard club membership., Job_short_des=OUR HIIT COACHES BRING INTENSITY, PASSION AND EXPERTISE, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_14_Validate_moreinfo_popupwindow_of_HCP, Text_input=Career Opportunity, TextMessage=Validate_moreinfo_popupwindow_of_HCP, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:05:43 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:06:33 IST" duration-ms="50212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=, Job_short_des=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_15_Validate_corporate_positions_section, Text_input=Career Opportunity, TextMessage=Validate_corporate_positions_section, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:06:33 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:07:24 IST" duration-ms="51085" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=, Job_short_des=Our Accounting team provides a wide variety of services to support the Company through, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_16_Validate_details_of_Accounting_section, Text_input=Career Opportunity, TextMessage=Validate_details_of_Accounting, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:07:24 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:08:15 IST" duration-ms="50792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=, Job_short_des=Our Finance team provides vital planning and analysis information to support the operations, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_17_Validate_details_of_Finance_and_T_section, Text_input=Career Opportunity, TextMessage=Validate_details_of_Finance_and_T, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:08:15 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:09:06 IST" duration-ms="51060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=, Job_short_des=Our Human Resource professionals support our field and corporate managers by aligning, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_18_Validate_details_of_HR_section, Text_input=Career Opportunity, TextMessage=Validate_details_of_HR, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:09:06 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:09:57 IST" duration-ms="50763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=, Job_short_des=Our IT professionals deliver outstanding tools based on almost every technology available, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_19_Validate_details_of_IT_section, Text_input=Career Opportunity, TextMessage=Validate_details_of_IT, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:09:57 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:10:48 IST" duration-ms="50559" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=, Job_short_des=Our legal and Administration team members provide invaluable support to the Company’s support, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_20_Validate_details_of_Legal_and_A_section, Text_input=Career Opportunity, TextMessage=Validate_details_of_Legal_and_A, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:10:48 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:11:43 IST" duration-ms="55794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=, Job_short_des=Our Real Estate and Development teams are responsible for consistent delivery of, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_21_Validate_details_of_RealEstate_and_D_section, Text_input=Career Opportunity, TextMessage=Validate_details_of_RealEstate_and_D, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:11:43 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:12:44 IST" duration-ms="60792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=The Fitness International, LLC Accounting team provides essential support to the business through dedication to integrity, personal accountability, and proactive thinking. In addition to providing financial accounting and reporting services, this team also supports accounting policy, payroll, purchasing, construction accounting and corporate taxation for all of our locations in the most efficient and cost-effective manner. You’ll find a wide variety of positions and plenty of opportunities for professional growth. Fitness International, LLC is an equal opportunity employer who recognizes the value of having a diverse workforce. We seek and encourage qualified applicants regardless of gender, ethnicity, or other cultural or physical characteristics., Job_short_des=Our Accounting team provides a wide variety of services to support the Company through, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_22_Validate_moreinfo_popupwindow_of_Accounting_section, Text_input=Career Opportunity, TextMessage=Validate_moreinfo_popupwindow_of_Accounting, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:12:44 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:13:45 IST" duration-ms="60782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=The Finance team at Fitness International, LLC delivers financial planning, analysis and treasury services company-wide. Our Finance team has the challenging but essential task of managing a detail-oriented discipline inside a rapidly growing and process improvement oriented company. If you think strategically and creatively, you can find many opportunities for professional growth. Fitness International, LLC is an equal opportunity employer who recognizes the value of having a diverse workforce. We seek and encourage qualified applicants regardless of gender, ethnicity, or other cultural or physical characteristics., Job_short_des=Our Finance team provides vital planning and analysis information to support the operations, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_23_Validate_moreinfo_popupwindow_of_Finance_and_T_section, Text_input=Career Opportunity, TextMessage=Validate_moreinfo_popupwindow_of_Finance_and_T, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:13:45 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:14:46 IST" duration-ms="61058" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=Our people are our greatest asset. Human Resource professionals at Fitness International, LLC are focused on aligning human resource strategies to our overall business plans. This team is dedicated to supporting our field management teams’ recruiting and management efforts (including employee relations) as well as administering our hiring, compensation, certification, benefits programs and compliance reporting in a fast-paced energetic environment. Fitness International, LLC is an equal opportunity employer who recognizes the value of having a diverse workforce. We seek and encourage qualified applicants regardless of gender, ethnicity, or other cultural or physical characteristics., Job_short_des=Our Human Resource professionals support our field and corporate managers by aligning, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_24_Validate_moreinfo_popupwindow_of_Human_R_section, Text_input=Career Opportunity, TextMessage=Validate_moreinfo_popupwindow_of_Human_R, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:14:46 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:15:47 IST" duration-ms="60552" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=Information Technology is an essential asset at Fitness International, LLC. We use technology effectively in every aspect of the business. Our technology platform is based primarily on Microsoft products. If you are proficient in one or more of the latest versions of .NET development, SharePoint, Windows Server, Windows OS, Exchange, SQL Server, Lync, the entire Microsoft business intelligence stack, Biztalk, or Dynamics Great Plains and you enjoy applying technology to real business opportunities as part of an exceptional information technology team, then this could be the place for you. Fitness International, LLC is an equal opportunity employer who recognizes the value of having a diverse workforce. We seek and encourage qualified applicants regardless of gender, ethnicity, or other cultural or physical characteristics., Job_short_des=Our IT professionals deliver outstanding tools based on almost every technology available, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_25_Validate_moreinfo_popupwindow_of_IT_section, Text_input=Career Opportunity, TextMessage=Validate_moreinfo_popupwindow_of_IT, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:15:47 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:16:48 IST" duration-ms="61078" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=Our legal and administrative professionals collaborate with each of Fitness International, LLC’s support and delivery teams to provide a wide range of legal, lease, marketing, compliance and administrative services aimed at protecting the Company’s assets, supporting growth and assessing regulatory requirements in an ever changing environment. Professionals capable of building strong relationships with internal and external clients can provide invaluable support to meet the Company’s overall business plans. Fitness International, LLC is an equal opportunity employer who recognizes the value of having a diverse workforce. We seek and encourage qualified applicants regardless of gender, ethnicity, or other cultural or physical characteristics., Job_short_des=Our legal and Administration team members provide invaluable support to the Company’s support, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_26_Validate_moreinfo_popupwindow_of_Legal_and_A_section, Text_input=Career Opportunity, TextMessage=Validate_moreinfo_popupwindow_of_Legal_and_A, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:16:48 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:17:55 IST" duration-ms="66940" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Accounting, Finance and Treasury, Human Resources, Information Technology, Legal and Administration, Real Estate and Development, input_data2=Corporate Positions are located in Irvine, California., input_data3=, input_data4=, Job_long_des=Today, our state-of-the-art clubs span the continent and we’re still expanding. Our strong and successful growth stems from our commitment to understanding and meeting the distinct needs of each community we serve. You can work with the teams that contribute to the real estate, design, construction, and maintenance of all current and future club locations. Fitness International, LLC is an equal opportunity employer who recognizes the value of having a diverse workforce. We seek and encourage qualified applicants regardless of gender, ethnicity, or other cultural or physical characteristics., Job_short_des=Our Real Estate and Development teams are responsible for consistent delivery of, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_27_Validate_moreinfo_popupwindow_of_RE_and_D_section, Text_input=Career Opportunity, TextMessage=Validate_moreinfo_popupwindow_of_RE_and_D, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:17:55 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:18:43 IST" duration-ms="48336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=, input_data1=, input_data2=, input_data3=, input_data4=, Job_long_des=, Job_short_des=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_28_Validate_GF_applyhere_button, Text_input=, TextMessage=Validate_GF_applyhere_button, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:18:43 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:19:29 IST" duration-ms="46274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=, input_data1=, input_data2=, input_data3=, input_data4=, Job_long_des=, Job_short_des=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_29_Validate_Personal_T_applyhere_button, Text_input=, TextMessage=Validate_Personal_T_applyhere_button, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:19:29 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:20:15 IST" duration-ms="46197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=, input_data1=, input_data2=, input_data3=, input_data4=, Job_long_des=, Job_short_des=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_30_Validate_Pilates_T_applyhere_button, Text_input=, TextMessage=Validate_Personal_T_applyhere_button, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:20:15 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:21:01 IST" duration-ms="45700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=, input_data1=, input_data2=, input_data3=, input_data4=, Job_long_des=, Job_short_des=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=, Routing_number=, Run=Yes, State=, TestScenario=TC_31_Validate_HIIT_C_applyhere_button, Text_input=, TextMessage=Validate_HIIT_C_applyhere_button, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:21:01 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:21:48 IST" duration-ms="46487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=For the Following Positions, input_data4=, Job_long_des=, Job_short_des=, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_32_Validate_applyhere_button_followingpos_text, Text_input=Career Opportunity, TextMessage=Validate_applyhere_button_followingpos_text, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:21:48 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:22:36 IST" duration-ms="48038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=For the Following Positions, input_data4=General Manager, Job_long_des=, Job_short_des=The role of General Manager is crucial to the success of our business. They are, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_33_Validate_details_of_General_Manager, Text_input=Career Opportunity, TextMessage=Validate_details_of_General_Manager, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:22:36 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:23:24 IST" duration-ms="48176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=For the Following Positions, input_data4=Operations Manager, Job_long_des=, Job_short_des=The Operations Managers are dedicated to making the fitness experience, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_34_Validate_details_of_Operations_Manager, Text_input=Career Opportunity, TextMessage=Validate_details_of_Operations_Manager, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:23:24 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:24:12 IST" duration-ms="48083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=For the Following Positions, input_data4=Personal Training Director, Job_long_des=, Job_short_des=The mission of the Pro Results Personal Training department is to take every single, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_35_Validate_details_of_Personal_TD, Text_input=Career Opportunity, TextMessage=Validate_details_of_Personal_TD, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:24:12 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:24:59 IST" duration-ms="47539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=For the Following Positions, input_data4=Membership Counselor, Job_long_des=, Job_short_des=We look for people who are passionate about health and fitness to present, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_36_Validate_details_of_Membership_Counselor, Text_input=Career Opportunity, TextMessage=Validate_details_of_Membership_Counselor, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:24:59 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:25:47 IST" duration-ms="47897" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=For the Following Positions, input_data4=Personal Training Membership Counselor, Job_long_des=, Job_short_des=Our ProResults training staff boasts some of the, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_37_Validate_details_of_Personal_TMC, Text_input=Career Opportunity, TextMessage=Validate_details_of_Personal_TMC, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:25:47 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:26:36 IST" duration-ms="48445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=For the Following Positions, input_data4=Club Staff, Job_long_des=, Job_short_des=These employees are the face of the club! They are who members and guests, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_38_Validate_details_of_Club_Staff, Text_input=Career Opportunity, TextMessage=Validate_details_of_Club_Staff, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:26:36 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:27:26 IST" duration-ms="49949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=For the Following Positions, input_data4=League Sports Director, Job_long_des=, Job_short_des=League Sports Directors have an interest in organized sports and are highly motivated, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_39_Validate_details_of_League_SD, Text_input=Career Opportunity, TextMessage=Validate_details_of_League_SD, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:27:26 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:28:14 IST" duration-ms="47865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=For the Following Positions, input_data4=Equipment Tech, Job_long_des=, Job_short_des=Successful Equipment Techs possess strong troubleshooting, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_40_Validate_details_of_Equipment_Tech, Text_input=Career Opportunity, TextMessage=Validate_details_of_Equipment_Tech, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:28:14 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:29:01 IST" duration-ms="47789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=For the Following Positions, input_data4=HVAC/Building Maintenance, Job_long_des=, Job_short_des=Must have experience in at least one of the following specialties: wood, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_41_Validate_details_of_HVAC_Building_M, Text_input=Career Opportunity, TextMessage=Validate_details_of_HVAC_Building_M, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RUNALL -->
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T14:29:01 IST" name="RUNALL" data-provider="TestData" finished-at="2022-09-28T14:29:49 IST" duration-ms="47723" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Account_number=, Add_amenities=, additional_input=Club Positions, Corporate Positions, Amount_details=, Annual_Fee_Per_Person=, Billing_Frequency=, Card_name=, Card_number=, Club_Address=, Club_city=, Club_name=, Club_phone=, Club_zip=, Country=, Dropdown_values=, Email=, Ex_month=, Ex_year=, F_Name=, First_Month_Dues=, How_hear_abt_us=, Included_amenities=, Initial_Term=, Initiation_Fee=, input_data=Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry., input_data1=Group Fitness, Personal Trainer, Pilates Teacher, HIIT Coach, input_data2=Club Positions are located throughout the US and Canada., input_data3=For the Following Positions, input_data4=Club Pride/Janitor, Job_long_des=, Job_short_des=Our janitorial staff is the backbone of the “Club Pride” everyone shares for, L_Name=, Last_Month_Dues=, Member_address=, Member_City=, Member_Phone=, Member_Zipcode=, Mobile_Device=, Number_of_Persons1=, Payment_type=, Plan_rates=, Prepayment=, Radiobtn18YearsOld=, Radius_travel_to_work=, Rates/amenities=, Rates_details=, Res_Run=No, Routing_number=, Run=Yes, State=, TestScenario=TC_42_Validate_details_of_Pride_Janitor, Text_input=Career Opportunity, TextMessage=Validate_details_of_Pride_Janitor, Total_initial_Payment=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2f4919b0]]>
               </value>
             </param>
           </params>
@@ -25,19 +681,13 @@
         </test-method> <!-- RUNALL -->
       </class> <!-- com.test.user.All_scenarios -->
     </test> <!-- Joinnow_Test -->
-    <test started-at="2022-09-09T17:26:21 IST" name="Responsive_tests" finished-at="2022-09-09T17:26:21 IST" duration-ms="289">
+    <test started-at="2022-09-28T14:29:49 IST" name="Responsive_tests" finished-at="2022-09-28T14:29:49 IST" duration-ms="0">
       <class name="com.test.user.All_scenarios">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.user.All_scenarios@5158b42f]" started-at="2022-09-09T17:25:06 IST" name="reference" finished-at="2022-09-09T17:25:06 IST" duration-ms="512" status="PASS">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.user.All_scenarios@38c6f217]" started-at="2022-09-28T13:54:22 IST" name="reference" finished-at="2022-09-28T13:54:22 IST" duration-ms="515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reference -->
       </class> <!-- com.test.user.All_scenarios -->
-      <class name="com.test.user.Responsive_scenarios">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.user.Responsive_scenarios@2a3b5b47]" started-at="2022-09-09T17:25:06 IST" name="reference" finished-at="2022-09-09T17:25:06 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reference -->
-      </class> <!-- com.test.user.Responsive_scenarios -->
     </test> <!-- Responsive_tests -->
   </suite> <!-- Suite -->
 </testng-results>

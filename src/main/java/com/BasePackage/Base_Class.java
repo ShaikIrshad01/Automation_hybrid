@@ -2,6 +2,8 @@ package com.BasePackage;
 
 import java.awt.AWTException;
 import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import com.Utility.Log;
@@ -12,7 +14,6 @@ import com.google.common.base.Verify;
 
 import java.io.IOException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
@@ -28,11 +29,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.SendKeysAction;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.internal.Arguments;
@@ -42,8 +45,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Base_Class {
 
 	public static RemoteWebDriver driver = null;
-
-
+	 String Browser ;
+	 String Url;
 	public static Properties configloader() throws IOException {
 		FileInputStream File = new FileInputStream(".\\src\\test\\resources\\config.properties");
 		Properties properties = new Properties();
@@ -53,8 +56,8 @@ public class Base_Class {
 
 	public void setup() throws IOException, InterruptedException {
 
-		String Browser = configloader().getProperty("Browser");
-		String Url = configloader().getProperty("URL");
+		Browser = configloader().getProperty("Browser");
+		 Url = configloader().getProperty("URL");
 //		String UserName = configloader().getProperty("UserName");
 //		String Password = configloader().getProperty("Password");
 
@@ -65,6 +68,7 @@ public class Base_Class {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-extensions");
+			options.addArguments("--incognito");
 			driver = new ChromeDriver(options);
 			
 			break;
@@ -72,7 +76,11 @@ public class Base_Class {
 		case "FIREFOX":
 
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			
+			FirefoxOptions options1 = new FirefoxOptions();
+			options1.addArguments("--disable-extensions");
+			options1.addArguments("-private");
+			driver = new FirefoxDriver(options1);
 			break;
 
 		default:
@@ -83,12 +91,14 @@ public class Base_Class {
 		Log.info(Browser+" browser launched successfully");
 		ExtentTestManager.getTest().log(Status.PASS, Browser+" browser launched successfully");
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		
 		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		driver.get(Url);
 		Log.info("Entered the application url successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Entered the application url successfully");
-		Thread.sleep(1000);
+		driver.get(Url);
+		Thread.sleep(100);
 		/*
 		 * driver.navigate().refresh(); driver.findElement(L_email).sendKeys(UserName);
 		 * driver.findElement(L_password).sendKeys(Password);
@@ -116,6 +126,8 @@ try {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-extensions");
+		
+		options.addArguments("--incognito");
 		options.setExperimentalOption("mobileEmulation", mp );
 		driver = new ChromeDriver(options);
 //		 = "iPhone SE"
@@ -130,7 +142,10 @@ try {
 	case "FIREFOX":
 
 		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
+		FirefoxOptions options1 = new FirefoxOptions();
+		options1.addArguments("--disable-extensions");
+		options1.addArguments("-private");
+		driver = new FirefoxDriver(options1);
 		break;
 
 	default:
@@ -141,6 +156,7 @@ try {
 	Log.info(Browser+" browser launched successfully");
 	ExtentTestManager.getTest().log(Status.PASS, Browser+" browser launched successfully");
 	driver.manage().window().maximize();
+	driver.manage().deleteAllCookies();
 	driver.get(Url);
 	Log.info("Entered the application url successfully");
 	ExtentTestManager.getTest().log(Status.PASS, "Entered the application url successfully");
@@ -181,7 +197,9 @@ try {
 //			mp.put("deviceName", mobile);
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
+			
 			options.addArguments("--disable-extensions");
+			options.addArguments("--incognito");
 //			options.setExperimentalOption("mobileEmulation", mp );
 			driver = new ChromeDriver(options);
 //			 = "iPhone SE"
@@ -209,6 +227,7 @@ try {
 //		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
 		driver.get(Url);
 		Log.info("Entered the application url successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Entered the application url successfully");
@@ -225,9 +244,9 @@ try {
 	
 	public void Element_isdisplayed(By element) throws Exception {
 		try {
+			
 			WebDriverWait wait2 = new WebDriverWait(driver, 30);
 			Assert.assertTrue(wait2.until(ExpectedConditions.presenceOfElementLocated(element)).isDisplayed());
-			
 			
 	
 		} catch (Exception e) {
@@ -242,7 +261,7 @@ try {
 			throw new Exception("Element: "+ element +" is not displayed");
 		}
 		
-Thread.sleep(200);
+Thread.sleep(100);
 		
 	}
 	
@@ -266,27 +285,13 @@ Thread.sleep(200);
 	}
 	
 	public void MoveToElement(By element) throws InterruptedException {
+		Thread.sleep(100);
 		WebElement element1 = driver.findElement(element);
 		Actions actions = new Actions(driver);
-		actions.moveToElement(element1);
-		actions.perform();
+		actions.moveToElement(element1).perform();
+//		actions.perform();
 		Thread.sleep(500);
 	}
-	
-
-public void error(By error) throws Exception {
-	Thread.sleep(100);
-	if(driver.findElement(error).isDisplayed()) {
-		MoveToElement(error);
-		click(error);
-		String error1=driver.findElement(error).getText();
-		Log.info(error1);
-
-		throw new Exception(error1);
-	}
-}
-
-
 	
 public ExpectedCondition<Boolean> Verify_staleelement(WebElement element) throws InterruptedException {
 		
@@ -299,7 +304,7 @@ public ExpectedCondition<Boolean> Verify_staleelement(WebElement element) throws
 	
 	
 	public static void input(By element, String Value) throws InterruptedException {
-
+		
 		WebDriverWait wait2 = new WebDriverWait(driver, 30);
 		wait2.until(ExpectedConditions.presenceOfElementLocated(element)).sendKeys(Value);
 		Thread.sleep(300);
@@ -352,11 +357,46 @@ public ExpectedCondition<Boolean> Verify_staleelement(WebElement element) throws
 	}
 
 	
-	
-	public String convert_to_tel_number(String number) {
-		String tel_number = number.replaceFirst("(\\d{3})(\\d{3})(\\d+)", "($1) $2-$3");
-		return tel_number;
+	public void Mouse_hover(By element) throws Exception {
+		
+		
+		//Creating object of an Actions class
+				Actions action = new Actions(driver);
+
+				//Performing the mouse hover action on the target element.
+				action.moveToElement(driver.findElement(element)).perform();
+				Thread.sleep(200);
 	}
+	
+	
+public void upload_file(By upload_btn, String file_path) throws Exception {
+	Element_isdisplayed(upload_btn);
+	driver.findElement(upload_btn).click();
+	Thread.sleep(200);
+	
+	StringSelection s = new StringSelection(file_path);
+//    Clipboard copy
+   Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s,null);
+   Robot r = new Robot();
+   //pressing enter
+   r.keyPress(KeyEvent.VK_ENTER);
+   //releasing enter
+   r.keyRelease(KeyEvent.VK_ENTER);
+   //pressing ctrl+v
+   r.keyPress(KeyEvent.VK_CONTROL);
+   r.keyPress(KeyEvent.VK_V);
+   //releasing ctrl+v
+   r.keyRelease(KeyEvent.VK_CONTROL);
+   r.keyRelease(KeyEvent.VK_V);
+   Thread.sleep(2000);
+   //pressing enter
+   r.keyPress(KeyEvent.VK_ENTER);
+   //releasing enter
+   r.keyRelease(KeyEvent.VK_ENTER);
+   Thread.sleep(2000);
+
+      
+}
 	
 	public void keypress(int KeyEvent) throws Throwable {
 		Robot r = new Robot();
@@ -367,6 +407,40 @@ public ExpectedCondition<Boolean> Verify_staleelement(WebElement element) throws
 		Robot r = new Robot();
 		r.keyRelease(KeyEvent);
 	}
+
+	
+
+public void captcha() throws Exception {
+	
+//	By dd=By.id("ctl00_MainContent_MembershipReviewInfo1_txtIAgree");
+//	String Fullname=F_name+" "+L_name;
+//	input(dd, Fullname);
+	
+	Thread.sleep(100);
+	WebDriverWait wait = new WebDriverWait(driver, 30);
+	wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(
+	        By.xpath("//iframe[starts-with(@name, 'a-') and starts-with(@src, 'https://www.google.com/recaptcha')]")));
+
+	wait.until(ExpectedConditions.elementToBeClickable(
+	            By.xpath("//div[@class='recaptcha-checkbox-border']"))).click();
+
+	Thread.sleep(100);
+	driver.switchTo().defaultContent();
+	By d=By.id("ctl00_MainContent_MembershipReviewInfo1_imgSubmit");
+	click(d);
+
+}
+
+public void select_dropdown(By dropdown, String dropdown_value, String dropdown_name) throws Exception {
+	Element_isdisplayed(dropdown);
+	ExtentTestManager.getTest().log(Status.PASS, dropdown_name+ "dropdown displayed successfully" );
+	Log.info(dropdown_name+ "dropdown displayed successfully");
+	
+	Select select = new Select(driver.findElement(dropdown)); 
+	select.selectByVisibleText(dropdown_value);
+	ExtentTestManager.getTest().log(Status.PASS, dropdown_value+" selected successfully in "+dropdown_name+" dropdwon");
+	Log.info(dropdown_value+" selected successfully in "+dropdown_name+" dropdwon");
+}
 
 	public void PopUp_Authentication() throws Throwable {
 
@@ -514,111 +588,258 @@ public ExpectedCondition<Boolean> Verify_staleelement(WebElement element) throws
 	}
 
 	
+	public static String convert_month_to_number(String month) {
+
+		switch(month) {
+	    case "January":
+	    case "january":
+	    case "jan":
+	    case "Jan":
+	    	month = "01";
+	    break;
+
+	    case "febuary":
+	    case "feb":
+	    case "Febuary":
+	    case "Feb":
+	    	month = "02";
+	    break;
+
+	    case "march":
+	    case "mar":
+	    case "March":
+	    case "Mar":
+	    	month = "03";
+	    break;
+
+	    case "april":
+	    case "apr":
+	    case "April":
+	    case "Apr":
+	    	month = "04";
+	    break;
+
+	    case "may":
+	    case "May":
+	    	month = "05";
+	    break;
+
+	    case "june":
+	    case "jun":
+	    case "June":
+	    case "Jun":
+	    	month = "06";
+	    break;
+
+	    case "july":
+	    case "jul":
+	    case "July":
+	    case "Jul":
+	    	month = "07";
+	    break;
+
+	    case "august":
+	    case "aug":
+	    case "August":
+	    case "Aug":
+	    	month = "08";
+	    break;
+
+	    case "september":
+	    case "sep":
+	    case "sept":
+	    case "September":
+	    case "Sep":
+	    case "Sept":
+	    	month = "09";
+	    break;
+
+	    case "october":
+	    case "oct":
+	    case "October":
+	    case "Oct":
+	    	month = "10";
+	    break;
+
+	    case "november":
+	    case "nov":
+	    case "November":
+	    case "Nov":
+	    	month = "11";
+	    break;
+
+	    case "december":
+	    case "dec":
+	    case "December":
+	    case "Dec":
+	    	month = "12";
+	    break;
+	    }
+		
+		return month;
+		
+	}
+
 	
 	
-
-
-public static String convert_month_to_number(String month) {
+	public String convert_to_tel_number(String number) {
+		String tel_number = number.replaceFirst("(\\d{3})(\\d{3})(\\d+)", "($1) $2-$3");
+		return tel_number;
+	}
 	
-	switch(month) {
-    case "January":
-    case "january":
-    case "jan":
-    case "Jan":
-    	month = "01";
-    break;
 
-    case "febuary":
-    case "feb":
-    case "Febuary":
-    case "Feb":
-    	month = "02";
-    break;
+	public String Get_todays_date_pus_1month(String dateformatter) {
+		
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern(dateformatter);  
+//		   LocalDateTime now = LocalDateTime.now();
+		 LocalDate now = LocalDate.now().plusMonths(1);
+		   String date=dtf.format(now);
+		   return date;
+	}
 
-    case "march":
-    case "mar":
-    case "March":
-    case "Mar":
-    	month = "03";
-    break;
+    public static String convert_day_to_fulldayname(String day) {
 
-    case "april":
-    case "apr":
-    case "April":
-    case "Apr":
-    	month = "04";
-    break;
+		switch(day) {
+	    case "Mon":
+	    case "mon":
+	    
+	    	day = "Monday";
+	    break;
 
-    case "may":
-    case "May":
-    	month = "05";
-    break;
+	    case "Tue":
+	    case "tue":
+	   
+	    	day = "Tuesday";
+	    break;
 
-    case "june":
-    case "jun":
-    case "June":
-    case "Jun":
-    	month = "06";
-    break;
+	    case "Wed":
+	    case "wed":
+	    
+	    	day = "Wednesday";
+	    break;
 
-    case "july":
-    case "jul":
-    case "July":
-    case "Jul":
-    	month = "07";
-    break;
+	    case "Thu":
+	    case "thu":
+	    
+	    	day = "Thursday";
+	    break;
 
-    case "august":
-    case "aug":
-    case "August":
-    case "Aug":
-    	month = "08";
-    break;
+	    case "Fri":
+	    case "fri":
+	    	day = "Friday";
+	    break;
 
-    case "september":
-    case "sep":
-    case "sept":
-    case "September":
-    case "Sep":
-    case "Sept":
-    	month = "09";
-    break;
+	    case "Sat":
+	    case "sat":
+	   
+	    	day = "Saturday";
+	    break;
 
-    case "october":
-    case "oct":
-    case "October":
-    case "Oct":
-    	month = "10";
-    break;
+	    case "Sun":
+	    case "sun":
+	   
+	    	day = "Sunday";
+	    break;
 
-    case "november":
-    case "nov":
-    case "November":
-    case "Nov":
-    	month = "11";
-    break;
+	    
+	    }
+		
+		return day;
+		
+	}
 
-    case "december":
-    case "dec":
-    case "December":
-    case "Dec":
-    	month = "12";
-    break;
-    }
+    public static String convert_month_to_monthname(String month) {
+
+		switch(month) {
+	    case "jan":
+	    case "Jan":
+	    	month = "January";
+	    break;
+
+	 
+	    case "feb":
+	    case "Feb":
+	    	month = "Febuary";
+	    break;
+
+	   
+	    case "mar":
+	   
+	    case "Mar":
+	    	month = "March";
+	    break;
+
+	   
+	    case "apr":
+	 
+	    case "Apr":
+	    	month = "April";
+	    break;
+
+	    case "may":
+	    case "May":
+	    	month = "May";
+	    	
+	    break;
+
+	  
+	    case "jun":
 	
-	return month;
-	
-}
+	    case "Jun":
+	    	month = "June";
+	    break;
 
+	  
+	    case "jul":
+	  
+	    case "Jul":
+	    	month = "July";
+	    break;
 
-public String Get_todays_date_pus_1month(String dateformatter) {
+	  
+	    case "aug":
 	
-	DateTimeFormatter dtf = DateTimeFormatter.ofPattern(dateformatter);  
-//	   LocalDateTime now = LocalDateTime.now();
-	 LocalDate now = LocalDate.now().plusMonths(1);
-	   String date=dtf.format(now);
-	   return date;
-}
+	    case "Aug":
+	    	month = "August";
+	    break;
+
+	  
+	    case "sep":
+	    
+	
+	    case "Sep":
+	 
+	    	month = "September";
+	    break;
+
+	  
+	    case "oct":
+	   
+	    case "Oct":
+	    	month = "October";
+	    break;
+
+	 
+	    case "nov":
+	 
+	    case "Nov":
+	    	month = "November";
+	    break;
+
+	
+	    case "dec":
+	  
+	    case "Dec":
+	    	month = "December";
+	    break;
+	    }
+		
+		return month;
+		
+	}
+
+    
+	
 	
 	}
 

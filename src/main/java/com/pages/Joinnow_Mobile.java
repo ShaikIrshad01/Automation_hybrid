@@ -7,7 +7,6 @@ import java.util.List;
 
 import com.Utility.Log;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 //import org.apache.logging.log4j.core.util.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -94,14 +93,12 @@ public class Joinnow_Mobile extends Base_Class {
 	By back_button= By.id("ctl00_MainContent_TabRates_ctl00_ctl00_btnBack");
 	By back_button_1= By.id("ctl00_MainContent_TabRates_ctl01_ctl00_btnBack");
 	
-	
 	com.pages.Joinnow joinnow = new com.pages.Joinnow();
 	
 	
-	
-	public void Validate_joinnow_steps(String Value) throws Exception {
+	public void Joinnow_searchclub_4steps(String Value) throws Exception {
 		
-		if (Value.equalsIgnoreCase("Joinnow_steps")) {
+		if (Value.equalsIgnoreCase("Joinnow_searchclub_4steps")) {
 			click(menu);
 			Thread.sleep(200);
 //			Element_isdisplayed(menu);
@@ -131,9 +128,9 @@ public class Joinnow_Mobile extends Base_Class {
 	}
 	
 	
-public void Validate_joinnow_fields(String Value) throws Exception {
+public void Validate_joinnow_fields_buttons(String Value) throws Exception {
 	
-	if (Value.equalsIgnoreCase("Joinnow_fields")) {
+	if (Value.equalsIgnoreCase("Joinnow_fields_buttons")) {
 		click(menu);
 		Thread.sleep(200);
 //		Element_isdisplayed(menu);
@@ -631,6 +628,123 @@ public void Validate_listofclubs(String Value, String dropdown_values, String co
 //	   
 	 }
 	Thread.sleep(200);
+}
+
+
+public void Validate_clubs_name_address_photo_joinbutton(String Value, String dropdown_values, String country) throws Exception
+{
+	if (Value.equalsIgnoreCase("club_details"))
+	{
+	click(menu);
+	Thread.sleep(200);	
+	click(Join_now_button);
+	ExtentTestManager.getTest().log(Status.PASS, "Join_now_button clicked successfully");
+	Log.info("Join_now_button clicked successfully");
+	
+	Element_isdisplayed(Country_dropdown);
+	Log.info("Country dropdown field is displayed successfully");
+	ExtentTestManager.getTest().log(Status.PASS, "Country dropdown field is displayed successfully");
+
+	 Select select = new Select(driver.findElement(Country_dropdown));
+	 if(!select.getFirstSelectedOption().getText().equalsIgnoreCase(country.trim()))
+		 select.selectByValue(country.trim());
+	Thread.sleep(200);
+	Log.info("Country dropdown value: "+country.trim()+" is selected successfully");
+	ExtentTestManager.getTest().log(Status.PASS, "Country dropdown value: "+country.trim()+"is selected successfully");
+	
+	Element_isdisplayed(ByStateorprovince_dropdown);
+	Log.info("By State or province dropdown field  is displayed successfully");
+	ExtentTestManager.getTest().log(Status.PASS, "By State or province dropdown field  is displayed successfully");
+	
+	 Select select1 = new Select(driver.findElement(ByStateorprovince_dropdown)); 
+	 select1.selectByValue(dropdown_values.trim());
+	
+	 Log.info("By state or province dropdown value: "+dropdown_values.trim()+" is selected successfully");
+	 ExtentTestManager.getTest().log(Status.PASS, "By state or province dropdown value: "+dropdown_values.trim()+" is selected successfully");
+	 Thread.sleep(200);
+	 int clb_count= Integer.parseInt(driver.findElement(club_count).getText().trim());
+	 String club_result_text= driver.findElement(club_result_total).getText();
+	 
+	 if(club_result_text.contains(dropdown_values.trim())) {
+		 Log.info(dropdown_values.trim()+" contains in the results: "+club_result_text);
+		 ExtentTestManager.getTest().log(Status.PASS, dropdown_values.trim()+" contains in the results: "+club_result_text );
+
+	 }
+	 else
+	 {
+		 Log.error(dropdown_values.trim()+" not contains in the results: "+club_result_text);
+
+		 throw new Exception(dropdown_values.trim()+" not contains in the results");
+	 }
+
+	 int listSize = driver.findElements(club_list_rows).size();
+//	 int count=0;
+	
+	 for(int i=1; i<=listSize; i++)  
+	 	{
+			
+		 if(i==1)	
+			 System.out.println("By default first club is selected");
+
+		 else {
+			 
+			 	By name_link=By.xpath("/html[1]/body[1]/form[1]/div[3]/div[2]/div[4]/div[6]/div[1]/div[1]/div[2]/div["+i+"]/div[1]/div[1]/div[1]/a[1]");
+			 	Thread.sleep(200);
+				 click(name_link);
+			 	scrolltotop();
+		 		}
+		 Thread.sleep(200);
+		 Element_isdisplayed(club_desktop_details);
+		 WebElement cad =driver.findElement(club_desktop_details);
+		 String club_address_desktop=cad.getText();	
+		 Thread.sleep(200);
+		 By locator= By.xpath("//*[contains(@id, '_ItemRowContainer')]["+i+"]");
+		 Element_isdisplayed(locator);
+		 MoveToElement(locator);
+		 WebElement element = driver.findElement(locator);
+		 String clb_text=element.getText();
+		 
+//		 club_result_rows.get(i);
+			if(clb_text.equalsIgnoreCase(club_address_desktop))
+			{
+					Log.info("Club name followed by address and phone number is validated successfully: \n"+element.getText());
+					ExtentTestManager.getTest().log(Status.PASS, "Club name followed by address and phone number is validated successfully: \n"+element.getText());
+			  		Assert.assertTrue(true);
+			}
+
+			else {
+					Log.error("Club name followed by address and phone number is not validated: \n"+element.getText());
+//					ExtentTestManager.getTest().log(Status.FAIL, "Club name followed by address and phone number is not validated: \n"+element.getText());
+//					Assert.assertTrue(false, "Club name followed by address and phone number is not validated: \n"+element.getText());
+					throw new Exception( "Club name followed by address and phone number is not validated: \n"+element.getText());
+			}
+		 
+	
+			Element_isdisplayed(club_image);
+			Log.info("Club image is displayed successfully");
+			ExtentTestManager.getTest().log(Status.PASS, "Club image is displayed successfully");
+			
+			Element_isdisplayed(join_this_club);
+			Log.info("Join this club button is displayed successfully");
+			ExtentTestManager.getTest().log(Status.PASS, "Join this club button is displayed successfully");
+		}
+	 
+	 if (clb_count == listSize) 
+	    {	
+		 	Log.info("All the clubs successfully displayed for the state: "+dropdown_values.trim());
+	        ExtentTestManager.getTest().log(Status.PASS, "All the clubs successfully displayed for the state: "+dropdown_values.trim());
+		   Assert.assertTrue(true);
+	     } 
+	 else 
+	      {	
+		 	Log.error("All the clubs not displayed for the state: "+dropdown_values.trim());
+//		 	ExtentTestManager.getTest().log(Status.PASS, "All the clubs not displayed for the state: "+dropdown_values.trim());
+//	    	Assert.assertTrue(false,"All the clubs not displayed for the state: "+dropdown_values.trim());
+	    	throw new Exception("All the clubs not displayed for the state: "+dropdown_values.trim());
+
+	      }		   
+	 }
+	Thread.sleep(100);
 }
 
 
@@ -1869,7 +1983,7 @@ public void Validate_Additionalfeatures_monthlyrates(String Value, String dropdo
 	Thread.sleep(100);
 }
 
-
+/*
 
 public void Validate_select_monthlyrates_$36_99_details(String Value, String dropdown_values, String country,  String clubname,  String plan_rates,  String Number_of_Persons1, String Initiation_Fee, String Billing_Frequency, String Initial_Term, String Prepayment, String device) throws Exception
 {
@@ -1999,7 +2113,7 @@ public void Validate_select_monthlyrates_$36_99_details(String Value, String dro
 	Thread.sleep(100);
 }
 
-
+*/
 
 public void select_rates(String rates) throws Exception {
 	
@@ -2113,7 +2227,6 @@ public	void validate_Select_MR_36_99(String plan_rates, String Number_of_Persons
 			
 
 }
-
 
 
 

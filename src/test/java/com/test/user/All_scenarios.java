@@ -30,8 +30,8 @@ public class All_scenarios extends Base_Class  {
 	Log log;
 	TestListener TestListener;
 	com.Utility.ScreenShot screenShot;
+	com.pages.Employment Employment;
 	com.pages.FreePass FreePass;
-
 	@BeforeSuite
 	public void reference() {
 		Base_Class = new Base_Class();
@@ -40,6 +40,7 @@ public class All_scenarios extends Base_Class  {
 		screenShot = new com.Utility.ScreenShot(null);
 		Home = new com.pages.Home();
 		joinnow = new com.pages.Joinnow();
+		Employment = new com.pages.Employment();
 		FreePass = new com.pages.FreePass();
 	}
 	
@@ -56,8 +57,7 @@ public class All_scenarios extends Base_Class  {
 				ExtentTestManager.getTest().log(Status.PASS, "*** Running test method " + testdata.get("TestScenario").toString() + "...");
 				Base_Class.setup();
 				
-//				Base_Class.setup("iPhone SE");
-//				Base_Class.setup(800,800);
+
 				ExtentTestManager.getTest().log(Status.PASS, "Successfully Entered into Application URL ");
 
 
@@ -66,41 +66,19 @@ public class All_scenarios extends Base_Class  {
 				String Country =testdata.get("Country").toString();
 				String Ratesoramenities =testdata.get("Rates/amenities").toString();
 				String Club_name =testdata.get("Club_name").toString();
-				String rates_details =testdata.get("Rates_details").toString();
+				
 				String Add_amenities =testdata.get("Add_amenities").toString();
 				String Included_amenities =testdata.get("Included_amenities").toString();
-				String Text_input =testdata.get("Text_input").toString();
-				
-				String plan_rates =testdata.get("Plan_rates").toString();
+			
 				String Amount_details =testdata.get("Amount_details").toString();
-//				String Club_address =testdata.get("Address").toString();
-				String additional_input =testdata.get("additional_input").toString();
-				String input_data =testdata.get("input_data").toString();
-				String input_data1 =testdata.get("input_data1").toString();
-				String F_Name =testdata.get("F_Name").toString();
-				String L_Name =testdata.get("L_Name").toString();
-				String Phone =testdata.get("Member_Phone").toString();
-				String Email =testdata.get("Email").toString();
-				String Address =testdata.get("Member_address").toString();
+				String rates_details =testdata.get("Rates_details").toString();
+				String plan_rates =testdata.get("Plan_rates").toString();
 				
-				String City =testdata.get("Member_City").toString();
 				
-				String Club_phone =testdata.get("Club_phone").toString();
-				String Club_zip =testdata.get("Club_zip").toString();
-				String Club_Address =testdata.get("Club_Address").toString();
-				String Club_city =testdata.get("Club_city").toString();
 				
-				String State =testdata.get("State").toString();
-				String Zipcode =testdata.get("Member_Zipcode").toString();
-				String Payment_type =testdata.get("Payment_type").toString();
-				String Card_number  =testdata.get("Card_number").toString();
 				
-				String Ex_month =testdata.get("Ex_month").toString();
-				String Ex_year  =testdata.get("Ex_year").toString();
-				
-				String Routing_number  =testdata.get("Routing_number").toString();
-				String Account_number =testdata.get("Account_number").toString();
-				String Card_name =testdata.get("Card_name").toString();
+				String Text_input =testdata.get("Text_input").toString();
+	
 				
 				String Number_of_Persons1 =testdata.get("Number_of_Persons1").toString();
 				String Initiation_Fee =testdata.get("Initiation_Fee").toString();
@@ -112,10 +90,365 @@ public class All_scenarios extends Base_Class  {
 				String Total_initial_Payment =testdata.get("Total_initial_Payment").toString();	
 				String Annual_Fee_Per_Person =testdata.get("Annual_Fee_Per_Person").toString();
 				
-//				String input_data1 =testdata.get("input_data1").toString();
-//				
 				
+				
+			
+
+				String additional_input =testdata.get("additional_input").toString();
+				String input_data =testdata.get("input_data").toString();
+				String input_data1 =testdata.get("input_data1").toString();
+				String input_data2 =testdata.get("input_data2").toString();
+				String input_data3 =testdata.get("input_data3").toString();
+				String input_data4 =testdata.get("input_data4").toString();
+				String Job_short_des =testdata.get("Job_short_des").toString();
+				String Job_long_des =testdata.get("Job_long_des").toString();
+				String F_Name =testdata.get("F_Name").toString();
+				String L_Name =testdata.get("L_Name").toString();
+				String Phone =testdata.get("Member_Phone").toString();
+				String Email =testdata.get("Email").toString();
+				String Address =testdata.get("Member_address").toString();
+//				job_short_des
+				String City =testdata.get("Member_City").toString();
+				
+				String Club_phone =testdata.get("Club_phone").toString();
+				String Club_zip =testdata.get("Club_zip").toString();
+				String Club_Address =testdata.get("Club_Address").toString();
+				String Club_city =testdata.get("Club_city").toString();
+//				
+				String State =testdata.get("State").toString();
+				String Zipcode =testdata.get("Member_Zipcode").toString();
+				String Radius_travel_to_work =testdata.get("Radius_travel_to_work").toString();
+				String How_hear_abt_us =testdata.get("How_hear_abt_us").toString();
+				String Radiobtn18YearsOld =testdata.get("Radiobtn18YearsOld").toString();
+				String Payment_type =testdata.get("Payment_type").toString();
+				String Card_number  =testdata.get("Card_number").toString();
+				
+				String Ex_month =testdata.get("Ex_month").toString();
+				String Ex_year  =testdata.get("Ex_year").toString();
+				
+				String Routing_number  =testdata.get("Routing_number").toString();
+				String Account_number =testdata.get("Account_number").toString();
+				String Card_name =testdata.get("Card_name").toString();
+				
+			
+				
+				
+				
+						
 				switch (testdata.get("TextMessage").toString()) {
+				
+				
+				// Career Opportunities / Employment Test cases
+				
+				
+				
+				case "About_dropdown":
+					
+					context.setAttribute("fileName", "About_dropdown");
+					Home.Validate_About_dropdown(testdata.get("TextMessage").toString());
+					context.setAttribute("fileName", "About_dropdown");
+					driver.quit();
+					
+				case "Nav_to_Employment_page":
+					
+					context.setAttribute("fileName", "Nav_to_Employment_page");
+					Home.Navigate_to_Emplyoment_page(testdata.get("TextMessage").toString());
+					context.setAttribute("fileName", "Nav_to_Employment_page");
+					driver.quit();		
+				
+				case "Validate_play_pause_video":
+					
+					context.setAttribute("fileName", "Validate_play_pause_video");
+					Employment.Validate_play_pause_video(testdata.get("TextMessage").toString(),Text_input, input_data);
+					context.setAttribute("fileName", "Validate_play_pause_video");
+					driver.quit();
+					
+				case "Validate_Club_and_corporate_positions":
+					
+					context.setAttribute("fileName", "Validate_Club_and_corporate_positions");
+					Employment.Validate_Club_and_corporate_positions(testdata.get("TextMessage").toString(), Text_input, input_data, additional_input);
+					context.setAttribute("fileName", "Validate_Club_and_corporate_positions");
+					driver.quit();
+					
+				case "Career_opportunity_section":
+					
+					context.setAttribute("fileName", "Career_opportunity_section");
+					Employment.Career_opportunity_section(testdata.get("TextMessage").toString(), Text_input, input_data);
+					context.setAttribute("fileName", "Career_opportunity_section");
+					driver.quit();
+					
+				case "Validate_Club_positions_section":
+					
+					context.setAttribute("fileName", "Validate_Club_positions_section");
+					Employment.Validate_Club_positions_section(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2);
+					context.setAttribute("fileName", "Validate_Club_positions_section");
+					driver.quit();
+					
+				case "Validate_corporate_positions_section":
+					
+					context.setAttribute("fileName", "Validate_corporate_positions_section");
+					Employment.Validate_Corporate_positions_section(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1 );
+					context.setAttribute("fileName", "Validate_corporate_positions_section");
+					driver.quit();
+					
+					
+					
+				case "Validate_details_of_Group_Fitness_position":
+					
+					context.setAttribute("fileName", "Validate_details_of_Group_Fitness_position");
+					Employment.Validate_details_of_Group_Fitness_position(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_Group_Fitness_position");
+					driver.quit();
+					
+				case "Validate_details_of_Personal_Trainer_position":
+					
+					context.setAttribute("fileName", "Validate_details_of_Personal_Trainer_position");
+					Employment.Validate_details_of_Personal_Trainer_position(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_Personal_Trainer_position");
+					driver.quit();
+					
+				case "Validate_details_of_Pilates_Teacher_position":
+					
+					context.setAttribute("fileName", "Validate_details_of_Pilates_Teacher_position");
+					Employment.Validate_details_of_Pilates_Teacher_position(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_Pilates_Teacher_position");
+					driver.quit();
+					
+				case "Validate_details_of_Hiit_Coach_position":
+					
+					context.setAttribute("fileName", "Validate_details_of_Hiit_Coach_position");
+					Employment.Validate_details_of_Hiit_Coach_position(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_Hiit_Coach_position");
+					driver.quit();
+					
+					
+				case "Validate_moreinfo_popupwindow_of_GFP":
+					
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_GFP");
+					Employment.Validate_moreinfo_popupwindow_of_Group_Fitness_position(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, Job_short_des, Job_long_des);
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_GFP");
+					driver.quit();
+					
+				case "Validate_moreinfo_popupwindow_of_Personal_TP":
+					
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_Personal_TP");
+					Employment.Validate_moreinfo_popupwindow_of_Personal_TP(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, Job_short_des, Job_long_des);
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_Personal_TP");
+					driver.quit();
+					
+				case "Validate_moreinfo_popupwindow_of_Pilates_TP":
+					
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_Pilates_TP");
+					Employment.Validate_moreinfo_popupwindow_of_Pilates_TP(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, Job_short_des, Job_long_des);
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_Pilates_TP");
+					driver.quit();
+					
+				case "Validate_moreinfo_popupwindow_of_HCP":
+					
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_HCP");
+					Employment.Validate_moreinfo_popupwindow_of_HCP(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, Job_short_des, Job_long_des);
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_HCP");
+					driver.quit();
+					
+				case "Validate_details_of_Accounting":
+					
+					context.setAttribute("fileName", "Validate_details_of_Accounting");
+					Employment.Validate_details_of_Accounting(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1,Job_short_des );
+					context.setAttribute("fileName", "Validate_details_of_Accounting");
+					driver.quit();
+					
+				case "Validate_details_of_Finance_and_T":
+					
+					context.setAttribute("fileName", "Validate_details_of_Finance_and_T");
+					Employment.Validate_details_of_Finance_and_T(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1,Job_short_des );
+					context.setAttribute("fileName", "Validate_details_of_Finance_and_T");
+					driver.quit();
+					
+				case "Validate_details_of_HR":
+					
+					context.setAttribute("fileName", "Validate_details_of_HR");
+					Employment.Validate_details_of_HR(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1,Job_short_des );
+					context.setAttribute("fileName", "Validate_details_of_HR");
+					driver.quit();
+					
+				case "Validate_details_of_IT":
+					
+					context.setAttribute("fileName", "Validate_details_of_IT");
+					Employment.Validate_details_of_IT(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1,Job_short_des );
+					context.setAttribute("fileName", "Validate_details_of_IT");
+					driver.quit();
+					
+				case "Validate_details_of_Legal_and_A":
+					
+					context.setAttribute("fileName", "Validate_details_of_Legal_and_A");
+					Employment.Validate_details_of_Legal_and_A(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1,Job_short_des );
+					context.setAttribute("fileName", "Validate_details_of_Legal_and_A");
+					driver.quit();
+					
+				case "Validate_details_of_RealEstate_and_D":
+					
+					context.setAttribute("fileName", "Validate_details_of_RealEstate_and_D");
+					Employment.Validate_details_of_RealEstate_and_D(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1,Job_short_des );
+					context.setAttribute("fileName", "Validate_details_of_RealEstate_and_D");
+					driver.quit();
+					
+				case "Validate_moreinfo_popupwindow_of_Accounting":
+					
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_Accounting");
+					Employment.Validate_moreinfo_popupwindow_of_Accounting(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1,Job_short_des, Job_long_des );
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_Accounting");
+					driver.quit();
+					
+				case "Validate_moreinfo_popupwindow_of_Finance_and_T":
+					
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_Finance_and_T");
+					Employment.Validate_moreinfo_popupwindow_of_Finance_and_T(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1,Job_short_des, Job_long_des);
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_Finance_and_T");
+					driver.quit();
+					
+				case "Validate_moreinfo_popupwindow_of_Human_R":
+					
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_Human_R");
+					Employment.Validate_moreinfo_popupwindow_of_Human_R(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1,Job_short_des, Job_long_des);
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_Human_R");
+					driver.quit();
+					
+				case "Validate_moreinfo_popupwindow_of_IT":
+					
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_IT");
+					Employment.Validate_moreinfo_popupwindow_of_IT(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1,Job_short_des, Job_long_des);
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_IT");
+					driver.quit();
+					
+				case "Validate_moreinfo_popupwindow_of_Legal_and_A":
+					
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_Legal_and_A");
+					Employment.Validate_moreinfo_popupwindow_of_Legal_and_A(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1,Job_short_des, Job_long_des);
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_Legal_and_A");
+					driver.quit();
+					
+				case "Validate_moreinfo_popupwindow_of_RE_and_D":
+					
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_RE_and_D");
+					Employment.Validate_moreinfo_popupwindow_of_RE_and_D(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data2,input_data1,Job_short_des, Job_long_des);
+					context.setAttribute("fileName", "Validate_moreinfo_popupwindow_of_RE_and_D");
+					driver.quit();
+					
+				case "Validate_GF_applyhere_button":
+					
+					context.setAttribute("fileName", "Validate_GF_applyhere_button");
+					Employment.Validate_GF_applyhere_button(testdata.get("TextMessage").toString());
+					context.setAttribute("fileName", "Validate_GF_applyhere_button");
+					driver.quit();
+					
+				case "Validate_Pilates_T_applyhere_button":
+					
+					context.setAttribute("fileName", "Validate_Pilates_T_applyhere_button");
+					Employment.Validate_Pilates_T_applyhere_button(testdata.get("TextMessage").toString());
+					context.setAttribute("fileName", "Validate_Pilates_T_applyhere_button");
+					driver.quit();
+					
+				case "Validate_Personal_T_applyhere_button":
+					
+					context.setAttribute("fileName", "Validate_Personal_T_applyhere_button");
+					Employment.Validate_Personal_T_applyhere_button(testdata.get("TextMessage").toString());
+					context.setAttribute("fileName", "Validate_Personal_T_applyhere_button");
+					driver.quit();
+					
+				case "Validate_HIIT_C_applyhere_button":
+					
+					context.setAttribute("fileName", "Validate_HIIT_C_applyhere_button");
+					Employment.Validate_HIIT_C_applyhere_button(testdata.get("TextMessage").toString());
+					context.setAttribute("fileName", "Validate_HIIT_C_applyhere_button");
+					driver.quit();
+					
+					
+				case "Validate_applyhere_button_followingpos_text":
+					
+					context.setAttribute("fileName", "Validate_applyhere_button_followingpos_text");
+					Employment.Validate_applyhere_button_followingpos_text(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, input_data3);
+					context.setAttribute("fileName", "Validate_applyhere_button_followingpos_text");
+					driver.quit();
+					
+				case "Validate_details_of_General_Manager":
+					
+					context.setAttribute("fileName", "Validate_details_of_General_Manager");
+					Employment.Validate_details_of_General_Manager(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, input_data3, input_data4, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_General_Manager");
+					driver.quit();
+					
+				case "Validate_details_of_Operations_Manager":
+					
+					context.setAttribute("fileName", "Validate_details_of_Operations_Manager");
+					Employment.Validate_details_of_Operations_Manager(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, input_data3, input_data4, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_Operations_Manager");
+					driver.quit();
+					
+				case "Validate_details_of_Personal_TD":
+					
+					context.setAttribute("fileName", "Validate_details_of_Personal_TD");
+					Employment.Validate_details_of_Personal_TD(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, input_data3, input_data4, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_Personal_TD");
+					driver.quit();
+					
+				case "Validate_details_of_Membership_Counselor":
+					
+					context.setAttribute("fileName", "Validate_details_of_Membership_Counselor");
+					Employment.Validate_details_of_Membership_Counselor(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, input_data3, input_data4, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_Membership_Counselor");
+					driver.quit();
+					
+				case "Validate_details_of_Personal_TMC":
+					
+					context.setAttribute("fileName", "Validate_details_of_Personal_TMC");
+					Employment.Validate_details_of_Personal_TMC(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, input_data3, input_data4, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_Personal_TMC");
+					driver.quit();
+					
+				case "Validate_details_of_Club_Staff":
+					
+					context.setAttribute("fileName", "Validate_details_of_Club_Staff");
+					Employment.Validate_details_of_Club_Staff(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, input_data3, input_data4, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_Club_Staff");
+					driver.quit();
+					
+				case "Validate_details_of_League_SD":
+					
+					context.setAttribute("fileName", "Validate_details_of_League_SD");
+					Employment.Validate_details_of_League_SD(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, input_data3, input_data4, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_League_SD");
+					driver.quit();
+					
+				case "Validate_details_of_Equipment_Tech":
+					
+					context.setAttribute("fileName", "Validate_details_of_Equipment_Tech");
+					Employment.Validate_details_of_Equipment_Tech(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, input_data3, input_data4, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_Equipment_Tech");
+					driver.quit();
+					
+				case "Validate_details_of_HVAC_Building_M":
+					
+					context.setAttribute("fileName", "Validate_details_of_HVAC_Building_M");
+					Employment.Validate_details_of_HVAC_Building_M(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, input_data3, input_data4, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_HVAC_Building_M");
+					driver.quit();
+					
+				case "Validate_details_of_Pride_Janitor":
+					
+					context.setAttribute("fileName", "Validate_details_of_Pride_Janitor");
+					Employment.Validate_details_of_Pride_Janitor(testdata.get("TextMessage").toString(),Text_input, input_data, additional_input, input_data1, input_data2, input_data3, input_data4, Job_short_des);
+					context.setAttribute("fileName", "Validate_details_of_Pride_Janitor");
+					driver.quit();
+					
+					
+//				case "Group_Fitness_job":
+//					
+//					context.setAttribute("fileName", "Group_Fitness_job");
+//					Employment.Group_Fitness_apply_here(testdata.get("TextMessage").toString(),How_hear_abt_us, F_Name, L_Name, Email  , Phone , Address , Zipcode  , City , State , Radius_travel_to_work, Radiobtn18YearsOld);
+//					context.setAttribute("fileName", "Group_Fitness_job");
+//					driver.quit();
+					
+				// Join Now Testcases
 				
 				case "Joinnow":
 					
@@ -126,18 +459,18 @@ public class All_scenarios extends Base_Class  {
 					
 				
 
-				case "Joinnow_steps":
+				case "Joinnow_searchclub_4steps":
 
-					context.setAttribute("fileName", "Joinnow_steps");
-					joinnow.Validate_joinnow_steps(testdata.get("TextMessage").toString());
-					context.setAttribute("fileName", "Joinnow_steps");
+					context.setAttribute("fileName", "Joinnow_searchclub_4steps");
+					joinnow.Joinnow_searchclub_4steps(testdata.get("TextMessage").toString());
+					context.setAttribute("fileName", "Joinnow_searchclub_4steps");
 					driver.quit();
 
-				case "Joinnow_fields":
+				case "Joinnow_fields_buttons":
 					
-					context.setAttribute("fileName", "Joinnow_fields");
-					joinnow.Validate_joinnow_fields(testdata.get("TextMessage").toString());
-					context.setAttribute("fileName", "Joinnow_fields");
+					context.setAttribute("fileName", "Joinnow_fields_buttons");
+					joinnow.Validate_joinnow_fields_buttons(testdata.get("TextMessage").toString());
+					context.setAttribute("fileName", "Joinnow_fields_buttons");
 					driver.quit();
 
 				case "country_values":
@@ -189,6 +522,8 @@ public class All_scenarios extends Base_Class  {
 					joinnow.Validate_clubs_buttons(testdata.get("TextMessage").toString(), Dropdown_values, Country);
 					context.setAttribute("fileName", "clubs_buttons");
 					driver.quit();
+
+					
 					
 					
 				case "club_ratesandamenities":
@@ -234,51 +569,51 @@ public class All_scenarios extends Base_Class  {
 					context.setAttribute("fileName", "Additionalfeatures_monthlyrates");
 					driver.quit();
 					
-				case "monthlyrates_$36_99_details":
+				case "monthlyrates_firstplan_details":
 
-					context.setAttribute("fileName", "monthlyrates_$36_99_details");
-					joinnow.Validate_select_monthlyrates_$36_99_details(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name,plan_rates, Number_of_Persons1, Initiation_Fee, Billing_Frequency, Initial_Term, Prepayment);
-					context.setAttribute("fileName", "monthlyrates_$36_99_details");
+					context.setAttribute("fileName", "monthlyrates_firstplan_details");
+					joinnow.Validate_select_monthlyrates_firstplan_details(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name,plan_rates, Number_of_Persons1, Initiation_Fee, Billing_Frequency, Initial_Term, Prepayment);
+					context.setAttribute("fileName", "monthlyrates_firstplan_details");
 					driver.quit();
 					
 					
-				case "monthlyrates_$46_99_details":
+				case "monthlyrates_secondplan_details":
 
-					context.setAttribute("fileName", "monthlyrates_$46_99_details");
-					joinnow.Validate_select_monthlyrates_$46_99_details(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, plan_rates, Number_of_Persons1, Initiation_Fee, Billing_Frequency, Initial_Term, Prepayment);
-					context.setAttribute("fileName", "monthlyrates_$46_99_details");
+					context.setAttribute("fileName", "monthlyrates_secondplan_details");
+					joinnow.Validate_select_monthlyrates_secondplan_details(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, plan_rates, Number_of_Persons1, Initiation_Fee, Billing_Frequency, Initial_Term, Prepayment);
+					context.setAttribute("fileName", "monthlyrates_secondplan_details");
 					driver.quit();
 					
-				case "monthlyrates_$36_99_add_amenities_list":
+				case "monthlyrates_firstplan_add_amenities_list":
 
-					context.setAttribute("fileName", "monthlyrates_$36_99_add_amenities_list");
-					joinnow.Validate_select_monthlyrates_$36_99_add_amenities_list(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name,plan_rates, Included_amenities, Add_amenities);
-					context.setAttribute("fileName", "monthlyrates_$36_99_add_amenities_list");
+					context.setAttribute("fileName", "monthlyrates_firstplan_add_amenities_list");
+					joinnow.Validate_select_monthlyrates_firstplan_add_amenities_list(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name,plan_rates, Included_amenities, Add_amenities);
+					context.setAttribute("fileName", "monthlyrates_firstplan_add_amenities_list");
 					driver.quit();
 					
-				case "monthlyrates_$46_99_add_amenities_list":
+				case "monthlyrates_secondplan_add_amenities_list":
 
-					context.setAttribute("fileName", "monthlyrates_$46_99_add_amenities_list");
-					joinnow.Validate_select_monthlyrates_$46_99_add_amenities_list(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name,plan_rates, Included_amenities, Add_amenities);
-					context.setAttribute("fileName", "monthlyrates_$46_99_add_amenities_list");
-					driver.quit();
-					
-					
-				case "monthlyrates_$36_99_yourdues_section":
-
-					context.setAttribute("fileName", "monthlyrates_$36_99_yourdues_section");
-					joinnow.Validate_select_monthlyrates_$36_99_yourdues_section(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name,plan_rates, First_Month_Dues ,Last_Month_Dues ,Total_initial_Payment ,Annual_Fee_Per_Person);
-					context.setAttribute("fileName", "monthlyrates_$36_99_yourdues_section");
+					context.setAttribute("fileName", "monthlyrates_secondplan_add_amenities_list");
+					joinnow.Validate_select_monthlyrates_secondplan_add_amenities_list(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name,plan_rates, Included_amenities, Add_amenities);
+					context.setAttribute("fileName", "monthlyrates_secondplan_add_amenities_list");
 					driver.quit();
 					
 					
-				case "monthlyrates_$46_99_yourdues_section":
+				case "monthlyrates_firstplan_yourdues_section":
 
-					context.setAttribute("fileName", "monthlyrates_$46_99_yourdues_section");
-					joinnow.Validate_select_monthlyrates_$46_99_yourdues_section(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, plan_rates,Ratesoramenities, rates_details);
-					context.setAttribute("fileName", "monthlyrates_$46_99_yourdues_section");
+					context.setAttribute("fileName", "monthlyrates_firstplan_yourdues_section");
+					joinnow.Validate_select_monthlyrates_firstplan_yourdues_section(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name,plan_rates, First_Month_Dues ,Last_Month_Dues ,Total_initial_Payment ,Annual_Fee_Per_Person);
+					context.setAttribute("fileName", "monthlyrates_firstplan_yourdues_section");
 					driver.quit();
 					
+					
+				case "monthlyrates_secondplan_yourdues_section":
+
+					context.setAttribute("fileName", "monthlyrates_secondplan_yourdues_section");
+					joinnow.Validate_select_monthlyrates_secondplan_yourdues_section(testdata.get("TextMessage").toString(), Dropdown_values, Country, Club_name, plan_rates, First_Month_Dues, Last_Month_Dues ,Total_initial_Payment ,Annual_Fee_Per_Person);
+					context.setAttribute("fileName", "monthlyrates_secondplan_yourdues_section");
+					driver.quit();
+//				/*	
 					
 				case "No_of_persons_dropdown_for_$36_99":
 
@@ -593,7 +928,10 @@ public class All_scenarios extends Base_Class  {
 					FreePass.TC_LAF_Validate_Freepass_Condition_Text(testdata.get("TextMessage").toString(),Text_input);
 					context.setAttribute("fileName", "Freepass_Condtion_Text");
 					driver.quit();
+//					*/
 
+					
+					
 				default:
 					driver.quit();
 					break;
@@ -714,4 +1052,6 @@ public class All_scenarios extends Base_Class  {
 
 	}
 
+	
+	
 }

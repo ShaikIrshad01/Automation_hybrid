@@ -1,32 +1,1094 @@
-[INFO ] 2022-09-09 17:25:07.826 [main] Log - *** Running test method TC18_Validate_Joinnow_club_select_monthlyrates_$36_99_add_amenities_list...
-[INFO ] 2022-09-09 17:25:09.859 [main] Log - Chrome browser launched successfully
-[INFO ] 2022-09-09 17:25:28.877 [main] Log - Entered the application url successfully
-[INFO ] 2022-09-09 17:25:35.950 [main] Log - Join_now_button clicked successfully
-[INFO ] 2022-09-09 17:25:36.198 [main] Log - Country dropdown field is displayed successfully
-[INFO ] 2022-09-09 17:25:36.509 [main] Log - Country dropdown value: USA is selected successfully
-[INFO ] 2022-09-09 17:25:36.742 [main] Log - By State or province dropdown field  is displayed successfully
-[INFO ] 2022-09-09 17:25:36.809 [main] Log - By state or province dropdown value: NY is selected successfully
-[INFO ] 2022-09-09 17:25:40.050 [main] Log - NY contains in the results 
-[INFO ] 2022-09-09 17:25:40.051 [main] Log - 28 Club(s) found in "NY"
-[INFO ] 2022-09-09 17:25:45.965 [main] Log - club BRONX - EASTCHESTER RD. (Signature) is selected
-[INFO ] 2022-09-09 17:25:51.234 [main] Log - Join this club button is displayed successfully
-[INFO ] 2022-09-09 17:25:56.400 [main] Log - User successfully navigated to the step two (Select a Membership Plan) page: LA Fitness | Online Membership - Rate | BRONX - EASTCHESTER RD. (Signature)
-[INFO ] 2022-09-09 17:25:56.638 [main] Log - Select a Membership Plan section displayed successfully
-[INFO ] 2022-09-09 17:25:56.871 [main] Log - Select additional features section is displayed successfully
-[INFO ] 2022-09-09 17:25:57.103 [main] Log - Your homeclub section is displayed successfully
-[INFO ] 2022-09-09 17:26:01.901 [main] Log - Selected 38.99 Monthly Rate successfully
-[INFO ] 2022-09-09 17:26:02.799 [main] Log - Add Amenities section is displayed successfully
-[INFO ] 2022-09-09 17:26:02.864 [main] Log - Amenity: Towels: $5.00 check box is checked: false and validated successfully
-[INFO ] 2022-09-09 17:26:02.864 [main] Log - All values matched successfully in the amenities list
-[INFO ] 2022-09-09 17:26:03.090 [main] Log - Included Amenities section is displayed successfully
-[INFO ] 2022-09-09 17:26:08.135 [main] Log - Amenity: Racquetball/Squash Courts: Included check box is checked: true and validated successfully
-[INFO ] 2022-09-09 17:26:08.172 [main] Log - Amenity: 2 guests per visit: Included check box is checked: true and validated successfully
-[INFO ] 2022-09-09 17:26:08.208 [main] Log - Amenity: Group Fitness: Included check box is checked: true and validated successfully
-[INFO ] 2022-09-09 17:26:08.247 [main] Log - Amenity: Cycle Class: Included check box is checked: true and validated successfully
-[INFO ] 2022-09-09 17:26:08.286 [main] Log - Amenity: Pool/Whirlpool Spa: Included check box is checked: true and validated successfully
-[INFO ] 2022-09-09 17:26:08.324 [main] Log - Amenity: Esporta Brand Access: Included check box is checked: true and validated successfully
-[INFO ] 2022-09-09 17:26:08.362 [main] Log - Amenity: City Sports Brand Access: Included check box is checked: true and validated successfully
-[INFO ] 2022-09-09 17:26:08.402 [main] Log - Amenity: LA Fitness Brand Access: Included check box is checked: true and validated successfully
-[INFO ] 2022-09-09 17:26:08.402 [main] Log - All values matched successfully in the amenities list
-[INFO ] 2022-09-09 17:26:21.575 [main] Log - *** Test Suite TC18_Validate_Joinnow_club_select_monthlyrates_$36_99_add_amenities_list ending ***
-[INFO ] 2022-09-09 17:26:21.576 [main] Log - Browser is closed
+[INFO ] 2022-09-28 13:54:23.814 [main] Log - *** Running test method TC_01_Validate_About_dropdown_Carreer_opportunities_option...
+[INFO ] 2022-09-28 13:54:25.370 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 13:54:25.522 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 13:54:37.127 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 13:54:37.648 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 13:54:57.830 [main] Log - *** Test Suite TC_01_Validate_About_dropdown_Carreer_opportunities_option ending ***
+[INFO ] 2022-09-28 13:54:57.831 [main] Log - Browser is closed
+[INFO ] 2022-09-28 13:54:57.841 [main] Log - *** Running test method TC_02_Validate_Navigation_to_Employment_page...
+[INFO ] 2022-09-28 13:54:58.618 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 13:54:58.770 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 13:55:01.394 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 13:55:01.946 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 13:55:07.462 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 13:55:07.674 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 13:55:28.398 [main] Log - *** Test Suite TC_02_Validate_Navigation_to_Employment_page ending ***
+[INFO ] 2022-09-28 13:55:28.399 [main] Log - Browser is closed
+[INFO ] 2022-09-28 13:55:28.411 [main] Log - *** Running test method TC_03_Validate_Career_opportunity_section&youtube_video&desc...
+[INFO ] 2022-09-28 13:55:29.146 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 13:55:29.285 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 13:55:40.622 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 13:55:41.093 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 13:55:46.513 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 13:55:46.722 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 13:55:46.877 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 13:55:47.013 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 13:55:47.179 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 13:56:07.912 [main] Log - *** Test Suite TC_03_Validate_Career_opportunity_section&youtube_video&desc ending ***
+[INFO ] 2022-09-28 13:56:07.912 [main] Log - Browser is closed
+[INFO ] 2022-09-28 13:56:07.919 [main] Log - *** Running test method TC_04_Validate_play_pause_youtube_video...
+[INFO ] 2022-09-28 13:56:08.668 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 13:56:08.806 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 13:56:20.017 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 13:56:20.592 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 13:56:26.070 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 13:56:26.277 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 13:56:26.453 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 13:56:26.597 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 13:56:26.761 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 13:56:30.860 [main] Log - Youtube video started playing
+[INFO ] 2022-09-28 13:56:59.967 [main] Log - Youtube video paused
+[INFO ] 2022-09-28 13:57:19.718 [main] Log - *** Test Suite TC_04_Validate_play_pause_youtube_video ending ***
+[INFO ] 2022-09-28 13:57:19.718 [main] Log - Browser is closed
+[INFO ] 2022-09-28 13:57:19.722 [main] Log - *** Running test method TC_05_Validate_Club_and_corporate_positions_sections...
+[INFO ] 2022-09-28 13:57:20.460 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 13:57:20.599 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 13:57:31.975 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 13:57:32.449 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 13:57:37.883 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 13:57:38.091 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 13:57:38.247 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 13:57:38.384 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 13:57:38.545 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 13:57:43.112 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 13:58:03.028 [main] Log - *** Test Suite TC_05_Validate_Club_and_corporate_positions_sections ending ***
+[INFO ] 2022-09-28 13:58:03.028 [main] Log - Browser is closed
+[INFO ] 2022-09-28 13:58:03.042 [main] Log - *** Running test method TC_06_Validate_Club_positions_section...
+[INFO ] 2022-09-28 13:58:03.770 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 13:58:03.920 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 13:58:15.079 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 13:58:15.665 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 13:58:21.089 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 13:58:21.300 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 13:58:21.456 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 13:58:21.595 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 13:58:21.758 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 13:58:26.342 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 13:58:27.288 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 13:58:27.446 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 13:58:27.468 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 13:58:27.479 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 13:58:27.500 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 13:58:27.523 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 13:58:27.544 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 13:58:27.555 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 13:58:47.419 [main] Log - *** Test Suite TC_06_Validate_Club_positions_section ending ***
+[INFO ] 2022-09-28 13:58:47.419 [main] Log - Browser is closed
+[INFO ] 2022-09-28 13:58:47.425 [main] Log - *** Running test method TC_07_Validate_details_of_Group_Fitness_position...
+[INFO ] 2022-09-28 13:58:48.256 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 13:58:48.410 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 13:58:59.868 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 13:59:00.354 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 13:59:05.807 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 13:59:06.022 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 13:59:06.179 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 13:59:06.315 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 13:59:06.461 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 13:59:11.003 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 13:59:11.889 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 13:59:12.035 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 13:59:12.046 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 13:59:12.058 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 13:59:12.085 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 13:59:12.108 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 13:59:12.130 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 13:59:12.141 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 13:59:12.266 [main] Log - Group fitness image/video is displayed successfully
+[INFO ] 2022-09-28 13:59:12.421 [main] Log - Group fitness job title is displayed and validated successfully: Group Fitness
+[INFO ] 2022-09-28 13:59:12.567 [main] Log - Group fitness job details displayed and validated successfully: We are looking for enthusiastic, professional, motivate
+[INFO ] 2022-09-28 13:59:12.701 [main] Log - Group Fitness moreinfo link displayed Successfully
+[INFO ] 2022-09-28 13:59:13.718 [main] Log - Group Fitness Apply Here element text is validated successfully
+[INFO ] 2022-09-28 13:59:13.719 [main] Log - Group Fitness apply here button displayed Successfully
+[INFO ] 2022-09-28 13:59:33.574 [main] Log - *** Test Suite TC_07_Validate_details_of_Group_Fitness_position ending ***
+[INFO ] 2022-09-28 13:59:33.574 [main] Log - Browser is closed
+[INFO ] 2022-09-28 13:59:33.584 [main] Log - *** Running test method TC_08_Validate_details_of_Personal_Trainer_position...
+[INFO ] 2022-09-28 13:59:34.377 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 13:59:34.514 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 13:59:45.830 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 13:59:46.423 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 13:59:51.885 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 13:59:52.098 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 13:59:52.255 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 13:59:52.390 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 13:59:52.557 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 13:59:57.081 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 13:59:57.968 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 13:59:58.125 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 13:59:58.137 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 13:59:58.147 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 13:59:58.167 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 13:59:58.188 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 13:59:58.209 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 13:59:58.221 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 13:59:58.356 [main] Log - Personal Trainer image is displayed successfully
+[INFO ] 2022-09-28 13:59:58.512 [main] Log - Personal Trainers job title is displayed and validated successfully: Personal Trainer
+[INFO ] 2022-09-28 13:59:58.657 [main] Log - Personal Trainers job details displayedand validated successfully: Our ProResults Personal Trainers are true professionals
+[INFO ] 2022-09-28 13:59:58.794 [main] Log - Personal Trainers moreinfo link displayed Successfully
+[INFO ] 2022-09-28 13:59:59.812 [main] Log - Personal Trainer Apply Here element text is validated successfully
+[INFO ] 2022-09-28 13:59:59.812 [main] Log - Personal Trainers apply here button displayed Successfully
+[INFO ] 2022-09-28 14:00:19.709 [main] Log - *** Test Suite TC_08_Validate_details_of_Personal_Trainer_position ending ***
+[INFO ] 2022-09-28 14:00:19.709 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:00:19.717 [main] Log - *** Running test method TC_09_Validate_details_of_Pilates_Teacher_position...
+[INFO ] 2022-09-28 14:00:20.420 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:00:20.559 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:00:31.988 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:00:32.534 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:00:38.004 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:00:38.217 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:00:38.372 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:00:38.498 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:00:38.657 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:00:43.221 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:00:44.105 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:00:44.263 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:00:44.274 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:00:44.284 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:00:44.305 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:00:44.327 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:00:44.349 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:00:44.361 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:00:44.496 [main] Log - Pilates Teacher image is displayed successfully
+[INFO ] 2022-09-28 14:00:44.649 [main] Log - Pilates Teacher job title is displayed and validated successfully: Pilates Teacher
+[INFO ] 2022-09-28 14:00:44.795 [main] Log - Pilates Teacher job details displayed and validated successfully: We are hiring enthusiastic, professional Pilates teache
+[INFO ] 2022-09-28 14:00:44.929 [main] Log - Pilates Teacher moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:00:45.946 [main] Log - Pilates Teacher Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:00:45.946 [main] Log - Pilates Teacher apply here button displayed Successfully
+[INFO ] 2022-09-28 14:01:09.246 [main] Log - *** Test Suite TC_09_Validate_details_of_Pilates_Teacher_position ending ***
+[INFO ] 2022-09-28 14:01:09.246 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:01:09.255 [main] Log - *** Running test method TC_10_Validate_details_of_Hiit_Coach_position...
+[INFO ] 2022-09-28 14:01:10.058 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:01:10.194 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:01:24.766 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:01:25.360 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:01:30.903 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:01:33.984 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:01:34.136 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:01:34.273 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:01:34.440 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:01:38.972 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:01:39.856 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:01:40.004 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:01:40.016 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:01:40.026 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:01:40.058 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:01:40.079 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:01:40.105 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:01:40.120 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:01:40.263 [main] Log - Hiit coach  image is displayed successfully
+[INFO ] 2022-09-28 14:01:40.403 [main] Log - Hiit coach job title is displayed and validated successfully: HIIT Coach
+[INFO ] 2022-09-28 14:01:40.578 [main] Log - Hiit coach job details displayed and validated successfully: Our HIIT Coaches bring intensity, passion and expertise
+[INFO ] 2022-09-28 14:01:40.715 [main] Log - Hiit coach moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:01:41.744 [main] Log - HIIT Coach Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:01:41.745 [main] Log - Hiit coach apply here button displayed Successfully
+[INFO ] 2022-09-28 14:02:02.915 [main] Log - *** Test Suite TC_10_Validate_details_of_Hiit_Coach_position ending ***
+[INFO ] 2022-09-28 14:02:02.915 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:02:02.922 [main] Log - *** Running test method TC_11_Validate_moreinfo_popupwindow_of_GFP...
+[INFO ] 2022-09-28 14:02:03.683 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:02:03.837 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:02:15.777 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:02:16.343 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:02:21.806 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:02:22.020 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:02:22.180 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:02:22.314 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:02:22.486 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:02:27.018 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:02:27.917 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:02:28.064 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:02:28.076 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:02:28.086 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:02:28.107 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:02:28.127 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:02:28.148 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:02:28.160 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:02:28.297 [main] Log - Group fitness image/video is displayed successfully
+[INFO ] 2022-09-28 14:02:28.453 [main] Log - Group fitness job title is displayed and validated successfully: Group Fitness
+[INFO ] 2022-09-28 14:02:28.603 [main] Log - Group fitness job details displayed and validated successfully: We are looking for enthusiastic, professional, motivate
+[INFO ] 2022-09-28 14:02:28.738 [main] Log - Group Fitness moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:02:29.759 [main] Log - Group Fitness Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:02:29.759 [main] Log - Group Fitness apply here button displayed Successfully
+[INFO ] 2022-09-28 14:02:33.918 [main] Log - Successfully clicked on Group Fitness moreinfo link
+[INFO ] 2022-09-28 14:02:34.066 [main] Log - Moreinfo pop up window is displayed and Group Fitness title in popup window is displayed and validated successfully
+[INFO ] 2022-09-28 14:02:34.241 [main] Log - full job description displayed and validated successfully: We are looking for enthusiastic, professional, motivated, experienced individuals who enjoy inspiring others and helping our members achieve their fitness goals. You must have experience in teaching one or more group fitness classes. These are part-time positions and babysitting for your children while you teach is available at most clubs. All instructors are given a complimentary club membership.
+[INFO ] 2022-09-28 14:02:34.520 [main] Log - Group Fitness image in popup window is displayed successfully
+[INFO ] 2022-09-28 14:02:34.648 [main] Log - Close button is displayed Successfully in popup window
+[INFO ] 2022-09-28 14:02:38.953 [main] Log - Successfully clicked on close button in popup window
+[INFO ] 2022-09-28 14:02:58.702 [main] Log - *** Test Suite TC_11_Validate_moreinfo_popupwindow_of_GFP ending ***
+[INFO ] 2022-09-28 14:02:58.702 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:02:58.705 [main] Log - *** Running test method TC_12_Validate_moreinfo_popupwindow_of_Personal_TP...
+[INFO ] 2022-09-28 14:02:59.477 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:02:59.614 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:03:10.911 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:03:11.403 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:03:16.779 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:03:16.990 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:03:17.148 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:03:17.287 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:03:17.436 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:03:21.990 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:03:22.877 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:03:23.023 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:03:23.034 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:03:23.045 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:03:23.066 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:03:23.087 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:03:23.108 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:03:23.119 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:03:23.254 [main] Log - Personal Trainer image is displayed successfully
+[INFO ] 2022-09-28 14:03:23.409 [main] Log - Personal Trainers job title is displayed and validated successfully: Personal Trainer
+[INFO ] 2022-09-28 14:03:23.555 [main] Log - Personal Trainers job details displayedand validated successfully: Our ProResults Personal Trainers are true professionals
+[INFO ] 2022-09-28 14:03:23.679 [main] Log - Personal Trainers moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:03:24.714 [main] Log - Personal Trainer Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:03:24.714 [main] Log - Personal Trainers apply here button displayed Successfully
+[INFO ] 2022-09-28 14:03:28.900 [main] Log - Successfully clicked on personal trainer moreinfo link
+[INFO ] 2022-09-28 14:03:29.044 [main] Log - Moreinfo pop up window is displayed and Personal Trainer title in popup window is displayed and validated successfully
+[INFO ] 2022-09-28 14:03:29.205 [main] Log - full job description displayed and validated successfully: Our ProResults Personal Trainers are true professionals, each possessing a certified Personal Training Certificate from a qualified, reputable organization. Their sole responsibility is to design customized workout programs and train our members based on their needs. There is an opportunity for advancement to Master Trainer, Group Trainer and beyond. All personal trainers are given a complimentary club membership.
+[INFO ] 2022-09-28 14:03:29.480 [main] Log - Personal Trainer image in popup window is displayed successfully
+[INFO ] 2022-09-28 14:03:29.608 [main] Log - Close button is displayed Successfully in popup window
+[INFO ] 2022-09-28 14:03:33.923 [main] Log - Successfully clicked on close button in popup window
+[INFO ] 2022-09-28 14:03:53.636 [main] Log - *** Test Suite TC_12_Validate_moreinfo_popupwindow_of_Personal_TP ending ***
+[INFO ] 2022-09-28 14:03:53.637 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:03:53.640 [main] Log - *** Running test method TC_13_Validate_moreinfo_popupwindow_of_Pilates_TP...
+[INFO ] 2022-09-28 14:03:54.435 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:03:54.572 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:04:05.866 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:04:06.398 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:04:11.769 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:04:11.979 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:04:12.135 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:04:12.272 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:04:12.422 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:04:16.921 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:04:17.808 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:04:17.952 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:04:17.963 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:04:17.975 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:04:17.996 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:04:18.016 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:04:18.040 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:04:18.051 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:04:18.184 [main] Log - Pilates Teacher image is displayed successfully
+[INFO ] 2022-09-28 14:04:18.332 [main] Log - Pilates Teacher job title is displayed and validated successfully: Pilates Teacher
+[INFO ] 2022-09-28 14:04:18.483 [main] Log - Pilates Teacher job details displayed and validated successfully: We are hiring enthusiastic, professional Pilates teache
+[INFO ] 2022-09-28 14:04:18.621 [main] Log - Pilates Teacher moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:04:19.655 [main] Log - Pilates Teacher Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:04:19.656 [main] Log - Pilates Teacher apply here button displayed Successfully
+[INFO ] 2022-09-28 14:04:23.873 [main] Log - Successfully clicked on Pilates teacher moreinfo link
+[INFO ] 2022-09-28 14:04:24.048 [main] Log - Moreinfo pop up window is displayed and Pilates Teacher title in popup window is displayed and validated successfully
+[INFO ] 2022-09-28 14:04:24.204 [main] Log - full job description displayed successfully: We are hiring enthusiastic, professional Pilates teachers with a current comprehensive Reformer Pilates certification. Experience teaching group Reformer workouts, including apparatus such as EXO® chair, spring board and TRX® equipment is required. Part-time hours and blocks of hours are available. Pilates by LAF offers group Reformer-based workouts, and opportunities to teach private and semi-private sessions. If you are interested in a full-time Sales and Management position as a Pilates Director, you receive additional compensation opportunities and training as well.
+[INFO ] 2022-09-28 14:04:24.477 [main] Log - Pilates Teacher image in popup window is displayed successfully
+[INFO ] 2022-09-28 14:04:24.604 [main] Log - Close button is displayed Successfully in popup window
+[INFO ] 2022-09-28 14:04:28.927 [main] Log - Successfully clicked on close button in popup window
+[INFO ] 2022-09-28 14:04:48.625 [main] Log - *** Test Suite TC_13_Validate_moreinfo_popupwindow_of_Pilates_TP ending ***
+[INFO ] 2022-09-28 14:04:48.625 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:04:48.628 [main] Log - *** Running test method TC_14_Validate_moreinfo_popupwindow_of_HCP...
+[INFO ] 2022-09-28 14:04:49.404 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:04:49.542 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:05:00.899 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:05:01.366 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:05:06.766 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:05:06.973 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:05:07.133 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:05:07.266 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:05:07.428 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:05:11.939 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:05:12.816 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:05:12.960 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:05:12.972 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:05:12.982 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:05:13.002 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:05:13.022 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:05:13.043 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:05:13.054 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:05:13.178 [main] Log - Hiit coach  image is displayed successfully
+[INFO ] 2022-09-28 14:05:13.319 [main] Log - Hiit coach job title is displayed and validated successfully: HIIT Coach
+[INFO ] 2022-09-28 14:05:13.465 [main] Log - Hiit coach job details displayed and validated successfully: Our HIIT Coaches bring intensity, passion and expertise
+[INFO ] 2022-09-28 14:05:13.603 [main] Log - Hiit coach moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:05:14.617 [main] Log - HIIT Coach Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:05:14.618 [main] Log - Hiit coach apply here button displayed Successfully
+[INFO ] 2022-09-28 14:05:18.793 [main] Log - Successfully clicked on Hiit coach moreinfo link
+[INFO ] 2022-09-28 14:05:18.939 [main] Log - Moreinfo pop up window is displayed and HIIT Coach title in popup window is displayed and validated successfully
+[INFO ] 2022-09-28 14:05:19.092 [main] Log - full job description displayed and validated successfully: Our HIIT Coaches bring intensity, passion and expertise to our newest club offering and Platinum brand, HIIT by LAF - a 50-minute high-tech, high-energy interval training workout comprised of a variety of functional exercises, core training, cardio interval training, and strength. HIIT Coaches deliver an amazing workout while motivating members to achieve their fitness goals. Coaches must hold a nationally recognized Personal Training Certification and/or Group Fitness Certification. Qualified applicants will receive paid training as part of our program. This is a part-time position. All Coaches receive a complimentary standard club membership.
+[INFO ] 2022-09-28 14:05:19.367 [main] Log - HIIT Coach image in popup window is displayed successfully
+[INFO ] 2022-09-28 14:05:19.494 [main] Log - Close button is displayed Successfully in popup window
+[INFO ] 2022-09-28 14:05:23.803 [main] Log - Successfully clicked on close button in popup window
+[INFO ] 2022-09-28 14:05:43.529 [main] Log - *** Test Suite TC_14_Validate_moreinfo_popupwindow_of_HCP ending ***
+[INFO ] 2022-09-28 14:05:43.529 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:05:43.543 [main] Log - *** Running test method TC_15_Validate_corporate_positions_section...
+[INFO ] 2022-09-28 14:05:44.317 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:05:44.453 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:05:55.714 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:05:56.212 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:06:01.595 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:06:01.806 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:06:01.962 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:06:02.087 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:06:02.248 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:06:06.769 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:06:06.905 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:06:12.453 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:06:12.801 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:06:13.840 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:06:13.840 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:06:13.856 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:06:13.867 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:06:13.887 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:06:13.911 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:06:13.932 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:06:13.952 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:06:13.972 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:06:13.983 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:06:33.753 [main] Log - *** Test Suite TC_15_Validate_corporate_positions_section ending ***
+[INFO ] 2022-09-28 14:06:33.753 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:06:33.756 [main] Log - *** Running test method TC_16_Validate_details_of_Accounting_section...
+[INFO ] 2022-09-28 14:06:34.514 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:06:34.652 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:06:46.103 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:06:46.589 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:06:52.026 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:06:52.236 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:06:52.391 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:06:52.524 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:06:52.671 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:06:57.220 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:06:57.359 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:07:03.076 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:07:03.428 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:07:04.434 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:07:04.434 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:07:04.446 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:07:04.463 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:07:04.485 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:07:04.507 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:07:04.528 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:07:04.547 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:07:04.568 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:07:04.579 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:07:04.701 [main] Log - Accounting image is displayed successfully
+[INFO ] 2022-09-28 14:07:04.856 [main] Log - Accounting title is displayed and validated successfully: Accounting
+[INFO ] 2022-09-28 14:07:05.004 [main] Log - Accounting short description is displayed and validated successfully: Our Accounting team provides a wide variety of services to support the Company through...
+[INFO ] 2022-09-28 14:07:05.137 [main] Log - Accounting moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:07:24.839 [main] Log - *** Test Suite TC_16_Validate_details_of_Accounting_section ending ***
+[INFO ] 2022-09-28 14:07:24.840 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:07:24.842 [main] Log - *** Running test method TC_17_Validate_details_of_Finance_and_T_section...
+[INFO ] 2022-09-28 14:07:25.599 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:07:25.736 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:07:37.008 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:07:37.482 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:07:42.889 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:07:43.095 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:07:43.248 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:07:43.387 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:07:43.544 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:07:48.077 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:07:48.216 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:07:53.786 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:07:54.149 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:07:55.241 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:07:55.241 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:07:55.253 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:07:55.267 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:07:55.287 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:07:55.309 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:07:55.329 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:07:55.349 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:07:55.371 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:07:55.388 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:07:55.513 [main] Log - Finance and Treasury image is displayed successfully
+[INFO ] 2022-09-28 14:07:55.655 [main] Log - Finance and Treasury title is displayed and validated successfully: Finance and Treasury
+[INFO ] 2022-09-28 14:07:55.801 [main] Log - Finance and Treasury short description is displayed and validated successfully: Our Finance team provides vital planning and analysis information to support the operations...
+[INFO ] 2022-09-28 14:07:55.924 [main] Log - Finance and Treasury moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:08:15.633 [main] Log - *** Test Suite TC_17_Validate_details_of_Finance_and_T_section ending ***
+[INFO ] 2022-09-28 14:08:15.633 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:08:15.637 [main] Log - *** Running test method TC_18_Validate_details_of_HR_section...
+[INFO ] 2022-09-28 14:08:16.427 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:08:16.566 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:08:27.978 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:08:28.465 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:08:33.881 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:08:34.092 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:08:34.249 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:08:34.372 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:08:34.534 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:08:39.069 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:08:39.207 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:08:44.817 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:08:45.180 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:08:46.253 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:08:46.253 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:08:46.264 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:08:46.277 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:08:46.298 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:08:46.319 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:08:46.338 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:08:46.358 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:08:46.380 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:08:46.390 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:08:46.534 [main] Log - Human Resources image is displayed successfully
+[INFO ] 2022-09-28 14:08:46.674 [main] Log - Human Resources title is displayed and validated successfully: Human Resources
+[INFO ] 2022-09-28 14:08:46.820 [main] Log - Human Resources short description is displayed and validated successfully: Our Human Resource professionals support our field and corporate managers by aligning...
+[INFO ] 2022-09-28 14:08:46.956 [main] Log - Human Resources moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:09:06.695 [main] Log - *** Test Suite TC_18_Validate_details_of_HR_section ending ***
+[INFO ] 2022-09-28 14:09:06.695 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:09:06.697 [main] Log - *** Running test method TC_19_Validate_details_of_IT_section...
+[INFO ] 2022-09-28 14:09:07.442 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:09:07.583 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:09:18.740 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:09:19.317 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:09:24.714 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:09:24.924 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:09:25.082 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:09:25.207 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:09:25.367 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:09:29.892 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:09:30.030 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:09:35.607 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:09:35.956 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:09:37.024 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:09:37.024 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:09:37.035 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:09:37.046 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:09:37.070 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:09:37.091 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:09:37.111 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:09:37.131 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:09:37.153 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:09:37.164 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:09:37.303 [main] Log - Information Technology image is displayed successfully
+[INFO ] 2022-09-28 14:09:37.457 [main] Log - Information Technology title is displayed and validated successfully: Information Technology
+[INFO ] 2022-09-28 14:09:37.623 [main] Log - Information Technology short description is displayed and validated successfully: Our IT professionals deliver outstanding tools based on almost every technology available...
+[INFO ] 2022-09-28 14:09:37.759 [main] Log - Information Technology moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:09:57.459 [main] Log - *** Test Suite TC_19_Validate_details_of_IT_section ending ***
+[INFO ] 2022-09-28 14:09:57.459 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:09:57.463 [main] Log - *** Running test method TC_20_Validate_details_of_Legal_and_A_section...
+[INFO ] 2022-09-28 14:09:58.211 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:09:58.349 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:10:09.383 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:10:09.916 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:10:15.335 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:10:15.543 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:10:15.698 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:10:15.823 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:10:15.970 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:10:20.502 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:10:20.638 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:10:26.178 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:10:26.538 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:10:27.568 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:10:27.568 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:10:27.579 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:10:27.590 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:10:27.611 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:10:27.634 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:10:27.654 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:10:27.675 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:10:27.709 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:10:27.730 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:10:27.881 [main] Log - Legal and Administration image is displayed successfully
+[INFO ] 2022-09-28 14:10:28.022 [main] Log - Legal and Administration title is displayed and validated successfully: Legal and Administration
+[INFO ] 2022-09-28 14:10:28.173 [main] Log - Legal and Administration short description is displayed and validated successfully: Our legal and Administration team members provide invaluable support to the Company’s support...
+[INFO ] 2022-09-28 14:10:28.304 [main] Log - Legal and Administration moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:10:48.021 [main] Log - *** Test Suite TC_20_Validate_details_of_Legal_and_A_section ending ***
+[INFO ] 2022-09-28 14:10:48.021 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:10:48.024 [main] Log - *** Running test method TC_21_Validate_details_of_RealEstate_and_D_section...
+[INFO ] 2022-09-28 14:10:48.800 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:10:48.934 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:11:00.203 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:11:00.685 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:11:06.120 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:11:06.328 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:11:06.482 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:11:06.621 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:11:06.782 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:11:11.294 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:11:11.430 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:11:17.131 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:11:17.480 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:11:18.497 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:11:18.498 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:11:18.509 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:11:18.525 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:11:18.548 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:11:18.570 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:11:18.592 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:11:18.612 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:11:18.635 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:11:18.652 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:11:18.785 [main] Log - Real Estate and Development image is displayed successfully
+[INFO ] 2022-09-28 14:11:23.024 [main] Log - Real Estate and Development title is displayed and validated successfully: Real Estate and Development
+[INFO ] 2022-09-28 14:11:23.934 [main] Log - Real Estate and Development short description is displayed and validated successfully: Our Real Estate and Development teams are responsible for consistent delivery of...
+[INFO ] 2022-09-28 14:11:24.066 [main] Log - Real Estate and Development moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:11:43.817 [main] Log - *** Test Suite TC_21_Validate_details_of_RealEstate_and_D_section ending ***
+[INFO ] 2022-09-28 14:11:43.817 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:11:43.821 [main] Log - *** Running test method TC_22_Validate_moreinfo_popupwindow_of_Accounting_section...
+[INFO ] 2022-09-28 14:11:44.503 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:11:44.642 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:11:55.911 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:11:56.461 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:12:01.898 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:12:02.112 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:12:02.267 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:12:02.390 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:12:02.538 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:12:07.045 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:12:07.183 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:12:12.798 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:12:13.156 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:12:14.209 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:12:14.209 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:12:14.221 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:12:14.232 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:12:14.255 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:12:14.275 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:12:14.294 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:12:14.314 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:12:14.334 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:12:14.344 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:12:14.477 [main] Log - Accounting image is displayed successfully
+[INFO ] 2022-09-28 14:12:14.618 [main] Log - Accounting title is displayed and validated successfully: Accounting
+[INFO ] 2022-09-28 14:12:14.777 [main] Log - Accounting short description is displayed and validated successfully: Our Accounting team provides a wide variety of services to support the Company through...
+[INFO ] 2022-09-28 14:12:14.917 [main] Log - Accounting moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:12:19.825 [main] Log - Successfully clicked on Accounting moreinfo link
+[INFO ] 2022-09-28 14:12:19.970 [main] Log - Moreinfo pop up window is displayed and Accounting title in popup window is displayed and validated successfully
+[INFO ] 2022-09-28 14:12:20.125 [main] Log - full description displayed and validated successfully: The Fitness International, LLC Accounting team provides essential support to the business through dedication to integrity, personal accountability, and proactive thinking. In addition to providing financial accounting and reporting services, this team also supports accounting policy, payroll, purchasing, construction accounting and corporate taxation for all of our locations in the most efficient and cost-effective manner. You’ll find a wide variety of positions and plenty of opportunities for professional growth. Fitness International, LLC is an equal opportunity employer who recognizes the value of having a diverse workforce. We seek and encourage qualified applicants regardless of gender, ethnicity, or other cultural or physical characteristics.
+[INFO ] 2022-09-28 14:12:20.397 [main] Log - Accounting image in popup window is displayed successfully
+[INFO ] 2022-09-28 14:12:20.524 [main] Log - Close button is displayed Successfully in popup window
+[INFO ] 2022-09-28 14:12:24.837 [main] Log - Successfully clicked on close button in popup window
+[INFO ] 2022-09-28 14:12:44.612 [main] Log - *** Test Suite TC_22_Validate_moreinfo_popupwindow_of_Accounting_section ending ***
+[INFO ] 2022-09-28 14:12:44.612 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:12:44.614 [main] Log - *** Running test method TC_23_Validate_moreinfo_popupwindow_of_Finance_and_T_section...
+[INFO ] 2022-09-28 14:12:45.340 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:12:45.478 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:12:56.710 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:12:57.198 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:13:02.649 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:13:02.858 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:13:03.015 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:13:03.140 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:13:03.287 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:13:07.830 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:13:07.967 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:13:13.553 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:13:13.916 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:13:14.976 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:13:14.976 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:13:14.987 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:13:14.999 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:13:15.020 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:13:15.047 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:13:15.070 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:13:15.095 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:13:15.123 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:13:15.138 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:13:15.276 [main] Log - Finance and Treasury image is displayed successfully
+[INFO ] 2022-09-28 14:13:15.428 [main] Log - Finance and Treasury title is displayed and validated successfully: Finance and Treasury
+[INFO ] 2022-09-28 14:13:15.575 [main] Log - Finance and Treasury short description is displayed and validated successfully: Our Finance team provides vital planning and analysis information to support the operations...
+[INFO ] 2022-09-28 14:13:15.699 [main] Log - Finance and Treasury moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:13:20.661 [main] Log - Successfully clicked on Finance and Treasury moreinfo link
+[INFO ] 2022-09-28 14:13:20.817 [main] Log - Moreinfo pop up window is displayed and Finance and Treasury title in popup window is displayed and validated successfully
+[INFO ] 2022-09-28 14:13:20.959 [main] Log - full description displayed and validated successfully: The Finance team at Fitness International, LLC delivers financial planning, analysis and treasury services company-wide. Our Finance team has the challenging but essential task of managing a detail-oriented discipline inside a rapidly growing and process improvement oriented company. If you think strategically and creatively, you can find many opportunities for professional growth. Fitness International, LLC is an equal opportunity employer who recognizes the value of having a diverse workforce. We seek and encourage qualified applicants regardless of gender, ethnicity, or other cultural or physical characteristics.
+[INFO ] 2022-09-28 14:13:21.234 [main] Log - Finance and Treasury image in popup window is displayed successfully
+[INFO ] 2022-09-28 14:13:21.361 [main] Log - Close button is displayed Successfully in popup window
+[INFO ] 2022-09-28 14:13:25.665 [main] Log - Successfully clicked on close button in popup window
+[INFO ] 2022-09-28 14:13:45.395 [main] Log - *** Test Suite TC_23_Validate_moreinfo_popupwindow_of_Finance_and_T_section ending ***
+[INFO ] 2022-09-28 14:13:45.395 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:13:45.398 [main] Log - *** Running test method TC_24_Validate_moreinfo_popupwindow_of_Human_R_section...
+[INFO ] 2022-09-28 14:13:46.117 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:13:46.255 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:13:57.793 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:13:58.360 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:14:03.805 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:14:04.013 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:14:04.169 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:14:04.304 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:14:04.466 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:14:08.988 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:14:09.125 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:14:14.650 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:14:15.014 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:14:16.062 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:14:16.062 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:14:16.089 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:14:16.102 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:14:16.126 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:14:16.146 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:14:16.166 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:14:16.186 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:14:16.206 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:14:16.218 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:14:16.347 [main] Log - Human Resources image is displayed successfully
+[INFO ] 2022-09-28 14:14:16.484 [main] Log - Human Resources title is displayed and validated successfully: Human Resources
+[INFO ] 2022-09-28 14:14:16.633 [main] Log - Human Resources short description is displayed and validated successfully: Our Human Resource professionals support our field and corporate managers by aligning...
+[INFO ] 2022-09-28 14:14:16.768 [main] Log - Human Resources moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:14:21.674 [main] Log - Successfully clicked on Human Resources moreinfo link
+[INFO ] 2022-09-28 14:14:21.833 [main] Log - Moreinfo pop up window is displayed and Human Resources title in popup window is displayed and validated successfully
+[INFO ] 2022-09-28 14:14:21.976 [main] Log - full description displayed and validated successfully: Our people are our greatest asset. Human Resource professionals at Fitness International, LLC are focused on aligning human resource strategies to our overall business plans. This team is dedicated to supporting our field management teams’ recruiting and management efforts (including employee relations) as well as administering our hiring, compensation, certification, benefits programs and compliance reporting in a fast-paced energetic environment. Fitness International, LLC is an equal opportunity employer who recognizes the value of having a diverse workforce. We seek and encourage qualified applicants regardless of gender, ethnicity, or other cultural or physical characteristics.
+[INFO ] 2022-09-28 14:14:22.247 [main] Log - Human Resources image in popup window is displayed successfully
+[INFO ] 2022-09-28 14:14:22.375 [main] Log - Close button is displayed Successfully in popup window
+[INFO ] 2022-09-28 14:14:26.685 [main] Log - Successfully clicked on close button in popup window
+[INFO ] 2022-09-28 14:14:46.455 [main] Log - *** Test Suite TC_24_Validate_moreinfo_popupwindow_of_Human_R_section ending ***
+[INFO ] 2022-09-28 14:14:46.455 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:14:46.457 [main] Log - *** Running test method TC_25_Validate_moreinfo_popupwindow_of_IT_section...
+[INFO ] 2022-09-28 14:14:47.206 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:14:47.343 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:14:58.472 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:14:58.970 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:15:04.330 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:15:04.542 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:15:04.694 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:15:04.820 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:15:04.988 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:15:09.525 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:15:09.664 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:15:15.240 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:15:15.601 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:15:16.645 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:15:16.645 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:15:16.674 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:15:16.685 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:15:16.705 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:15:16.726 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:15:16.749 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:15:16.769 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:15:16.790 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:15:16.800 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:15:16.927 [main] Log - Information Technology image is displayed successfully
+[INFO ] 2022-09-28 14:15:17.066 [main] Log - Information Technology title is displayed and validated successfully: Information Technology
+[INFO ] 2022-09-28 14:15:17.217 [main] Log - Information Technology short description is displayed and validated successfully: Our IT professionals deliver outstanding tools based on almost every technology available...
+[INFO ] 2022-09-28 14:15:17.341 [main] Log - Information Technology moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:15:22.269 [main] Log - Successfully clicked on Information Technology moreinfo link
+[INFO ] 2022-09-28 14:15:22.415 [main] Log - Moreinfo pop up window is displayed and Information Technology title in popup window is displayed and validated successfully
+[INFO ] 2022-09-28 14:15:22.567 [main] Log - full description displayed and validated successfully: Information Technology is an essential asset at Fitness International, LLC. We use technology effectively in every aspect of the business. Our technology platform is based primarily on Microsoft products. If you are proficient in one or more of the latest versions of .NET development, SharePoint, Windows Server, Windows OS, Exchange, SQL Server, Lync, the entire Microsoft business intelligence stack, Biztalk, or Dynamics Great Plains and you enjoy applying technology to real business opportunities as part of an exceptional information technology team, then this could be the place for you. Fitness International, LLC is an equal opportunity employer who recognizes the value of having a diverse workforce. We seek and encourage qualified applicants regardless of gender, ethnicity, or other cultural or physical characteristics.
+[INFO ] 2022-09-28 14:15:22.845 [main] Log - Information Technology image in popup window is displayed successfully
+[INFO ] 2022-09-28 14:15:22.973 [main] Log - Close button is displayed Successfully in popup window
+[INFO ] 2022-09-28 14:15:27.279 [main] Log - Successfully clicked on close button in popup window
+[INFO ] 2022-09-28 14:15:47.008 [main] Log - *** Test Suite TC_25_Validate_moreinfo_popupwindow_of_IT_section ending ***
+[INFO ] 2022-09-28 14:15:47.008 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:15:47.011 [main] Log - *** Running test method TC_26_Validate_moreinfo_popupwindow_of_Legal_and_A_section...
+[INFO ] 2022-09-28 14:15:47.766 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:15:47.901 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:15:59.060 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:15:59.544 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:16:05.283 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:16:05.496 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:16:05.653 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:16:05.789 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:16:05.947 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:16:10.481 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:16:10.621 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:16:16.229 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:16:16.591 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:16:17.628 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:16:17.628 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:16:17.639 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:16:17.649 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:16:17.670 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:16:17.695 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:16:17.715 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:16:17.735 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:16:17.755 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:16:17.766 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:16:17.896 [main] Log - Legal and Administration image is displayed successfully
+[INFO ] 2022-09-28 14:16:18.048 [main] Log - Legal and Administration title is displayed and validated successfully: Legal and Administration
+[INFO ] 2022-09-28 14:16:18.195 [main] Log - Legal and Administration short description is displayed and validated successfully: Our legal and Administration team members provide invaluable support to the Company’s support...
+[INFO ] 2022-09-28 14:16:18.332 [main] Log - Legal and Administration moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:16:23.303 [main] Log - Successfully clicked on Legal and Administration moreinfo link
+[INFO ] 2022-09-28 14:16:23.461 [main] Log - Moreinfo pop up window is displayed and Legal and Administration title in popup window is displayed and validated successfully
+[INFO ] 2022-09-28 14:16:23.617 [main] Log - full description displayed and validated successfully: Our legal and administrative professionals collaborate with each of Fitness International, LLC’s support and delivery teams to provide a wide range of legal, lease, marketing, compliance and administrative services aimed at protecting the Company’s assets, supporting growth and assessing regulatory requirements in an ever changing environment. Professionals capable of building strong relationships with internal and external clients can provide invaluable support to meet the Company’s overall business plans. Fitness International, LLC is an equal opportunity employer who recognizes the value of having a diverse workforce. We seek and encourage qualified applicants regardless of gender, ethnicity, or other cultural or physical characteristics.
+[INFO ] 2022-09-28 14:16:23.893 [main] Log - Legal and Administration image in popup window is displayed successfully
+[INFO ] 2022-09-28 14:16:24.019 [main] Log - Close button is displayed Successfully in popup window
+[INFO ] 2022-09-28 14:16:28.324 [main] Log - Successfully clicked on close button in popup window
+[INFO ] 2022-09-28 14:16:48.088 [main] Log - *** Test Suite TC_26_Validate_moreinfo_popupwindow_of_Legal_and_A_section ending ***
+[INFO ] 2022-09-28 14:16:48.089 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:16:48.091 [main] Log - *** Running test method TC_27_Validate_moreinfo_popupwindow_of_RE_and_D_section...
+[INFO ] 2022-09-28 14:16:48.850 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:16:48.989 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:17:01.147 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:17:01.617 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:17:07.526 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:17:07.734 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:17:07.885 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:17:08.009 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:17:08.155 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:17:12.681 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:17:12.819 [main] Log - By defaut corporate Positions is not selected
+[INFO ] 2022-09-28 14:17:18.329 [main] Log - corporate Positions is selected
+[INFO ] 2022-09-28 14:17:18.711 [main] Log - corporate Positions selected and the description is displayed and validated successfully: Corporate Positions are located in Irvine, California.
+[INFO ] 2022-09-28 14:17:19.741 [main] Log - Apply Here element is validated successfully
+[INFO ] 2022-09-28 14:17:19.741 [main] Log - Apply here button is displayed successfully
+[INFO ] 2022-09-28 14:17:19.752 [main] Log - 6 corporate Positions displayed
+[INFO ] 2022-09-28 14:17:19.774 [main] Log - Corporate Positions team Accounting is displayed and validated successfully
+[INFO ] 2022-09-28 14:17:19.804 [main] Log - Corporate Positions team Finance and Treasury is displayed and validated successfully
+[INFO ] 2022-09-28 14:17:19.824 [main] Log - Corporate Positions team Human Resources is displayed and validated successfully
+[INFO ] 2022-09-28 14:17:19.845 [main] Log - Corporate Positions team Information Technology is displayed and validated successfully
+[INFO ] 2022-09-28 14:17:19.865 [main] Log - Corporate Positions team Legal and Administration is displayed and validated successfully
+[INFO ] 2022-09-28 14:17:19.884 [main] Log - Corporate Positions team Real Estate and Development is displayed and validated successfully
+[INFO ] 2022-09-28 14:17:19.901 [main] Log - All Corporate Positions teams are displayed and validated successfully
+[INFO ] 2022-09-28 14:17:20.040 [main] Log - Real Estate and Development image is displayed successfully
+[INFO ] 2022-09-28 14:17:24.281 [main] Log - Real Estate and Development title is displayed and validated successfully: Real Estate and Development
+[INFO ] 2022-09-28 14:17:25.206 [main] Log - Real Estate and Development short description is displayed and validated successfully: Our Real Estate and Development teams are responsible for consistent delivery of...
+[INFO ] 2022-09-28 14:17:25.345 [main] Log - Real Estate and Development moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:17:30.324 [main] Log - Successfully clicked on Real Estate and Development moreinfo link
+[INFO ] 2022-09-28 14:17:30.482 [main] Log - Moreinfo pop up window is displayed and Real Estate and Development title in popup window is displayed and validated successfully
+[INFO ] 2022-09-28 14:17:30.628 [main] Log - full description displayed and validated successfully: Today, our state-of-the-art clubs span the continent and we’re still expanding. Our strong and successful growth stems from our commitment to understanding and meeting the distinct needs of each community we serve. You can work with the teams that contribute to the real estate, design, construction, and maintenance of all current and future club locations. Fitness International, LLC is an equal opportunity employer who recognizes the value of having a diverse workforce. We seek and encourage qualified applicants regardless of gender, ethnicity, or other cultural or physical characteristics.
+[INFO ] 2022-09-28 14:17:30.895 [main] Log - Real Estate and Development image in popup window is displayed successfully
+[INFO ] 2022-09-28 14:17:31.020 [main] Log - Close button is displayed Successfully in popup window
+[INFO ] 2022-09-28 14:17:35.335 [main] Log - Successfully clicked on close button in popup window
+[INFO ] 2022-09-28 14:17:55.030 [main] Log - *** Test Suite TC_27_Validate_moreinfo_popupwindow_of_RE_and_D_section ending ***
+[INFO ] 2022-09-28 14:17:55.030 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:17:55.032 [main] Log - *** Running test method TC_28_Validate_GF_applyhere_button...
+[INFO ] 2022-09-28 14:17:55.784 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:17:55.934 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:18:08.339 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:18:08.812 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:18:14.520 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:18:14.732 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:18:16.581 [main] Log - Group Fitness Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:18:16.582 [main] Log - Group Fitness apply here button displayed Successfully
+[INFO ] 2022-09-28 14:18:23.300 [main] Log - Successfully clicked on Group Fitness apply here button displayed 
+[INFO ] 2022-09-28 14:18:23.510 [main] Log - Successfully navigated to Submit Application page: LA Fitness | Submit Application
+[INFO ] 2022-09-28 14:18:43.367 [main] Log - *** Test Suite TC_28_Validate_GF_applyhere_button ending ***
+[INFO ] 2022-09-28 14:18:43.367 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:18:43.369 [main] Log - *** Running test method TC_29_Validate_Personal_T_applyhere_button...
+[INFO ] 2022-09-28 14:18:44.139 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:18:44.278 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:18:56.286 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:18:56.757 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:19:02.632 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:19:02.842 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:19:04.630 [main] Log - Personal Trainer Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:19:04.630 [main] Log - Personal Trainer apply here button displayed Successfully
+[INFO ] 2022-09-28 14:19:09.533 [main] Log - Successfully clicked on Personal Trainer apply here button displayed 
+[INFO ] 2022-09-28 14:19:09.741 [main] Log - Successfully navigated to Submit Application page: LA Fitness | Submit Application
+[INFO ] 2022-09-28 14:19:29.642 [main] Log - *** Test Suite TC_29_Validate_Personal_T_applyhere_button ending ***
+[INFO ] 2022-09-28 14:19:29.643 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:19:29.645 [main] Log - *** Running test method TC_30_Validate_Pilates_T_applyhere_button...
+[INFO ] 2022-09-28 14:19:30.405 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:19:30.543 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:19:42.454 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:19:42.930 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:19:48.712 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:19:48.920 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:19:50.729 [main] Log - Personal Trainer Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:19:50.729 [main] Log - Personal Trainer apply here button displayed Successfully
+[INFO ] 2022-09-28 14:19:55.758 [main] Log - Successfully clicked on Personal Trainer apply here button displayed 
+[INFO ] 2022-09-28 14:19:55.967 [main] Log - Successfully navigated to Submit Application page: LA Fitness | Submit Application
+[INFO ] 2022-09-28 14:20:15.841 [main] Log - *** Test Suite TC_30_Validate_Pilates_T_applyhere_button ending ***
+[INFO ] 2022-09-28 14:20:15.841 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:20:15.844 [main] Log - *** Running test method TC_31_Validate_HIIT_C_applyhere_button...
+[INFO ] 2022-09-28 14:20:16.591 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:20:16.738 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:20:28.195 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:20:28.772 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:20:34.428 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:20:34.640 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:20:36.442 [main] Log - HIIT Coach Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:20:36.442 [main] Log - HIIT Coach apply here button displayed Successfully
+[INFO ] 2022-09-28 14:20:41.465 [main] Log - Successfully clicked on HIIT Coach apply here button displayed 
+[INFO ] 2022-09-28 14:20:41.674 [main] Log - Successfully navigated to Submit Application page: LA Fitness | Submit Application
+[INFO ] 2022-09-28 14:21:01.543 [main] Log - *** Test Suite TC_31_Validate_HIIT_C_applyhere_button ending ***
+[INFO ] 2022-09-28 14:21:01.543 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:21:01.545 [main] Log - *** Running test method TC_32_Validate_applyhere_button_followingpos_text...
+[INFO ] 2022-09-28 14:21:02.235 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:21:02.375 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:21:13.764 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:21:14.299 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:21:19.957 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:21:20.170 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:21:20.325 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:21:20.448 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:21:20.595 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:21:25.117 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:21:26.006 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:21:26.168 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:21:26.179 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:21:26.189 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:21:26.209 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:21:26.229 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:21:26.249 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:21:26.258 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:21:27.305 [main] Log - For the Following Positions text is validated successfully
+[INFO ] 2022-09-28 14:21:28.194 [main] Log - Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:21:28.195 [main] Log - Apply here button displayed Successfully
+[INFO ] 2022-09-28 14:21:48.030 [main] Log - *** Test Suite TC_32_Validate_applyhere_button_followingpos_text ending ***
+[INFO ] 2022-09-28 14:21:48.031 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:21:48.035 [main] Log - *** Running test method TC_33_Validate_details_of_General_Manager...
+[INFO ] 2022-09-28 14:21:48.776 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:21:48.916 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:22:00.362 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:22:00.944 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:22:06.634 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:22:06.848 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:22:07.001 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:22:07.137 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:22:07.296 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:22:11.796 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:22:12.668 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:22:12.824 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:22:12.835 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:22:12.847 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:22:12.867 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:22:12.888 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:22:12.908 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:22:12.919 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:22:13.952 [main] Log - For the Following Positions text is validated successfully
+[INFO ] 2022-09-28 14:22:14.844 [main] Log - Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:22:14.844 [main] Log - Apply here button displayed Successfully
+[INFO ] 2022-09-28 14:22:15.858 [main] Log - General_Manager job image is displayed successfully
+[INFO ] 2022-09-28 14:22:16.020 [main] Log - General_Manager title is displayed and validated successfully: General Manager
+[INFO ] 2022-09-28 14:22:16.176 [main] Log - General_Manager short description is displayed and validated successfully: The role of General Manager is crucial to the success of our business. They are...
+[INFO ] 2022-09-28 14:22:16.296 [main] Log - General_Manager moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:22:36.073 [main] Log - *** Test Suite TC_33_Validate_details_of_General_Manager ending ***
+[INFO ] 2022-09-28 14:22:36.073 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:22:36.076 [main] Log - *** Running test method TC_34_Validate_details_of_Operations_Manager...
+[INFO ] 2022-09-28 14:22:36.753 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:22:36.891 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:22:48.427 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:22:49.076 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:22:54.769 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:22:54.978 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:22:55.132 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:22:55.268 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:22:55.414 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:22:59.945 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:23:00.837 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:23:00.981 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:23:00.991 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:23:01.001 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:23:01.022 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:23:01.042 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:23:01.062 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:23:01.074 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:23:02.124 [main] Log - For the Following Positions text is validated successfully
+[INFO ] 2022-09-28 14:23:03.030 [main] Log - Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:23:03.031 [main] Log - Apply here button displayed Successfully
+[INFO ] 2022-09-28 14:23:04.079 [main] Log - Operation Manager job image is displayed successfully
+[INFO ] 2022-09-28 14:23:04.238 [main] Log - Operation Manager title is displayed and validated successfully: Operations Manager
+[INFO ] 2022-09-28 14:23:04.393 [main] Log - Operation Manager short description is displayed and validated successfully: The Operations Managers are dedicated to making the fitness experience...
+[INFO ] 2022-09-28 14:23:04.516 [main] Log - Operation Manager moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:23:24.251 [main] Log - *** Test Suite TC_34_Validate_details_of_Operations_Manager ending ***
+[INFO ] 2022-09-28 14:23:24.251 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:23:24.252 [main] Log - *** Running test method TC_35_Validate_details_of_Personal_TD...
+[INFO ] 2022-09-28 14:23:25.035 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:23:25.190 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:23:36.902 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:23:37.386 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:23:42.834 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:23:43.042 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:23:43.197 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:23:43.332 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:23:43.490 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:23:48.023 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:23:48.904 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:23:49.048 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:23:49.059 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:23:49.070 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:23:49.090 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:23:49.111 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:23:49.131 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:23:49.142 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:23:50.188 [main] Log - For the Following Positions text is validated successfully
+[INFO ] 2022-09-28 14:23:51.078 [main] Log - Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:23:51.078 [main] Log - Apply here button displayed Successfully
+[INFO ] 2022-09-28 14:23:52.118 [main] Log - Personal Training Director job image is displayed successfully
+[INFO ] 2022-09-28 14:23:52.278 [main] Log - Personal Training Director title is displayed and validated successfully: Personal Training Director
+[INFO ] 2022-09-28 14:23:52.433 [main] Log - Personal Training Director short description is displayed and validated successfully: The mission of the Pro Results Personal Training department is to take every single...
+[INFO ] 2022-09-28 14:23:52.553 [main] Log - Personal Training Director moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:24:12.335 [main] Log - *** Test Suite TC_35_Validate_details_of_Personal_TD ending ***
+[INFO ] 2022-09-28 14:24:12.335 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:24:12.338 [main] Log - *** Running test method TC_36_Validate_details_of_Membership_Counselor...
+[INFO ] 2022-09-28 14:24:13.085 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:24:13.225 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:24:24.666 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:24:25.193 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:24:30.553 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:24:30.760 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:24:30.912 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:24:31.039 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:24:31.187 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:24:35.706 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:24:36.591 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:24:36.732 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:24:36.743 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:24:36.753 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:24:36.774 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:24:36.796 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:24:36.818 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:24:36.828 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:24:37.860 [main] Log - For the Following Positions text is validated successfully
+[INFO ] 2022-09-28 14:24:38.745 [main] Log - Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:24:38.745 [main] Log - Apply here button displayed Successfully
+[INFO ] 2022-09-28 14:24:39.755 [main] Log - Membership Counselorjob image is displayed successfully
+[INFO ] 2022-09-28 14:24:39.902 [main] Log - Membership Counselor title is displayed and validated successfully: Membership Counselor
+[INFO ] 2022-09-28 14:24:40.056 [main] Log - Membership Counselor short description is displayed and validated successfully: We look for people who are passionate about health and fitness to present...
+[INFO ] 2022-09-28 14:24:40.178 [main] Log - Membership Counselor moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:24:59.875 [main] Log - *** Test Suite TC_36_Validate_details_of_Membership_Counselor ending ***
+[INFO ] 2022-09-28 14:24:59.875 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:24:59.878 [main] Log - *** Running test method TC_37_Validate_details_of_Personal_TMC...
+[INFO ] 2022-09-28 14:25:00.638 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:25:00.775 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:25:12.474 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:25:12.958 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:25:18.396 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:25:18.607 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:25:18.759 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:25:18.882 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:25:19.028 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:25:23.558 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:25:24.441 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:25:24.585 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:25:24.596 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:25:24.607 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:25:24.626 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:25:24.646 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:25:24.666 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:25:24.676 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:25:25.692 [main] Log - For the Following Positions text is validated successfully
+[INFO ] 2022-09-28 14:25:26.582 [main] Log - Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:25:26.582 [main] Log - Apply here button displayed Successfully
+[INFO ] 2022-09-28 14:25:27.609 [main] Log - Personal Training Membership Counselor job image is displayed successfully
+[INFO ] 2022-09-28 14:25:27.769 [main] Log - Personal Training Membership Counselor title is displayed and validated successfully: Personal Training Membership Counselor
+[INFO ] 2022-09-28 14:25:27.924 [main] Log - Personal Training Membership Counselor short description is displayed and validated successfully: Our ProResults training staff boasts some of the...
+[INFO ] 2022-09-28 14:25:28.046 [main] Log - Personal Training Membership Counselor moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:25:47.773 [main] Log - *** Test Suite TC_37_Validate_details_of_Personal_TMC ending ***
+[INFO ] 2022-09-28 14:25:47.773 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:25:47.775 [main] Log - *** Running test method TC_38_Validate_details_of_Club_Staff...
+[INFO ] 2022-09-28 14:25:48.915 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:25:49.053 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:26:00.811 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:26:01.280 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:26:06.678 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:26:06.888 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:26:07.041 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:26:07.165 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:26:07.311 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:26:11.818 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:26:12.695 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:26:12.841 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:26:12.853 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:26:12.864 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:26:12.887 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:26:12.909 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:26:12.928 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:26:12.939 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:26:13.997 [main] Log - For the Following Positions text is validated successfully
+[INFO ] 2022-09-28 14:26:14.886 [main] Log - Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:26:14.886 [main] Log - Apply here button displayed Successfully
+[INFO ] 2022-09-28 14:26:15.912 [main] Log - Club Staff job image is displayed successfully
+[INFO ] 2022-09-28 14:26:16.073 [main] Log - Club Staff title is displayed and validated successfully: Club Staff
+[INFO ] 2022-09-28 14:26:16.230 [main] Log - Club Staff short description is displayed and validated successfully: These employees are the face of the club! They are who members and guests...
+[INFO ] 2022-09-28 14:26:16.364 [main] Log - Club Staff moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:26:36.219 [main] Log - *** Test Suite TC_38_Validate_details_of_Club_Staff ending ***
+[INFO ] 2022-09-28 14:26:36.219 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:26:36.221 [main] Log - *** Running test method TC_39_Validate_details_of_League_SD...
+[INFO ] 2022-09-28 14:26:36.862 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:26:36.996 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:26:50.652 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:26:51.232 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:26:56.769 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:26:56.979 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:26:57.130 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:26:57.254 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:26:57.399 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:27:01.921 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:27:02.805 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:27:02.952 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:27:02.963 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:27:02.973 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:27:02.993 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:27:03.012 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:27:03.033 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:27:03.043 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:27:04.075 [main] Log - For the Following Positions text is validated successfully
+[INFO ] 2022-09-28 14:27:04.962 [main] Log - Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:27:04.962 [main] Log - Apply here button displayed Successfully
+[INFO ] 2022-09-28 14:27:05.988 [main] Log - League Sports Director job image is displayed successfully
+[INFO ] 2022-09-28 14:27:06.138 [main] Log - League Sports Director title is displayed and validated successfully: League Sports Director
+[INFO ] 2022-09-28 14:27:06.290 [main] Log - League Sports Director short description is displayed and validated successfully: League Sports Directors have an interest in organized sports and are highly motivated...
+[INFO ] 2022-09-28 14:27:06.424 [main] Log - League Sports Director moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:27:26.168 [main] Log - *** Test Suite TC_39_Validate_details_of_League_SD ending ***
+[INFO ] 2022-09-28 14:27:26.169 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:27:26.171 [main] Log - *** Running test method TC_40_Validate_details_of_Equipment_Tech...
+[INFO ] 2022-09-28 14:27:26.964 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:27:27.103 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:27:38.689 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:27:39.204 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:27:44.608 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:27:44.819 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:27:44.975 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:27:45.111 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:27:45.257 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:27:49.770 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:27:50.656 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:27:50.801 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:27:50.812 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:27:50.823 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:27:50.844 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:27:50.865 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:27:50.884 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:27:50.894 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:27:51.928 [main] Log - For the Following Positions text is validated successfully
+[INFO ] 2022-09-28 14:27:52.817 [main] Log - Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:27:52.817 [main] Log - Apply here button displayed Successfully
+[INFO ] 2022-09-28 14:27:53.833 [main] Log - Equipment Tech job image is displayed successfully
+[INFO ] 2022-09-28 14:27:53.995 [main] Log - Equipment Tech title is displayed and validated successfully: Equipment Tech
+[INFO ] 2022-09-28 14:27:54.153 [main] Log - Equipment Tech short description is displayed and validated successfully: Successful Equipment Techs possess strong troubleshooting...
+[INFO ] 2022-09-28 14:27:54.273 [main] Log - Equipment Tech moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:28:14.035 [main] Log - *** Test Suite TC_40_Validate_details_of_Equipment_Tech ending ***
+[INFO ] 2022-09-28 14:28:14.035 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:28:14.038 [main] Log - *** Running test method TC_41_Validate_details_of_HVAC_Building_M...
+[INFO ] 2022-09-28 14:28:14.681 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:28:14.820 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:28:26.419 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:28:26.980 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:28:32.283 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:28:32.493 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:28:32.646 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:28:32.770 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:28:32.955 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:28:37.483 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:28:38.373 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:28:38.517 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:28:38.529 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:28:38.539 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:28:38.558 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:28:38.578 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:28:38.597 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:28:38.607 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:28:39.642 [main] Log - For the Following Positions text is validated successfully
+[INFO ] 2022-09-28 14:28:40.526 [main] Log - Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:28:40.526 [main] Log - Apply here button displayed Successfully
+[INFO ] 2022-09-28 14:28:41.567 [main] Log - HVAC/Building Maintenance job image is displayed successfully
+[INFO ] 2022-09-28 14:28:41.712 [main] Log - HVAC/Building Maintenance title is displayed and validated successfully: HVAC/Building Maintenance
+[INFO ] 2022-09-28 14:28:41.866 [main] Log - HVAC/Building Maintenance short description is displayed and validated successfully: Must have experience in at least one of the following specialties: wood...
+[INFO ] 2022-09-28 14:28:41.987 [main] Log - HVAC/Building Maintenance moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:29:01.826 [main] Log - *** Test Suite TC_41_Validate_details_of_HVAC_Building_M ending ***
+[INFO ] 2022-09-28 14:29:01.826 [main] Log - Browser is closed
+[INFO ] 2022-09-28 14:29:01.830 [main] Log - *** Running test method TC_42_Validate_details_of_Pride_Janitor...
+[INFO ] 2022-09-28 14:29:02.480 [main] Log - Chrome browser launched successfully
+[INFO ] 2022-09-28 14:29:02.619 [main] Log - Entered the application url successfully
+[INFO ] 2022-09-28 14:29:14.195 [main] Log - About dropdown displayed successful
+[INFO ] 2022-09-28 14:29:14.659 [main] Log - Career opportunities option is displayed successfully under About dropdown in homepage
+[INFO ] 2022-09-28 14:29:20.057 [main] Log - Successfully clicked on Career opportunities option under About dropdown in homepage
+[INFO ] 2022-09-28 14:29:20.267 [main] Log - Successfully navigated to Fitness Career Opportunities/Employment page: LA Fitness | Gym Jobs | Fitness Employment Opportunities
+[INFO ] 2022-09-28 14:29:20.420 [main] Log - Career Opportunity section successfully displayed in Career opportunities page and Career opportunities text validated 
+[INFO ] 2022-09-28 14:29:20.557 [main] Log - Youtube video is successfully displayed under Career opportunities section
+[INFO ] 2022-09-28 14:29:20.702 [main] Log - Career description paragraph is successfully displayed and validated under Career opportunities section: Want to join a growing, successful company where your talents, initiative and integrity will be rewarded? Then you’ve come to the right place! Fitness International, LLC, is one of the largest and fastest growing club chains in the fitness industry. Not only is it a great place to workout, it’s also a great place to work! We offer competitive pay, benefits and complimentary membership privileges. Plus, you could find yourself working beside some of the top professionals in the industry.
+[INFO ] 2022-09-28 14:29:25.216 [main] Log - Club Positions and corporate positions sections are displayed and validated successfully
+[INFO ] 2022-09-28 14:29:26.106 [main] Log - By defaut Club Positions is selected
+[INFO ] 2022-09-28 14:29:26.247 [main] Log - Club Positions selected and the content is displayed: Club Positions are located throughout the US and Canada.
+[INFO ] 2022-09-28 14:29:26.258 [main] Log - 4 Club Positions displayed
+[INFO ] 2022-09-28 14:29:26.269 [main] Log - Club Positions job Group Fitness is displayed and validated successfully
+[INFO ] 2022-09-28 14:29:26.289 [main] Log - Club Positions job Personal Trainer is displayed and validated successfully
+[INFO ] 2022-09-28 14:29:26.308 [main] Log - Club Positions job Pilates Teacher is displayed and validated successfully
+[INFO ] 2022-09-28 14:29:26.327 [main] Log - Club Positions job HIIT Coach is displayed and validated successfully
+[INFO ] 2022-09-28 14:29:26.338 [main] Log - All Club Positions are displayed and validated successfully
+[INFO ] 2022-09-28 14:29:27.376 [main] Log - For the Following Positions text is validated successfully
+[INFO ] 2022-09-28 14:29:28.266 [main] Log - Apply Here element text is validated successfully
+[INFO ] 2022-09-28 14:29:28.266 [main] Log - Apply here button displayed Successfully
+[INFO ] 2022-09-28 14:29:29.289 [main] Log - Club Pride/Janitor job image is displayed successfully
+[INFO ] 2022-09-28 14:29:29.435 [main] Log - Club Pride/Janitor title is displayed and validated successfully: Club Pride/Janitor
+[INFO ] 2022-09-28 14:29:29.589 [main] Log - Club Pride/Janitor short description is displayed and validated successfully: Our janitorial staff is the backbone of the “Club Pride” everyone shares for...
+[INFO ] 2022-09-28 14:29:29.709 [main] Log - Club Pride/Janitor moreinfo link displayed Successfully
+[INFO ] 2022-09-28 14:29:49.552 [main] Log - *** Test Suite TC_42_Validate_details_of_Pride_Janitor ending ***
+[INFO ] 2022-09-28 14:29:49.552 [main] Log - Browser is closed

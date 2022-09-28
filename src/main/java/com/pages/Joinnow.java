@@ -1,6 +1,7 @@
 package com.pages;
 
 import java.awt.AWTException;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -26,7 +27,13 @@ import net.bytebuddy.description.annotation.AnnotationList.Empty;
 import net.bytebuddy.implementation.bytecode.Throw;
 
 import org.testng.Assert;
+
+
 public class Joinnow extends Base_Class {
+	
+	
+	
+	
 
 	private static By Join_now_button = By.xpath("//div[@class='d-flex align-items-center nav-menu-list']/div/a[@title='JOIN NOW']");
 	private static By Join_now_button_m = By.xpath("//div[@class='w-100 join-now']//a[@title='JOIN NOW']");
@@ -100,7 +107,7 @@ public class Joinnow extends Base_Class {
 	private static By back_button= By.id("ctl00_MainContent_TabRates_ctl00_ctl00_btnBack");
 	private static By back_button_1= By.id("ctl00_MainContent_TabRates_ctl01_ctl00_btnBack");
 	
-	
+
 	private static By clubdetails_yourhome=By.xpath("//body/form[@id='aspnetForm']/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[2]/div[2]/div[1]/div[1]");
 	private static By club_name_and_address_yourhome=By.xpath("//body/form[@id='aspnetForm']/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[2]/div[2]/div[1]/div[1]/span");
 	private static By club_phone_yourhome=By.id("ctl00_MainContent_lnkclubphone");
@@ -197,9 +204,11 @@ public class Joinnow extends Base_Class {
 	private static By mem_agreement = By.id("divAgreement");
 	private static By menu = By.xpath("/html[1]/body[1]/form[1]/div[3]/div[1]/nav[1]/div[4]/div[3]/a[2]/img[1]");
 	
-	public void Validate_joinnow_steps(String Value) throws Exception {
+	
+	
+	public void Joinnow_searchclub_4steps(String Value) throws Exception {
 		
-				if (Value.equalsIgnoreCase("Joinnow_steps")) {
+				if (Value.equalsIgnoreCase("Joinnow_searchclub_4steps")) {
 					
 					click(Join_now_button);
 
@@ -219,9 +228,9 @@ public class Joinnow extends Base_Class {
 			}
 	
 	
-	public void Validate_joinnow_fields(String Value) throws Exception {
+	public void Validate_joinnow_fields_buttons(String Value) throws Exception {
 		
-		if (Value.equalsIgnoreCase("Joinnow_fields")) {
+		if (Value.equalsIgnoreCase("Joinnow_fields_buttons")) {
 			click(Join_now_button);
 			ExtentTestManager.getTest().log(Status.PASS, "Join_now_button clicked successfully");
 			Log.info("Join_now_button clicked successfully");
@@ -336,6 +345,7 @@ public class Joinnow extends Base_Class {
 
 		Log.info("Country dropdown value: "+country.trim()+" is selected successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Country dropdown value: "+country.trim()+"is selected successfully");
+		Thread.sleep(200);
 		Element_isdisplayed(ByStateorprovince_dropdown);
 
 		Log.info("By State or province dropdown field  is displayed successfully");
@@ -346,11 +356,11 @@ public class Joinnow extends Base_Class {
 		 Select select1 = new Select(driver.findElement(ByStateorprovince_dropdown));  
 		 int count=0;
 		 List<WebElement> options = select1.getOptions(); 
-//	
+
 		 
 		  
 		  ArrayList<String> mylist = new ArrayList<String>();
-//		Boolean b=	 mylist.equals(State_values);
+
 			 for(WebElement we:options)  
 			 	{  
 				 
@@ -383,7 +393,7 @@ public class Joinnow extends Base_Class {
 		    {	
 		        Log.info("All values matched successfully in the state dropdown");
 		        ExtentTestManager.getTest().log(Status.PASS, "All values matched successfully in the country dropdown");
-//		        Assert.assertTrue(true);
+
 		     } else 
 		    {	
 		        Log.error("All values not matched successfully in the state dropdown. Expected dropdown list [ "+dropdown_values +" ] Actual dropdown list [ "+res+" ]");
@@ -424,12 +434,9 @@ public class Joinnow extends Base_Class {
 		 Select select1 = new Select(driver.findElement(ByStateorprovince_dropdown));  
 		 int count=0;
 		 List<WebElement> options = select1.getOptions(); 
-		 
-		 
-		 
-		 
+
 		  ArrayList<String> mylist = new ArrayList<String>();
-//		Boolean b=	 mylist.equals(State_values);
+
 		  Thread.sleep(200);
 			 for(WebElement we:options)  
 			 	{  
@@ -459,12 +466,12 @@ public class Joinnow extends Base_Class {
 				  
 			    }	 
 		  
-//		 	} 
+ 
 		   if (count == State_values.length && mylist.size()==State_values.length) 
 		    {	
 		        Log.info("All values matched successfully in the state dropdown");
 		        ExtentTestManager.getTest().log(Status.PASS, "All values matched successfully in the country dropdown");
-//		        Assert.assertTrue(true);
+
 		     } else 
 		    {	
 		        Log.error("All values not matched successfully in the state dropdown. Expected dropdown list [ "+dropdown_values +" ] Actual dropdown list [ "+res+" ]");
@@ -472,9 +479,6 @@ public class Joinnow extends Base_Class {
 		        throw new Exception("All values not matched successfully in the state dropdown");
 		       
 		    }
-		 
-		 
-		 
 
 		 } 
 		Thread.sleep(100);
@@ -512,7 +516,6 @@ public class Joinnow extends Base_Class {
 	 
 		 
 		  ArrayList<String> mylist = new ArrayList<String>();
-//		Boolean b=	 mylist.equals(State_values);
 			 for(WebElement we:options)  
 			 	{  
 				 
@@ -543,16 +546,17 @@ public class Joinnow extends Base_Class {
 				  
 			    }	 
 		  
-//		 	} 
+ 
 		   if (count == State_values.length && mylist.size()==State_values.length) 
 		    {	
 		        Log.info("All values matched successfully in the state dropdown");
 		        ExtentTestManager.getTest().log(Status.PASS, "All values matched successfully in the country dropdown");
-//		        Assert.assertTrue(true);
+
 		     } else 
 		    {	
 		        Log.error("All values not matched successfully in the state dropdown. Expected dropdown list [ "+dropdown_values +" ] Actual dropdown list [ "+res+" ]");
 		        ExtentTestManager.getTest().log(Status.FAIL, "All values not matched successfully in the state dropdown. Expected dropdown list [ "+dropdown_values +" ] Actual dropdown list [ "+res+" ]");
+//		        Assert.assertTrue(false, "All values not matched successfully in the ByState province dropdown");
 		        
 		        throw new Exception("All values not matched successfully in the state dropdown");
 		    }
@@ -589,9 +593,7 @@ public class Joinnow extends Base_Class {
 		 Select select1 = new Select(driver.findElement(ByStateorprovince_dropdown));  
 		 int count=0;
 		 List<WebElement> options = select1.getOptions(); 
-//		 for (WebElement w : options) {
-//			 System.out.print(w.getText()+",");
-//		}
+
 		 for(WebElement we:options)  
 		 	{ 
 
@@ -615,10 +617,12 @@ public class Joinnow extends Base_Class {
 			   Log.info("All values matched successfully in the country dropdown");
 		        
 			   ExtentTestManager.getTest().log(Status.PASS, "All values matched successfully in the ByState province dropdown");
+			   Assert.assertTrue(true);
 		    } else 
 		    {	
 		    	
 		    	Log.error("All values not matched successfully in the country dropdown");
+
 		        throw new Exception("All values not matched successfully in the ByState province dropdown");
 		    }
 		 } 
@@ -665,15 +669,17 @@ public class Joinnow extends Base_Class {
 		 else
 		 {
 			 Log.error(dropdown_values.trim()+" not contains in the results \n"+ (club_result_text));
+
 			 throw new Exception(dropdown_values.trim()+" not contains in the results \n"+ club_result_text);
 		 }
 		 List<WebElement > club_result_rows=driver.findElements(club_list_rows);
+
 		 
 		 int count=0;
 		 for(WebElement we:club_result_rows)  
 		 	{ 
 			 
-//			 Log.info(we.getText());
+
 			 
 			 String[] club_address=we.findElement(clb_address).getText().split(",");
 			  if(club_address[1].contains(dropdown_values.trim()))
@@ -685,32 +691,28 @@ public class Joinnow extends Base_Class {
 		 
 		 if (clb_count == count) 
 		    {	
-			 	Log.info("All the clubs successfully displayed for the state: "+dropdown_values.trim());
-		        ExtentTestManager.getTest().log(Status.PASS, "All the clubs successfully displayed for the state: "+dropdown_values.trim());
+			 	Log.info(dropdown_values.trim()+ " state cotains in the address of all clubs in results");
+		        ExtentTestManager.getTest().log(Status.PASS, dropdown_values.trim()+ " state cotains in the address of all clubs in results");
+			   Assert.assertTrue(true);
 		     } 
 		 else 
 		      {	
-			 	Log.info("All the clubs not displayed for the state: "+dropdown_values.trim() +"Expected count :" +clb_count + " Acutal validated count: "+ count);
-			 	
-		    	throw new Exception("All the clubs not displayed for the state: "+dropdown_values.trim() +"Expected count :" +clb_count + " Acutal validated count: "+ count);
+			 	Log.error("All the clubs not displayed for the state: "+dropdown_values.trim());
+			 	ExtentTestManager.getTest().log(Status.FAIL, "All the clubs not displayed for the state: "+dropdown_values.trim());
+		    	Assert.assertTrue(false, "All the clubs not displayed for the state: "+dropdown_values.trim());
 
 		      }
 		 
-//		 
-//		 	} 
-//		   
+
 		 }
 		Thread.sleep(200);
 	}
-	
-	
 	
 	public void Validate_clubs_name_address_photo_joinbutton(String Value, String dropdown_values, String country) throws Exception
 	{
 		if (Value.equalsIgnoreCase("club_details"))
 		{
-		if (driver.findElement(Join_now_button).isDisplayed()) click(Join_now_button);
-		else click(Join_now_button_m);
+		click(Join_now_button);
 		ExtentTestManager.getTest().log(Status.PASS, "Join_now_button clicked successfully");
 		Log.info("Join_now_button clicked successfully");
 		
@@ -741,29 +743,17 @@ public class Joinnow extends Base_Class {
 		 if(club_result_text.contains(dropdown_values.trim())) {
 			 Log.info(dropdown_values.trim()+" contains in the results: "+club_result_text);
 			 ExtentTestManager.getTest().log(Status.PASS, dropdown_values.trim()+" contains in the results: "+club_result_text );
+
+			 Assert.assertTrue(true);
 		 }
 		 else
 		 {
 			 Log.error(dropdown_values.trim()+" not contains in the results: "+club_result_text);
 			 throw new Exception(dropdown_values.trim()+" not contains in the results");
 		 }
+	
+		 int listSize = driver.findElements(club_list_rows).size();
 
-		 List<WebElement > club_result_rows=driver.findElements(club_list_rows);
-		 int listSize=club_result_rows.size();
-		 
-		 int count=0;
-		 for(WebElement we:club_result_rows)  
-		 	{ 
-			 
-//			 Log.info(we.getText());
-			 
-			 String[] club_address=we.findElement(clb_address).getText().split(",");
-			  if(club_address[1].contains(dropdown_values.trim()))
-			  	{
-				  count++;
-			  	}
-			  
-		    }
 		
 		 for(int i=1; i<=listSize; i++)  
 		 	{
@@ -789,7 +779,6 @@ public class Joinnow extends Base_Class {
 			 WebElement element = driver.findElement(locator);
 			 String clb_text=element.getText();
 			 
-//			 club_result_rows.get(i);
 				if(clb_text.equalsIgnoreCase(club_address_desktop))
 				{
 						Log.info("Club name followed by address and phone number is validated successfully: \n"+element.getText());
@@ -799,8 +788,7 @@ public class Joinnow extends Base_Class {
 
 				else {
 						Log.error("Club name followed by address and phone number is not validated: \n"+element.getText());
-//						ExtentTestManager.getTest().log(Status.FAIL, "Club name followed by address and phone number is not validated: \n"+element.getText());
-//						Assert.assertTrue(false, "Club name followed by address and phone number is not validated: \n"+element.getText());
+
 						throw new Exception( "Club name followed by address and phone number is not validated: \n"+element.getText());
 				}
 			 
@@ -814,16 +802,17 @@ public class Joinnow extends Base_Class {
 				ExtentTestManager.getTest().log(Status.PASS, "Join this club button is displayed successfully");
 			}
 		 
-		 if (clb_count == count) 
+		 if (clb_count == listSize) 
 		    {	
 			 	Log.info("All the clubs successfully displayed for the state: "+dropdown_values.trim());
 		        ExtentTestManager.getTest().log(Status.PASS, "All the clubs successfully displayed for the state: "+dropdown_values.trim());
-			  
+			   Assert.assertTrue(true);
 		     } 
 		 else 
 		      {	
-			 	Log.error("All the clubs not displayed for the state: "+dropdown_values.trim() +"Expected count :" +clb_count + " Acutal validated count: "+ count);
-			 	throw new Exception("All the clubs not displayed for the state: "+dropdown_values.trim() +"Expected count :" +clb_count + " Acutal validated count: "+ count);
+			 	Log.error("All the clubs not displayed for the state: "+dropdown_values.trim());
+
+		    	throw new Exception("All the clubs not displayed for the state: "+dropdown_values.trim());
 
 		      }		   
 		 }
@@ -831,7 +820,6 @@ public class Joinnow extends Base_Class {
 	}
 	
 
-	
 	
 	public void Validate_clubs_buttons(String Value, String dropdown_values, String country) throws Exception
 	{
@@ -1842,9 +1830,9 @@ public class Joinnow extends Base_Class {
 	
 	
 
-	public void Validate_select_monthlyrates_$36_99_details(String Value, String dropdown_values, String country, String clubname, String plan_rates, String Number_of_Persons1, String Initiation_Fee, String Billing_Frequency, String Initial_Term, String Prepayment ) throws Exception
+	public void Validate_select_monthlyrates_firstplan_details(String Value, String dropdown_values, String country, String clubname, String plan_rates, String Number_of_Persons1, String Initiation_Fee, String Billing_Frequency, String Initial_Term, String Prepayment ) throws Exception
 	{
-		if (Value.equalsIgnoreCase("monthlyrates_$36_99_details"))
+		if (Value.equalsIgnoreCase("monthlyrates_firstplan_details"))
 		{
 			if (driver.findElement(Join_now_button).isDisplayed()) click(Join_now_button);
 			else click(Join_now_button_m);
@@ -2004,8 +1992,40 @@ public class Joinnow extends Base_Class {
 	public	void validate_Select_MR_36_99(String plan_rates, String Number_of_Persons1, String Initiation_Fee, String Billing_Frequency, String Initial_Term, String Prepayment1) throws Exception {
 		
 		select_rates(plan_rates.trim());
-	 	
-		Element_isdisplayed(No_of_Persons_dropdown);
+		By No_of_Persons_dropdown_x;
+		By initiation_fee_x;
+		By billing_frequency_x;
+		By initial_term_x;
+		By Prepay_x;
+		By addamenities_x;
+		By addamenities_rows_x;
+		By yourdues_x;
+		By firstmonthdues_x;
+		if(driver.findElement(No_of_Persons_dropdown).isDisplayed())
+		{
+			 No_of_Persons_dropdown_x  = No_of_Persons_dropdown;
+			 initiation_fee_x=initiation_fee;
+			 billing_frequency_x=billing_frequency;
+			 initial_term_x=initial_term;
+			 Prepay_x=Prepay;
+			 addamenities_x=addamenities;
+			 addamenities_rows_x=addamenities_rows;
+			 yourdues_x=yourdues;
+			 firstmonthdues_x=firstmonthdues;
+		}
+		else {
+			No_of_Persons_dropdown_x=No_of_Persons_dropdown_1;
+			initiation_fee_x=initiation_fee_1;
+			 billing_frequency_x=billing_frequency_1;
+			 initial_term_x=initial_term_1;
+			 Prepay_x=Prepay_1;
+			 addamenities_x=addamenities_1;
+			 addamenities_rows_x=addamenities_rows_1;
+			 yourdues_x=yourdues_1;
+			 firstmonthdues_x=firstmonthdues_1;
+		}
+		
+		Element_isdisplayed(No_of_Persons_dropdown_x);
 		Log.info("Number of Persons dropdown displayed successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Number of Persons dropdown displayed successfully");
 	
@@ -2015,7 +2035,7 @@ public class Joinnow extends Base_Class {
 		String initial_term_input= Initial_Term.trim();
 		String Prepayment_input= Prepayment1.trim();
 		
-		Select monthly_dropdown = new Select(driver.findElement(No_of_Persons_dropdown));
+		Select monthly_dropdown = new Select(driver.findElement(No_of_Persons_dropdown_x));
 //		1 for $36.99/month
 		if(monthly_dropdown.getFirstSelectedOption().getText().equalsIgnoreCase(dropdowninput)){
 			
@@ -2038,44 +2058,44 @@ public class Joinnow extends Base_Class {
 		Log.info("Number of Persons dropdown validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Number of Persons dropdown validated successfully");
 		
-		Element_isdisplayed(initiation_fee);
-		String initiationfee=driver.findElement(initiation_fee).getText().trim();
+		Element_isdisplayed(initiation_fee_x);
+		String initiationfee=driver.findElement(initiation_fee_x).getText().trim();
 		Assert.assertEquals(initiationfee_input.toUpperCase(), initiationfee.toUpperCase(), "Initiation is not matched with the given input");
 		Log.info("Initiation fee "+ initiationfee +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Initiation fee "+ initiationfee +" is validated successfully");
-		Element_isdisplayed(billing_frequency);
-		String Billing_frequency=driver.findElement(billing_frequency).getText().trim();
+		Element_isdisplayed(billing_frequency_x);
+		String Billing_frequency=driver.findElement(billing_frequency_x).getText().trim();
 		Assert.assertEquals(Billing_frequency_input.toUpperCase(), Billing_frequency.toUpperCase(), "Billing frequency is not matched with the given input");
 		Log.info("Billing frequency "+ Billing_frequency +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Billing frequency "+ Billing_frequency +" is validated successfully");
 		
 
-		Element_isdisplayed(initial_term);
-		String monthlyterm=driver.findElement(initial_term).getText().trim();
+		Element_isdisplayed(initial_term_x);
+		String monthlyterm=driver.findElement(initial_term_x).getText().trim();
 		Assert.assertEquals(initial_term_input.toUpperCase(), monthlyterm.toUpperCase(), "monthly term is not matched with the given input");
 		Log.info("initial term  "+ monthlyterm +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "initial term  "+ monthlyterm +" is validated successfully");
 		
 		
 
-		Element_isdisplayed(Prepay);
-		String Prepayment=driver.findElement(Prepay).getText().trim();
+		Element_isdisplayed(Prepay_x);
+		String Prepayment=driver.findElement(Prepay_x).getText().trim();
 		Assert.assertEquals(Prepayment_input.toUpperCase(), Prepayment.toUpperCase(), "Prepayment is not matched with the given input");
 		Log.info("Prepayment "+ Prepayment +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Prepayment  "+ Prepayment +" is validated successfully");
 		
-		Element_isdisplayed(addamenities);
-		Element_isdisplayed(addamenities_rows);
-		String add_amenities=driver.findElement(addamenities).getText().trim();
+		Element_isdisplayed(addamenities_x);
+		Element_isdisplayed(addamenities_rows_x);
+		String add_amenities=driver.findElement(addamenities_x).getText().trim();
 		Assert.assertEquals("Add Amenities".toUpperCase(), add_amenities.toUpperCase(), "Add amenities is not matched with the given input");
 		Log.info(add_amenities +" section is displayed successfully");
 		ExtentTestManager.getTest().log(Status.PASS,  add_amenities +" section is displayed successfully");
 
 		
-		Element_isdisplayed(yourdues);
+		Element_isdisplayed(yourdues_x);
 
-		Element_isdisplayed(firstmonthdues);
-		String yourDues=driver.findElement(yourdues).getText().trim();
+		Element_isdisplayed(firstmonthdues_x);
+		String yourDues=driver.findElement(yourdues_x).getText().trim();
 		Assert.assertEquals("Your Dues2".toUpperCase(), yourDues.toUpperCase(), "Your Dues2 is not matched with the given input");
 		Log.info(yourDues +"section is displayed successfully");
 		ExtentTestManager.getTest().log(Status.PASS,  yourDues +" section is displayed successfully");
@@ -2088,7 +2108,45 @@ public class Joinnow extends Base_Class {
 		
 		select_rates(plan_rates);
 		
-		Element_isdisplayed(No_of_Persons_dropdown_1);
+		
+		By No_of_Persons_dropdown_x;
+		By initiation_fee_x;
+		By billing_frequency_x;
+		By initial_term_x;
+		By Prepay_x;
+		By addamenities_x;
+		By addamenities_rows_x;
+		By yourdues_x;
+		By firstmonthdues_x;
+		if(driver.findElement(No_of_Persons_dropdown_1).isDisplayed())
+		{
+			No_of_Persons_dropdown_x=No_of_Persons_dropdown_1;
+			initiation_fee_x=initiation_fee_1;
+			 billing_frequency_x=billing_frequency_1;
+			 initial_term_x=initial_term_1;
+			 Prepay_x=Prepay_1;
+			 addamenities_x=addamenities_1;
+			 addamenities_rows_x=addamenities_rows_1;
+			 yourdues_x=yourdues_1;
+			 firstmonthdues_x=firstmonthdues_1;
+		}
+		else {
+			
+			 
+			 No_of_Persons_dropdown_x  = No_of_Persons_dropdown;
+			 initiation_fee_x=initiation_fee;
+			 billing_frequency_x=billing_frequency;
+			 initial_term_x=initial_term;
+			 Prepay_x=Prepay;
+			 addamenities_x=addamenities;
+			 addamenities_rows_x=addamenities_rows;
+			 yourdues_x=yourdues;
+			 firstmonthdues_x=firstmonthdues;
+			 
+		}
+		
+		
+		Element_isdisplayed(No_of_Persons_dropdown_x);
 		Log.info("Number of Persons dropdown displayed successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Number of Persons dropdown displayed successfully");
 //		String[] details=Rates_details.split(",");
@@ -2098,7 +2156,7 @@ public class Joinnow extends Base_Class {
 		String initial_term_input= Initial_Term.trim();
 		String Prepayment_input= Prepayment1.trim();
 		
-		Select monthly_dropdown = new Select(driver.findElement(No_of_Persons_dropdown_1));
+		Select monthly_dropdown = new Select(driver.findElement(No_of_Persons_dropdown_x));
 //		1 for $36.99/month
 		if(monthly_dropdown.getFirstSelectedOption().getText().equalsIgnoreCase(dropdowninput)){
 			
@@ -2121,46 +2179,46 @@ public class Joinnow extends Base_Class {
 		Log.info("Number of Persons dropdown validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Number of Persons dropdown validated successfully");
 		
-		Element_isdisplayed(initiation_fee_1);
-		String initiationfee=driver.findElement(initiation_fee_1).getText().trim();
+		Element_isdisplayed(initiation_fee_x);
+		String initiationfee=driver.findElement(initiation_fee_x).getText().trim();
 		Assert.assertEquals(initiationfee_input.toUpperCase(), initiationfee.toUpperCase(), "Initiation is not matched with the given input");
 		Log.info("Initiation fee "+ initiationfee +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Initiation fee "+ initiationfee +" is validated successfully");
-		Element_isdisplayed(billing_frequency_1);
-		String Billing_frequency=driver.findElement(billing_frequency_1).getText().trim();
+		Element_isdisplayed(billing_frequency_x);
+		String Billing_frequency=driver.findElement(billing_frequency_x).getText().trim();
 		Assert.assertEquals(Billing_frequency_input.toUpperCase(), Billing_frequency.toUpperCase(), "Billing frequency is not matched with the given input");
 		Log.info("Billing frequency "+ Billing_frequency +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Billing frequency "+ Billing_frequency +" is validated successfully");
 		
 
-		Element_isdisplayed(initial_term_1);
-		String monthlyterm=driver.findElement(initial_term_1).getText().trim();
+		Element_isdisplayed(initial_term_x);
+		String monthlyterm=driver.findElement(initial_term_x).getText().trim();
 		Assert.assertEquals(initial_term_input.toUpperCase(), monthlyterm.toUpperCase(), "monthly term is not matched with the given input");
 		Log.info("initial term  "+ monthlyterm +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "initial term  "+ monthlyterm +" is validated successfully");
 		
 		
 
-		Element_isdisplayed(Prepay_1);
-		String Prepayment=driver.findElement(Prepay_1).getText().trim();
+		Element_isdisplayed(Prepay_x);
+		String Prepayment=driver.findElement(Prepay_x).getText().trim();
 		Assert.assertEquals(Prepayment_input.toUpperCase(), Prepayment.toUpperCase(), "Prepayment is not matched with the given input");
 		Log.info("Prepayment "+ Prepayment +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Prepayment  "+ Prepayment +" is validated successfully");
 		
-		Element_isdisplayed(addamenities_1);
-		Element_isdisplayed(addamenities_rows_1);
-		String add_amenities=driver.findElement(addamenities_1).getText().trim();
+		Element_isdisplayed(addamenities_x);
+		Element_isdisplayed(addamenities_rows_x);
+		String add_amenities=driver.findElement(addamenities_x).getText().trim();
 		Assert.assertEquals("Add Amenities".toUpperCase(), add_amenities.toUpperCase(), "Add amenities is not matched with the given input");
 		Log.info(add_amenities +" section is displayed successfully");
 		ExtentTestManager.getTest().log(Status.PASS,  add_amenities +" section is displayed successfully");
 
 		
-		Element_isdisplayed(yourdues_1);
+		Element_isdisplayed(yourdues_x);
 
-		Element_isdisplayed(firstmonthdues_1);
-		String yourDues=driver.findElement(yourdues_1).getText().trim();
+		Element_isdisplayed(firstmonthdues_x);
+		String yourDues=driver.findElement(yourdues_x).getText().trim();
 		Assert.assertEquals("Your Dues2".toUpperCase(), yourDues.toUpperCase(), "Your Dues2 is not matched with the given input");
-		Log.info(yourDues +"section is displayed successfully");
+		Log.info(yourDues +" section is displayed successfully");
 		ExtentTestManager.getTest().log(Status.PASS,  yourDues +" section is displayed successfully");
 				
 
@@ -2172,35 +2230,78 @@ public class Joinnow extends Base_Class {
 	
 		select_rates(plan_rates);
 	
-		Element_isdisplayed(addamenities);
-		MoveToElement(addamenities);
-		String add_amenities=driver.findElement(addamenities).getText();
+		
+		By add_amenities_td_x;
+		By add_ams_x;
+		 By amenities_xx;
+		 By included_amenities_x;
+		 By ams_x; 
+		
+		By addamenities_x;
+	
+		boolean firstplan=false;
+		if(driver.findElement(addamenities).isDisplayed())
+		{
+			
+			 add_amenities_td_x=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[7]/td[1]");
+			 add_ams_x  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl00_ctl00_ckbAddAmenity_')]");
+			 amenities_xx= By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[1]");
+			 included_amenities_x=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[2]");
+			 ams_x  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_')]");
+			
+			 addamenities_x=addamenities;
+			 firstplan=true;
+		}
+		else {
+			add_amenities_td_x=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[7]/td[1]");
+			add_ams_x  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl01_ctl00_ckbAddAmenity_')]");
+			amenities_xx= By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[1]");
+			included_amenities_x=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[2]");
+			ams_x  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl01_ctl00_ckbAmenity_')]");
+			
+			 addamenities_x=addamenities_1;
+			 
+		
+		}
+		
+		
+		Element_isdisplayed(addamenities_x);
+		MoveToElement(addamenities_x);
+		String add_amenities=driver.findElement(addamenities_x).getText();
 		Assert.assertEquals("Add Amenities".toUpperCase(), add_amenities.toUpperCase(), "Add amenities is not matched with the given input");
 		Log.info(add_amenities +" section is displayed successfully");
 		ExtentTestManager.getTest().log(Status.PASS,  add_amenities +" section is displayed successfully");
 
 		//add amenities
 		
-		By add_amenities_td=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[7]/td[1]");
-		String add_amenities_s= driver.findElement(add_amenities_td).getText().replaceAll("\n+", " ").trim();
+//		By add_amenities_td=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[7]/td[1]");
+		String add_amenities_s= driver.findElement(add_amenities_td_x).getText().replaceAll("\n+", " ").trim();
 //		By am= By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_0");
-		 By add_ams  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl00_ctl00_ckbAddAmenity_')]");
+//		 By add_ams  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl00_ctl00_ckbAddAmenity_')]");
 		 
-		List<WebElement> add_s=driver.findElements(add_ams);
+		List<WebElement> add_s=driver.findElements(add_ams_x);
 
 		String[] add_amen=new String[add_s.size()];
 		String[] add_ameni_input=add_amenities_input.split(",");
 		int count=0;
 		for (int i=0; i<add_s.size() ;i++) {
-			
+			MoveToElement(add_amenities_td_x);
 //			String s=driver.findElement(By.xpath("//label[@for='ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_"+i+"']")).getText();
 			String[] my_am=add_ameni_input[i].split("-");
 			if(add_amenities_s.toUpperCase().contains(my_am[0].trim().toUpperCase()))
 			{
-																
-						String s=driver.findElement(By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl00_ctl00_ckbAddAmenity_"+i+"')]")).getText();
+				String s;
+				boolean  b;
+								if(firstplan) {								
+						 s=driver.findElement(By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl00_ctl00_ckbAddAmenity_"+i+"')]")).getText();
 			
-						boolean  b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAddAmenity_"+i)).isSelected();
+						 b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAddAmenity_"+i)).isSelected();
+								}
+								else {
+									 s=driver.findElement(By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl01_ctl00_ckbAddAmenity_"+i+"')]")).getText();
+									
+									  b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl01_ctl00_ckbAddAmenity_"+i)).isSelected();
+								}
 						String[] am_b=add_ameni_input[i].trim().split("-");
 						Boolean checked = null;
 						if (am_b[1].trim().equalsIgnoreCase("checked")){
@@ -2212,6 +2313,7 @@ public class Joinnow extends Base_Class {
 						}
 						
 			//			Boolean.parseBoolean(am_b[0].trim().replace("checked", "true"));
+						
 						if(am_b[0].trim().equalsIgnoreCase(s) && checked==b)
 						{
 						Log.info("Amenity: "+s+" check box is checked: "+b+" and validated successfully");
@@ -2231,8 +2333,8 @@ public class Joinnow extends Base_Class {
 			}
 			else 
 			{
-				Log.error("Amenity [ "+add_ameni_input[i].trim()+" ] is not present in amenities list [ "+add_amenities_s+" ]");
-				ExtentTestManager.getTest().log(Status.FAIL, "Amenity [ "+add_ameni_input[i].trim()+" ] is not present in amenities list [ "+add_amenities_s+" ]");
+				Log.error("Amenity [ "+add_ameni_input[i].trim()+" ] is not present in add amenities list [ "+add_amenities_s+" ]");
+				ExtentTestManager.getTest().log(Status.FAIL, "Amenity [ "+add_ameni_input[i].trim()+" ] is not present in add amenities list [ "+add_amenities_s+" ]");
 			}
 			
 		}
@@ -2246,10 +2348,10 @@ public class Joinnow extends Base_Class {
 	    {	
 	    	
 		 	
-	        String res = String.join( ",", add_ameni_input);
-	    	Log.error("All values not matched successfully in the amenities list. Expected amenities list [ "+included_amenitities_input +" ] Actual dropdown list [ "+res+" ]");
-        	ExtentTestManager.getTest().log(Status.FAIL, "All values not matched successfully in the amenities list. Expected amenities list [ "+included_amenitities_input +" ] Actual dropdown list [ "+res+" ]");
-        	throw new Exception("All values not matched successfully in the amenities list");
+	        String res = String.join( ",", add_amenities_s);
+	    	Log.error("All values not matched successfully in the add amenities list. Expected amenities list [ "+add_amenities_input +" ] Actual dropdown list [ "+res+" ]");
+        	ExtentTestManager.getTest().log(Status.FAIL, "All values not matched successfully in the add amenities list. Expected amenities list [ "+add_amenities_input +" ] Actual dropdown list [ "+res+" ]");
+        	throw new Exception("All values not matched successfully in the add amenities list");
 			
 		}
 		
@@ -2259,34 +2361,49 @@ public class Joinnow extends Base_Class {
 		
 		
 //		By amenities= By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity");
-		By amenities= By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[1]");
+//		By amenities= By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[1]");
 		
-		Element_isdisplayed(amenities);
+		Element_isdisplayed(amenities_xx);
 		Log.info("Included Amenities section is displayed successfully");
 		ExtentTestManager.getTest().log(Status.PASS,   "Included Amenities section is displayed successfully");
-		click(amenities);
-		By included_amenities=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[2]");
+		click(amenities_xx);
+//		By included_amenities=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[2]");
 //		By continue_button= By.id("ctl00_MainContent_TabRates_ctl00_ctl00_btnPayment");
-		Element_isdisplayed(included_amenities);
+		Element_isdisplayed(included_amenities_x);
 		MoveToElement(yourdues);
-		String amenities_s= driver.findElement(included_amenities).getText().replaceAll("\n+", " ").trim();
+		String amenities_s= driver.findElement(included_amenities_x).getText().replaceAll("\n+", " ").trim();
 //		By am= By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_0");
-		 By ams  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_')]");
-		List<WebElement> am_s=driver.findElements(ams);
+//		 By ams  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_')]");
+		List<WebElement> am_s=driver.findElements(ams_x);
 
 		String[] amen=new String[am_s.size()];
 		String[] amen_input=included_amenitities_input.split(",");
 		int count1=0;
 		for (int i=0; i<am_s.size() ;i++) {
-			
+			MoveToElement(included_amenities_x);
 //			String s=driver.findElement(By.xpath("//label[@for='ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_"+i+"']")).getText();
 			String[] my_am=amen_input[i].split("-");
 			if(amenities_s.toUpperCase().contains(my_am[0].trim().toUpperCase()))
 			{
 				
-						String s=driver.findElement(By.xpath("//label[@for='ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_"+i+"']")).getText();
-			
-						boolean  b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_"+i)).isSelected();
+			String s;
+			boolean  b;
+				if(firstplan) {
+					 s=driver.findElement(By.xpath("//label[@for='ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_"+i+"']")).getText();
+						
+					  b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_"+i)).isSelected();
+					
+				}
+				else {
+					
+					 s=driver.findElement(By.xpath("//label[@for='ctl00_MainContent_TabRates_ctl01_ctl00_ckbAmenity_"+i+"']")).getText();
+					
+					  b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl01_ctl00_ckbAmenity_"+i)).isSelected();
+					
+				}
+//						 s=driver.findElement(By.xpath("//label[@for='ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_"+i+"']")).getText();
+//			
+//						  b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_"+i)).isSelected();
 						String[] am_b=amen_input[i].trim().split("-");
 						Boolean checked = null;
 						if (am_b[1].trim().equalsIgnoreCase("checked")){
@@ -2347,9 +2464,44 @@ Thread.sleep(200);
 	select_rates(plan_rates);
 		
 	
-		Element_isdisplayed(addamenities_1);
-		MoveToElement(addamenities_1);
-		String add_amenities=driver.findElement(addamenities_1).getText();
+	By add_amenities_td_x;
+	By add_ams_x;
+	 By amenities_xx;
+	 By included_amenities_x;
+	 By ams_x; 
+	
+	By addamenities_x;
+	By yourdues_x;
+	boolean firstplan=false;
+	
+	if(driver.findElement(addamenities).isDisplayed())
+	{
+		
+		 add_amenities_td_x=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[7]/td[1]");
+		 add_ams_x  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl00_ctl00_ckbAddAmenity_')]");
+		 amenities_xx= By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[1]");
+		 included_amenities_x=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[2]");
+		 ams_x  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_')]");
+		
+		 addamenities_x=addamenities;
+		 yourdues_x=yourdues;
+		 firstplan=true;
+	}
+	else {
+		add_amenities_td_x=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[7]/td[1]");
+		add_ams_x  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl01_ctl00_ckbAddAmenity_')]");
+		amenities_xx= By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[1]");
+		included_amenities_x=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[2]");
+		ams_x  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl01_ctl00_ckbAmenity_')]");
+		 yourdues_x=yourdues_1;
+		 addamenities_x=addamenities_1;
+		 
+	
+	}
+	
+		Element_isdisplayed(addamenities_x);
+		MoveToElement(addamenities_x);
+		String add_amenities=driver.findElement(addamenities_x).getText();
 		Assert.assertEquals("Add Amenities".toUpperCase(), add_amenities.toUpperCase(), "Add amenities is not matched with the given input");
 		Log.info(add_amenities +" section is displayed successfully");
 		ExtentTestManager.getTest().log(Status.PASS,  add_amenities +" section is displayed successfully");
@@ -2359,26 +2511,36 @@ Thread.sleep(200);
 		
 		//add amenities
 		
-		By add_amenities_td=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[7]/td[1]");
-		String add_amenities_s= driver.findElement(add_amenities_td).getText().replaceAll("\n+", " ").trim();
+//		By add_amenities_td_x=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[7]/td[1]");
+		String add_amenities_s= driver.findElement(add_amenities_td_x).getText().replaceAll("\n+", " ").trim();
 //		By am= By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_0");
-		 By add_ams  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl01_ctl00_ckbAddAmenity_')]");
+//		 By add_ams  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl01_ctl00_ckbAddAmenity_')]");
 		 
-		List<WebElement> add_s=driver.findElements(add_ams);
+		List<WebElement> add_s=driver.findElements(add_ams_x);
 
 		String[] add_amen=new String[add_s.size()];
 		String[] add_ameni_input=add_amenities_input.split(",");
 		int count=0;
 		for (int i=0; i<add_s.size() ;i++) {
-			
+				MoveToElement(add_amenities_td_x);
 //			String s=driver.findElement(By.xpath("//label[@for='ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_"+i+"']")).getText();
 			String[] my_am=add_ameni_input[i].split("-");
 			if(add_amenities_s.toUpperCase().contains(my_am[0].trim().toUpperCase()))
 			{
-																
-						String s=driver.findElement(By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl01_ctl00_ckbAddAmenity_"+i+"')]")).getText();
+				String s;
+				boolean  b;
+								if(firstplan) {								
+						 s=driver.findElement(By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl00_ctl00_ckbAddAmenity_"+i+"')]")).getText();
 			
-						boolean  b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl01_ctl00_ckbAddAmenity_"+i)).isSelected();
+						 b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAddAmenity_"+i)).isSelected();
+								}
+								else {
+									 s=driver.findElement(By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl01_ctl00_ckbAddAmenity_"+i+"')]")).getText();
+									
+									  b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl01_ctl00_ckbAddAmenity_"+i)).isSelected();
+								}
+						
+						
 						String[] am_b=add_ameni_input[i].trim().split("-");
 						Boolean checked = null;
 						if (am_b[1].trim().equalsIgnoreCase("checked")){
@@ -2424,9 +2586,9 @@ Thread.sleep(200);
 	    {	
 	    	
 		 	
-	        String res = String.join( ",", add_ameni_input);
-	    	Log.error("All values not matched successfully in the amenities list. Expected amenities list [ "+included_amenitities_input +" ] Actual dropdown list [ "+res+" ]");
-        	ExtentTestManager.getTest().log(Status.FAIL, "All values not matched successfully in the amenities list. Expected amenities list [ "+included_amenitities_input +" ] Actual dropdown list [ "+res+" ]");
+	        String res = String.join( ",", add_amenities_s);
+	    	Log.error("All values not matched successfully in the add amenities list. Expected amenities list [ "+add_amenities_input +" ] Actual dropdown list [ "+res+" ]");
+        	ExtentTestManager.getTest().log(Status.FAIL, "All values not matched successfully in the add amenities list. Expected amenities list [ "+add_amenities_input +" ] Actual dropdown list [ "+res+" ]");
         	throw new Exception("All values not matched successfully in the amenities list");
 			
 		}
@@ -2437,34 +2599,49 @@ Thread.sleep(200);
 		
 		
 //		By amenities= By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity");
-		By amenities= By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[1]");
+//		By amenities= By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[1]");
 		
-		Element_isdisplayed(amenities);
+		Element_isdisplayed(amenities_xx);
 		Log.info("Included Amenities section is displayed successfully");
 		ExtentTestManager.getTest().log(Status.PASS,   "Included Amenities section is displayed successfully");
-		click(amenities);
-		By included_amenities=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[2]");
+		click(amenities_xx);
+//		By included_amenities=By.xpath("//body[1]/form[1]/div[3]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/table[1]/tbody[1]/tr[9]/td[1]/div[1]/div[2]");
 //		By continue_button= By.id("ctl00_MainContent_TabRates_ctl00_ctl00_btnPayment");
-		Element_isdisplayed(included_amenities);
-		MoveToElement(yourdues_1);
-		String amenities_s= driver.findElement(included_amenities).getText().replaceAll("\n+", " ").trim();
+		Element_isdisplayed(included_amenities_x);
+		MoveToElement(yourdues_x);
+		String amenities_s= driver.findElement(included_amenities_x).getText().replaceAll("\n+", " ").trim();
 //		By am= By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_0");
-		 By ams  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl01_ctl00_ckbAmenity_')]");
-		List<WebElement> am_s=driver.findElements(ams);
+//		 By ams  = By.xpath("//label[contains(@for,'ctl00_MainContent_TabRates_ctl01_ctl00_ckbAmenity_')]");
+		List<WebElement> am_s=driver.findElements(ams_x);
 
 		String[] amen=new String[am_s.size()];
 		String[] amen_input=included_amenitities_input.split(",");
 		int count1=0;
 		for (int i=0; i<am_s.size() ;i++) {
 			
+			
+			MoveToElement(included_amenities_x);
 //			String s=driver.findElement(By.xpath("//label[@for='ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_"+i+"']")).getText();
 			String[] my_am=amen_input[i].split("-");
 			if(amenities_s.toUpperCase().contains(my_am[0].trim().toUpperCase()))
 			{
 				
-						String s=driver.findElement(By.xpath("//label[@for='ctl00_MainContent_TabRates_ctl01_ctl00_ckbAmenity_"+i+"']")).getText();
-			
-						boolean  b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl01_ctl00_ckbAmenity_"+i)).isSelected();
+				String s;
+				boolean  b;
+					if(firstplan) {
+						 s=driver.findElement(By.xpath("//label[@for='ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_"+i+"']")).getText();
+							
+						  b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl00_ctl00_ckbAmenity_"+i)).isSelected();
+						
+					}
+					else {
+						
+						 s=driver.findElement(By.xpath("//label[@for='ctl00_MainContent_TabRates_ctl01_ctl00_ckbAmenity_"+i+"']")).getText();
+						
+						  b=driver.findElement(By.id("ctl00_MainContent_TabRates_ctl01_ctl00_ckbAmenity_"+i)).isSelected();
+						
+					}
+						
 						String[] am_b=amen_input[i].trim().split("-");
 						Boolean checked = null;
 						if (am_b[1].trim().equalsIgnoreCase("checked")){
@@ -2522,9 +2699,9 @@ Thread.sleep(500);
 	}
 	
 
-	public void Validate_select_monthlyrates_$36_99_add_amenities_list(String Value, String dropdown_values, String country, String clubname, String plan_rates, String included_amenities, String add_amenities) throws Exception
+	public void Validate_select_monthlyrates_firstplan_add_amenities_list(String Value, String dropdown_values, String country, String clubname, String plan_rates, String included_amenities, String add_amenities) throws Exception
 	{
-		if (Value.equalsIgnoreCase("monthlyrates_$36_99_add_amenities_list"))
+		if (Value.equalsIgnoreCase("monthlyrates_firstplan_add_amenities_list"))
 		{
 		click(Join_now_button);
 		ExtentTestManager.getTest().log(Status.PASS, "Join_now_button clicked successfully");
@@ -2661,9 +2838,9 @@ Thread.sleep(500);
 	
 	
 
-	public void Validate_select_monthlyrates_$46_99_add_amenities_list(String Value, String dropdown_values, String country, String clubname, String plan_rates, String included_amenities, String add_amenities) throws Exception
+	public void Validate_select_monthlyrates_secondplan_add_amenities_list(String Value, String dropdown_values, String country, String clubname, String plan_rates, String included_amenities, String add_amenities) throws Exception
 	{
-		if (Value.equalsIgnoreCase("monthlyrates_$46_99_add_amenities_list"))
+		if (Value.equalsIgnoreCase("monthlyrates_secondplan_add_amenities_list"))
 		{
 		click(Join_now_button);
 		ExtentTestManager.getTest().log(Status.PASS, "Join_now_button clicked successfully");
@@ -2799,9 +2976,9 @@ Thread.sleep(500);
 	}
 	
 	
-	public void Validate_select_monthlyrates_$36_99_yourdues_section(String Value, String dropdown_values, String country, String clubname, String plan_rates, String First_Month_Dues, String Last_Month_Dues, String Total_initial_Payment, String Annual_Fee_Per_Person) throws Exception
+	public void Validate_select_monthlyrates_firstplan_yourdues_section(String Value, String dropdown_values, String country, String clubname, String plan_rates, String First_Month_Dues, String Last_Month_Dues, String Total_initial_Payment, String Annual_Fee_Per_Person) throws Exception
 	{
-		if (Value.equalsIgnoreCase("monthlyrates_$36_99_yourdues_section"))
+		if (Value.equalsIgnoreCase("monthlyrates_firstplan_yourdues_section"))
 		{
 		click(Join_now_button);
 		ExtentTestManager.getTest().log(Status.PASS, "Join_now_button clicked successfully");
@@ -2956,44 +3133,77 @@ Thread.sleep(500);
 //			ExtentTestManager.getTest().log(Status.PASS,  "Invalid your dues input: "+all_yourdues);
 //			throw new Exception("Invalid your dues input");
 //		}
-		Element_isdisplayed(yourdues);
+		 
+		 
+		 By firstmonth_due_x;
+			By continue_button_x;
+			By lastmonth_due_x;
+			By total_paymnt_x;
+			
+			By annulfee_x;
+			
+			By yourdues_x;
+			By firstmonthdues_x;
+			if(driver.findElement(yourdues).isDisplayed())
+			{
+				firstmonth_due_x  = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblMonthlyFee");
+				continue_button_x=continue_button;
+				lastmonth_due_x= By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblMonthlyFee1");
+				total_paymnt_x = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblTotalPayment");
+				 annulfee_x = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblAnnualFee");
+				 yourdues_x=yourdues;
+			}
+			else {
+				firstmonth_due_x=By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblMonthlyFee");
+				continue_button_x=continue_button_1;
+				lastmonth_due_x= By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblMonthlyFee1");;
+				total_paymnt_x=By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblTotalPayment");;
+				 
+				 annulfee_x=By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblAnnualFee");;
+				 yourdues_x=yourdues_1;
+			}
+			
+		 
+		 
+		 
+		Element_isdisplayed(yourdues_x);
 
 //		Element_isdisplayed(firstmonthdues);
-		String yourDues=driver.findElement(yourdues).getText();
+		String yourDues=driver.findElement(yourdues_x).getText();
 		Assert.assertEquals("Your Dues2".toUpperCase(), yourDues.toUpperCase(), "Your Dues2 is not matched with the given input");
 		Log.info(yourDues +"section is displayed successfully");
 		ExtentTestManager.getTest().log(Status.PASS,  yourDues +" section is displayed successfully");
 		
-		By firstmonth_due = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblMonthlyFee");
+//		By firstmonth_due = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblMonthlyFee");
 		
-		MoveToElement(continue_button);
-		Element_isdisplayed(firstmonth_due);
-		String firstmonthdue=driver.findElement(firstmonth_due).getText().trim();
+		MoveToElement(continue_button_x);
+		Element_isdisplayed(firstmonth_due_x);
+		String firstmonthdue=driver.findElement(firstmonth_due_x).getText().trim();
 		Assert.assertEquals(firstmonth_input.toUpperCase(), firstmonthdue.toUpperCase(), "First month due is not matched with the given input");
 		Log.info("First month due "+ firstmonthdue +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "First month due "+ firstmonthdue +" is validated successfully");
 //		ctl00_MainContent_TabRates_ctl00_ctl00_lblMonthlyFee1
-		By lastmonth_due = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblMonthlyFee1");
-		Element_isdisplayed(lastmonth_due);
-		String lastmonthdue=driver.findElement(lastmonth_due).getText().trim();
+//		By lastmonth_due = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblMonthlyFee1");
+		Element_isdisplayed(lastmonth_due_x);
+		String lastmonthdue=driver.findElement(lastmonth_due_x).getText().trim();
 		Assert.assertEquals(lastmonth_input.toUpperCase(), lastmonthdue.toUpperCase(), "Last month due is not matched with the given input");
 		Log.info("Last month due "+ lastmonthdue +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Last month due "+ lastmonthdue +" is validated successfully");
 		
-		By total_paymnt = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblTotalPayment");
+//		By total_paymnt = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblTotalPayment");
 		
-		Element_isdisplayed(total_paymnt);
-		String total_pay=driver.findElement(total_paymnt).getText().trim();
+		Element_isdisplayed(total_paymnt_x);
+		String total_pay=driver.findElement(total_paymnt_x).getText().trim();
 		Assert.assertEquals(total_payment_input.toUpperCase(), total_pay.toUpperCase(), "Total payment  is not matched with the given input");
 		Log.info("Total payment "+ total_pay +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Total payment "+ total_pay +" is validated successfully");
 		
-		By annulfee = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblAnnualFee");
+//		By annulfee = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblAnnualFee");
 		
 
-		Element_isdisplayed(annulfee);
+		Element_isdisplayed(annulfee_x);
 	
-		String Annual_fee=driver.findElement(annulfee).getText().trim();
+		String Annual_fee=driver.findElement(annulfee_x).getText().trim();
 		Assert.assertEquals(annualfee_input.toUpperCase(), Annual_fee.toUpperCase(), "Annual fee is not matched with the given input");
 		Log.info("Annual fee "+ Annual_fee +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Annual fee  "+ Annual_fee +" is validated successfully");
@@ -3007,9 +3217,9 @@ Thread.sleep(500);
 	}
 	
 
-	public void Validate_select_monthlyrates_$46_99_yourdues_section(String Value, String dropdown_values, String country, String clubname,String plan_rates, String Monthly_rates, String all_yourdues) throws Exception
+	public void Validate_select_monthlyrates_secondplan_yourdues_section(String Value, String dropdown_values, String country, String clubname,String plan_rates,String First_Month_Dues, String Last_Month_Dues, String Total_initial_Payment, String Annual_Fee_Per_Person) throws Exception
 	{
-		if (Value.equalsIgnoreCase("monthlyrates_$46_99_yourdues_section"))
+		if (Value.equalsIgnoreCase("monthlyrates_secondplan_yourdues_section"))
 		{
 		click(Join_now_button);
 		ExtentTestManager.getTest().log(Status.PASS, "Join_now_button clicked successfully");
@@ -3082,7 +3292,7 @@ Thread.sleep(500);
 						Element_isdisplayed(yourhomeclub_h);
 						Log.info("Your homeclub section is displayed successfully");
 						ExtentTestManager.getTest().log(Status.PASS, "Your homeclub section is displayed successfully");
-						validate_Select_MR_46_99_all_yourdues(plan_rates,Monthly_rates, all_yourdues);
+						validate_Select_MR_46_99_all_yourdues(plan_rates, First_Month_Dues ,Last_Month_Dues ,Total_initial_Payment ,Annual_Fee_Per_Person);
 //						validate_Select_MR_34_99_amenities(Monthly_rates, Monthly_details);
 						count++;
 						break;
@@ -3105,7 +3315,7 @@ Thread.sleep(500);
 						Element_isdisplayed(yourhomeclub_h);
 						Log.info("Your homeclub section is displayed successfully");
 						ExtentTestManager.getTest().log(Status.PASS, "Your homeclub section is displayed successfully");
-						validate_Select_MR_46_99_all_yourdues(plan_rates,Monthly_rates, all_yourdues);
+						validate_Select_MR_46_99_all_yourdues(plan_rates, First_Month_Dues ,Last_Month_Dues ,Total_initial_Payment ,Annual_Fee_Per_Person);
 //						validate_Select_MR_34_99_amenities(Monthly_rates, Monthly_details);
 					 	count++;
 					 	break;
@@ -3123,7 +3333,7 @@ Thread.sleep(500);
 					Element_isdisplayed(yourhomeclub_h);
 					Log.info("Your homeclub section is displayed successfully");
 					ExtentTestManager.getTest().log(Status.PASS, "Your homeclub section is displayed successfully");
-					validate_Select_MR_46_99_all_yourdues(plan_rates,Monthly_rates, all_yourdues);
+					validate_Select_MR_46_99_all_yourdues(plan_rates, First_Month_Dues ,Last_Month_Dues ,Total_initial_Payment ,Annual_Fee_Per_Person);
 //					validate_Select_MR_34_99_amenities(Monthly_rates, Monthly_details);
 					count++;
 					break;
@@ -3144,69 +3354,90 @@ Thread.sleep(500);
 		Thread.sleep(1000);
 	}
 
-	public	void validate_Select_MR_46_99_all_yourdues(String plan_rates,String Monthly_rates, String all_yourdues) throws Exception {
+	public	void validate_Select_MR_46_99_all_yourdues(String plan_rates, String First_Month_Dues ,String Last_Month_Dues ,String Total_initial_Payment ,String Annual_Fee_Per_Person) throws Exception {
 
 
 		
 		select_rates(plan_rates);
 		
-		String[] details=all_yourdues.split(",");
-//		System.out.println(details.length);
+
 		String firstmonth_input = null;
 		String lastmonth_input= null;
 		String total_payment_input= null;
 		String annualfee_input= null;
-		if(details.length==4){
-		 firstmonth_input= details[0].trim();
-		 lastmonth_input= details[1].trim();
-		 total_payment_input= details[2].trim();
-		 annualfee_input= details[3].trim();
-//		String Prepayment_input= details[4].trim();
-//		ctl00_MainContent_TabRates_ctl01_ctl00_lblMonthlyFee
-		}
-		else {
-			Log.info("Invalid your dues input: "+all_yourdues);
-			ExtentTestManager.getTest().log(Status.PASS,  "Invalid your dues input: "+all_yourdues);
-			throw new Exception("Invalid your dues input");
-		}
-		Element_isdisplayed(yourdues_1);
+
+		 firstmonth_input= First_Month_Dues.trim();
+		 lastmonth_input= Last_Month_Dues.trim();
+		 total_payment_input= Total_initial_Payment.trim();
+		 annualfee_input=Annual_Fee_Per_Person.trim();
+
+		 
+		 By firstmonth_due_x;
+			By continue_button_x;
+			By lastmonth_due_x;
+			By total_paymnt_x;
+			
+			By annulfee_x;
+			
+			By yourdues_x;
+			By firstmonthdues_x;
+			if(driver.findElement(yourdues).isDisplayed())
+			{
+				firstmonth_due_x  = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblMonthlyFee");
+				continue_button_x=continue_button;
+				lastmonth_due_x= By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblMonthlyFee1");
+				total_paymnt_x = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblTotalPayment");
+				 annulfee_x = By.id("ctl00_MainContent_TabRates_ctl00_ctl00_lblAnnualFee");
+				 yourdues_x=yourdues;
+			}
+			else {
+				firstmonth_due_x=By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblMonthlyFee");
+				continue_button_x=continue_button_1;
+				lastmonth_due_x= By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblMonthlyFee1");;
+				total_paymnt_x=By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblTotalPayment");;
+				 
+				 annulfee_x=By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblAnnualFee");;
+				 yourdues_x=yourdues_1;
+			}
+		 
+		Element_isdisplayed(yourdues_x);
 
 //		Element_isdisplayed(firstmonthdues);
-		String yourDues=driver.findElement(yourdues_1).getText();
+		String yourDues=driver.findElement(yourdues_x).getText();
 		Assert.assertEquals("Your Dues2".toUpperCase(), yourDues.toUpperCase(), "Your Dues2 is not matched with the given input");
 		Log.info(yourDues +"section is displayed successfully");
 		ExtentTestManager.getTest().log(Status.PASS,  yourDues +" section is displayed successfully");
 		
-		By firstmonth_due = By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblMonthlyFee");
+//		By firstmonth_due = By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblMonthlyFee");
 		
-		MoveToElement(continue_button_1);
-		Element_isdisplayed(firstmonth_due);
-		String firstmonthdue=driver.findElement(firstmonth_due).getText().trim();
+		MoveToElement(continue_button_x);
+		Element_isdisplayed(firstmonth_due_x);
+		String firstmonthdue=driver.findElement(firstmonth_due_x).getText().trim();
 		Assert.assertEquals(firstmonth_input.toUpperCase(), firstmonthdue.toUpperCase(), "First month due is not matched with the given input");
 		Log.info("First month due "+ firstmonthdue +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "First month due "+ firstmonthdue +" is validated successfully");
 //		ctl00_MainContent_TabRates_ctl00_ctl00_lblMonthlyFee1
-		By lastmonth_due = By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblMonthlyFee1");
-		Element_isdisplayed(lastmonth_due);
-		String lastmonthdue=driver.findElement(lastmonth_due).getText().trim();
+//		By lastmonth_due = By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblMonthlyFee1");
+		Element_isdisplayed(lastmonth_due_x);
+		String lastmonthdue=driver.findElement(lastmonth_due_x).getText().trim();
 		Assert.assertEquals(lastmonth_input.toUpperCase(), lastmonthdue.toUpperCase(), "Last month due is not matched with the given input");
 		Log.info("Last month due "+ lastmonthdue +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Last month due "+ lastmonthdue +" is validated successfully");
 		
-		By total_paymnt = By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblTotalPayment");
+//		By total_paymnt = By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblTotalPayment");
 		
-		Element_isdisplayed(total_paymnt);
-		String total_pay=driver.findElement(total_paymnt).getText().trim();
+		Element_isdisplayed(total_paymnt_x);
+		String total_pay=driver.findElement(total_paymnt_x).getText().trim();
 		Assert.assertEquals(total_payment_input.toUpperCase(), total_pay.toUpperCase(), "Total payment  is not matched with the given input");
 		Log.info("Total payment "+ total_pay +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Total payment "+ total_pay +" is validated successfully");
 		
-		By annulfee = By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblAnnualFee");
+//		By annulfee = By.id("ctl00_MainContent_TabRates_ctl01_ctl00_lblAnnualFee");
 		
 
-		Element_isdisplayed(annulfee);
+		Element_isdisplayed(annulfee_x);
 	
-		String Annual_fee=driver.findElement(annulfee).getText().trim();
+		String Annual_fee=driver.findElement(annulfee_x).getText().trim();
 		Assert.assertEquals(annualfee_input.toUpperCase(), Annual_fee.toUpperCase(), "Annual fee is not matched with the given input");
 		Log.info("Annual fee "+ Annual_fee +" is validated successfully");
 		ExtentTestManager.getTest().log(Status.PASS, "Annual fee  "+ Annual_fee +" is validated successfully");
@@ -3220,9 +3451,9 @@ Thread.sleep(500);
 	}
 	
 	
-	public void Validate_select_monthlyrates_$46_99_details(String Value, String dropdown_values, String country, String clubname, String plan_rates,String Number_of_Persons1, String Initiation_Fee, String Billing_Frequency, String Initial_Term, String Prepayment ) throws Exception
+	public void Validate_select_monthlyrates_secondplan_details(String Value, String dropdown_values, String country, String clubname, String plan_rates,String Number_of_Persons1, String Initiation_Fee, String Billing_Frequency, String Initial_Term, String Prepayment ) throws Exception
 	{
-		if (Value.equalsIgnoreCase("monthlyrates_$46_99_details"))
+		if (Value.equalsIgnoreCase("monthlyrates_secondplan_details"))
 		{
 		click(Join_now_button);
 		ExtentTestManager.getTest().log(Status.PASS, "Join_now_button clicked successfully");
@@ -3357,6 +3588,7 @@ Thread.sleep(500);
 		 }
 		Thread.sleep(1000);
 	}
+
 	
 
 	public void Validate_No_of_persons_dropdown_for_$36_99(String Value, String dropdown_values, String country, String clubname, String persons_dropdown_values, String plan_rates) throws Exception
@@ -9176,8 +9408,8 @@ public void Validate_Membership_agreement_in_review_page(String Value, String dr
 public void Previewagreement_and_Confirmandpay_buttons() throws Exception {
 	
 	
-	By Preview_agreement_button = By.id("imgAgreement");
-	By Confirm_pay_button=By.id("ctl00_MainContent_MembershipReviewInfo1_imgSubmit");
+	By Preview_agreement_button = By.id("ctl00_MainContent_btnProceedPayment");
+	By Confirm_pay_button=By.id("ctl00_MainContent_MembershipReviewInfo1_pnlCMSConfirmEmailrshipReviewInfo1_imgSubmit");
 	
 	 
 	Element_isdisplayed(Preview_agreement_button);
@@ -9343,5 +9575,10 @@ public void Validate_Previewagreement_and_Confirmandpay_buttons(String Value, St
 //		ExtentTestManager.getTest().log(Status.PASS, "Login Successful");
 //
 //	}
+
+
+
+
+
 
 }
